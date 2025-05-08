@@ -1,0 +1,22 @@
+# Python
+.ipynb_checkpoints
+*.pyc
+*.pyo
+__pycache__/
+build
+*.egg-info
+
+# other
+.idea
+.vscode
+*.txt
+*.cache
+*.xdlexe
+.pytest_cache
+.coverage
+log_files/
+dist/
+
+# Allows
+!*.flake8*
+logs.txt

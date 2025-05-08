@@ -1,0 +1,96 @@
+{
+    "NL": "A mixture of HfOCl2·8H2O (61 mg) and H3BTB (65 mg) was dissolved in a mixture of DMF (7.5 mL) and HCOOH (4.5mL) in a Teflon-lined autoclave, and kept at 120 oC for 3 days.",
+    "function": [
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "Teflon-lined autoclave",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "HfOCl2·8H2O"
+                        ]
+                    }
+                },
+                "mass": {
+                    "quantity": 61,
+                    "unit": "mg"
+                }
+            }
+        },
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "Teflon-lined autoclave",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "H3BTB"
+                        ]
+                    }
+                },
+                "mass": {
+                    "quantity": 65,
+                    "unit": "mg"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "Teflon-lined autoclave",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "DMF"
+                        ]
+                    },
+                    "concentration": null,
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 7.5,
+                    "unit": "mL"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "Teflon-lined autoclave",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "HCOOH"
+                        ]
+                    },
+                    "concentration": null,
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 4.5,
+                    "unit": "mL"
+                }
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureForDuration",
+            "function_args": {
+                "reactor_name": "Teflon-lined autoclave",
+                "temperature": {
+                    "quantity": 120,
+                    "unit": "°C"
+                },
+                "duration": {
+                    "quantity": 3,
+                    "unit": "days"
+                },
+                "adjust_method": null,
+                "stir": false,
+                "stir_speed": null,
+                "ramp_rate": null,
+                "reflux": null
+            }
+        }
+    ]
+}

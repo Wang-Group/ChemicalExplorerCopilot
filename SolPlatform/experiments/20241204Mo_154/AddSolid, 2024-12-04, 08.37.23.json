@@ -1,0 +1,21 @@
+{
+    "time": "2024-12-04 20:37:23.090184",
+    "reactor": "reactor0",
+    "job finished": {
+        "Outcome": "Success",
+        "Substance Name": "Na2MoO4.2H2O",
+        "Target Weight": {
+            "Value": 1097.0,
+            "Unit": "Milligram"
+        },
+        "Tolerance": {
+            "Value": 5.0,
+            "Unit": "Milligram"
+        },
+        "Net Weight": {
+            "Value": "1.1392",
+            "Unit": "Gram",
+            "CustomUnitName": null
+        }
+    }
+}

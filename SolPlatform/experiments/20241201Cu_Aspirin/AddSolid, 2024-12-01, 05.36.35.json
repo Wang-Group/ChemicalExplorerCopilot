@@ -1,0 +1,21 @@
+{
+    "time": "2024-12-01 17:36:35.116589",
+    "reactor": "reactor0",
+    "job finished": {
+        "Outcome": "Success",
+        "Substance Name": "Aspirin",
+        "Target Weight": {
+            "Value": 514.0,
+            "Unit": "Milligram"
+        },
+        "Tolerance": {
+            "Value": 5.0,
+            "Unit": "Milligram"
+        },
+        "Net Weight": {
+            "Value": "0.5273",
+            "Unit": "Gram",
+            "CustomUnitName": null
+        }
+    }
+}

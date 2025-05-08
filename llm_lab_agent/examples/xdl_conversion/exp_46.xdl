@@ -1,0 +1,113 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Teflon-lined reactor"
+      type="reactor" />
+    <Component
+      id="reactor_1"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="Cu(NO3)2·2H2O"
+      id="Cu(NO3)2·2H2O"
+      role="reagent" />
+    <Reagent
+      name="H2O"
+      id="H2O"
+      role="reagent" />
+    <Reagent
+      name="H3PO4"
+      id="H3PO4"
+      role="reagent" />
+    <Reagent
+      name="HCl (1.0 mol/L)"
+      id="HCl (1.0 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="Na2MoO4·2H2O"
+      id="Na2MoO4·2H2O"
+      role="reagent" />
+    <Reagent
+      name="tib"
+      id="tib"
+      role="reagent" />
+    <Reagent
+      name="{'acid': 'HCl (1.0 mol/L)', 'base': 'None'}"
+      id="{'acid': 'HCl (1.0 mol/L)', 'base': 'None'}"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor_1"
+      reagent="Na2MoO4·2H2O"
+      mass="0.48 g"
+      amount="0.48 g" />
+    <Add
+      vessel="reactor_1"
+      reagent="H3PO4"
+      volume="0.1 mL"
+      amount="0.1 mL" />
+    <Add
+      vessel="reactor_1"
+      reagent="Cu(NO3)2·2H2O"
+      mass="0.12 g"
+      amount="0.12 g" />
+    <Add
+      vessel="reactor_1"
+      reagent="tib"
+      mass="0.055 g"
+      amount="0.055 g" />
+    <Add
+      vessel="reactor_1"
+      reagent="H2O"
+      volume="10.0 mL"
+      stir="True"
+      amount="10.0 mL" />
+    <Stir
+      vessel="reactor_1"
+      time="3600.0 second"
+      stir_speed="300.0 rpm" />
+    <AdjustPH
+      vessel="reactor_1"
+      reagent="{'acid': 'HCl (1.0 mol/L)', 'base': 'None'}"
+      pH="4.34" />
+    <Transfer
+      from_vessel="reactor_1"
+      to_vessel="Teflon-lined reactor"
+      volume="all"
+      amount="all" />
+    <HeatChill
+      vessel="Teflon-lined reactor"
+      time="259200.0 second"
+      temp="160.0 °C"
+      stir="False" />
+    <HeatChillToTemp
+      vessel="Teflon-lined reactor"
+      temp="20.0 °C"
+      stir="False" />
+    <Filter
+      vessel="Teflon-lined reactor"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 °C" />
+    <WashSolid
+      vessel="Teflon-lined reactor"
+      solvent="H2O"
+      volume="appropriate"
+      filtrate_vessel="waste"
+      stir="False" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

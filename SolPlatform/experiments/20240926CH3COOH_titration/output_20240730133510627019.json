@@ -1,0 +1,58 @@
+{
+    "NL": "Objective: Adjust the acidity of an acetic acid solution to a pH of 4.5.\nPrepare a container labeled \"Reactor B.\"\nAdd 5 milliliters of a 0.1 molar acetic acid solution to Reactor B.\nGradually add a 0.1 molar sodium hydroxide solution while stirring the mixture until the pH reaches 4.5.",
+    "function": [
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "Reactor B",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "acetic acid solution"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.1,
+                        "unit": "M"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ]
+                    }
+                },
+                "volume": {
+                    "quantity": 5.0,
+                    "unit": "mL"
+                },
+                "stir": false
+            }
+        },
+        {
+            "function_name": "AdjustpH",
+            "function_args": {
+                "reactor_name": "Reactor B",
+                "pH": 4.5,
+                "stir": true,
+                "base_reagent": {
+                    "identity": {
+                        "chemical_id": [
+                            "sodium hydroxide solution"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.1,
+                        "unit": "M"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

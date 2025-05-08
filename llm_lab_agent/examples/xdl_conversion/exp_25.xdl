@@ -1,0 +1,83 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="reactor_1"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="CH3COOH (99.5 %)"
+      id="CH3COOH (99.5 %)"
+      role="reagent" />
+    <Reagent
+      name="H3PO4 (85.0 %)"
+      id="H3PO4 (85.0 %)"
+      role="reagent" />
+    <Reagent
+      name="Na2WO4·2H2O"
+      id="Na2WO4·2H2O"
+      role="reagent" />
+    <Reagent
+      name="water"
+      id="water"
+      role="reagent" />
+    <Reagent
+      name="{'acid': 'H3PO4 (85.0 %)', 'base': 'None'}"
+      id="{'acid': 'H3PO4 (85.0 %)', 'base': 'None'}"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor_1"
+      reagent="Na2WO4·2H2O"
+      mass="120.0 g"
+      stir="True"
+      stir_speed="300.0 rpm"
+      amount="120.0 g" />
+    <Add
+      vessel="reactor_1"
+      reagent="water"
+      volume="150.0 mL"
+      stir="True"
+      stir_speed="300.0 rpm"
+      amount="150.0 mL" />
+    <AdjustPH
+      vessel="reactor_1"
+      reagent="{'acid': 'H3PO4 (85.0 %)', 'base': 'None'}"
+      pH="{'min': 8.9, 'max': 9.0}"
+      stir_speed="300.0 rpm" />
+    <Precipitate
+      vessel="reactor_1"
+      temp="20.0 °C"
+      stir_speed="300.0 rpm"
+      reagent="CH3COOH (99.5 %)"
+      volume="large amount"
+      amount="large amount" />
+    <Stir
+      vessel="reactor_1"
+      time="3600.0 second"
+      stir_speed="300.0 rpm" />
+    <Filter
+      vessel="reactor_1"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 °C" />
+    <Dry
+      vessel="reactor_1"
+      time="43200.0 second"
+      pressure="1 bar"
+      temp="60.0 °C" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

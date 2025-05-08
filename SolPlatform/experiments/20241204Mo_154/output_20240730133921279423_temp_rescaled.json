@@ -1,0 +1,219 @@
+{
+    "NL": "To a solution of Na2MoO4 2H2O (3.04 g, 12.56 mmol) in 25 ml of water acidified with 2.7 ml of 32% hydrochloric acid, Na2S2O4 (0.15 g, 0.86 mmol) was added under continuous stirring, resulting in a deep-blue colouration of the reaction mixture. The solution was kept in a closed flask at room temperature for ca. one day and the blue precipitated crystals were filtered off, washed quickly with a small amount of cold water (note the rather high solubility!) and dried at room temperature over CaCl2. Yield: 1.15 g (45% based on Mo).",
+    "function": [
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "H2O",
+                            "water"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 9.025270758122744,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": false,
+                "stir_speed": null,
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "Na2MoO4.2H2O",
+                            "Na2MoO4 2H2O"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "mass": {
+                    "quantity": 1.0974729241877257,
+                    "unit": "g"
+                },
+                "stir": false,
+                "stir_speed": {
+                    "quantity": 0.0,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "hydrochloric acid"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 32.0,
+                        "unit": "%"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "H2O"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 0.9747292418772564,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "Na2S2O4"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "mass": {
+                    "quantity": 0.05415162454873646,
+                    "unit": "g"
+                },
+                "stir": false,
+                "stir_speed": {
+                    "quantity": 0.0,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureForDuration",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "temperature": {
+                    "quantity": 20.0,
+                    "unit": "°C"
+                },
+                "duration": {
+                    "quantity": 86400.0,
+                    "unit": "second"
+                },
+                "adjust_method": null,
+                "stir": false,
+                "stir_speed": null,
+                "ramp_rate": null,
+                "reflux": false
+            }
+        },
+        {
+            "function_name": "Filter",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "target_form": "solid",
+                "filtrate_vessel": "waste",
+                "stir": false,
+                "stir_speed": null,
+                "temperature": {
+                    "quantity": 20.0,
+                    "unit": "°C"
+                },
+                "atmosphere": "air"
+            }
+        },
+        {
+            "function_name": "WashSolid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "solvent": {
+                    "identity": {
+                        "chemical_id": [
+                            "H2O",
+                            "water"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "solvent_temperature": {
+                    "quantity": 0.0,
+                    "unit": "°C"
+                },
+                "volume": {
+                    "quantity": 0.7220216606498195,
+                    "unit": "mL"
+                },
+                "waste_vessel": "waste",
+                "stir": false,
+                "stir_speed": null,
+                "atmosphere": "air",
+                "repeat": 1
+            }
+        },
+        {
+            "function_name": "Dry",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "time": {
+                    "quantity": 600.0,
+                    "unit": "second"
+                },
+                "temperature": {
+                    "quantity": 20.0,
+                    "unit": "°C"
+                },
+                "atmosphere": "air"
+            }
+        },
+        {
+            "function_name": "Yield",
+            "function_args": {
+                "product_name": "blue precipitated crystals",
+                "product_quantity": {
+                    "quantity": 1.15,
+                    "unit": "g"
+                },
+                "yield_percentage": {
+                    "quantity": 45.0,
+                    "unit": "%"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+connection_param:
+  port: "COM28"
+  baudrate: 115200
+  parity: "N"
+  timeout: 0.1
+axis:
+  z: 1
+  spin: 2
+  stir: 3
+  spec_waste_pump: 4 
+  stir_storage: 5
+axis_list: [1, 2, 3, 4, 5]
+ip: # [LimitN, LimitP]
+op:
+  stir: 0
+  actuator: 1 
+  air_gripper: 2
+  magnetic: 3
+dac: 
+      
+adc: 
+
+motor_param: # [pulse/rev, pitch_of_screws]
+  1: [6400, 1]
+  2: [25600, 360]
+  3: [6400, 60]
+  4: [6400, 60]
+  5: [6400, 60]
+trap_param: # [dAcc, dDec, dSmoothTime, dVelStart]
+  1: [5, 5, 0, 0]
+  2: [40, 450, 0, 0]
+jog_param: # [dAcc, dDec, dSmoothTime]
+  1: [50, 30, 0]
+  2: [50, 30, 0]
+  3: [200, 300, 0]
+  4: [200, 300, 0]
+  5: [300, 300, 2]
+home_param: # [nHomeMode, nHomeDir, lOffset, dHomeRapidVel, dHomeLocatVel, dHomeIndexVel, dHomeAcc]
+  1: [1, 0, 0, 10, 1, 0, 100]
+  2: [1, 0, 0, 10, 1, 0, 100]
+safe_coordiniate:
+  z: 0

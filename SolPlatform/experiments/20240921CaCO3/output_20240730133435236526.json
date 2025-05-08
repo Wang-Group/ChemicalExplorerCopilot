@@ -1,0 +1,88 @@
+{
+    "NL": "Objective: Form solid calcium carbonate from solutions of calcium chloride and sodium carbonate.\nPrepare two containers labeled \"Reactor C\" and \"Reactor D.\"\nAdd 5 milliliters of a 0.1 molar calcium chloride solution to Reactor C.\nAdd 5 milliliters of a 0.1 molar sodium carbonate solution to Reactor D.\nPour the solution from Reactor D into Reactor C while stirring. Continue stirring for 5 minutes to form calcium carbonate precipitate.",
+    "function": [
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "Reactor C",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "calcium chloride solution"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.1,
+                        "unit": "M"
+                    },
+                    "solvent": null
+                },
+                "liquid_temperature": null,
+                "volume": {
+                    "quantity": 5.0,
+                    "unit": "mL"
+                },
+                "pH": null,
+                "dropwise": false,
+                "stir": false
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "Reactor D",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "sodium carbonate solution"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.1,
+                        "unit": "M"
+                    },
+                    "solvent": null
+                },
+                "liquid_temperature": null,
+                "volume": {
+                    "quantity": 5.0,
+                    "unit": "mL"
+                },
+                "pH": null,
+                "dropwise": false,
+                "stir": false
+            }
+        },
+        {
+            "function_name": "TransferLiquid",
+            "function_args": {
+                "from_reactor": "Reactor D",
+                "to_reactor": "Reactor C",
+                "volume": "all",
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                },
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "StirForDuration",
+            "function_args": {
+                "reactor_name": "Reactor C",
+                "duration": {
+                    "quantity": 5.0,
+                    "unit": "minutes"
+                },
+                "temperature": null,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        }
+    ]
+}

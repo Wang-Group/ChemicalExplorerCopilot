@@ -1,0 +1,61 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Teflon-lined autoclave"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="DMF"
+      id="DMF"
+      role="reagent" />
+    <Reagent
+      name="H3BTB"
+      id="H3BTB"
+      role="reagent" />
+    <Reagent
+      name="HCOOH"
+      id="HCOOH"
+      role="reagent" />
+    <Reagent
+      name="HfOCl2·8H2O"
+      id="HfOCl2·8H2O"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="Teflon-lined autoclave"
+      reagent="HfOCl2·8H2O"
+      mass="61.0 mg"
+      amount="61.0 mg" />
+    <Add
+      vessel="Teflon-lined autoclave"
+      reagent="H3BTB"
+      mass="65.0 mg"
+      amount="65.0 mg" />
+    <Add
+      vessel="Teflon-lined autoclave"
+      reagent="DMF"
+      volume="7.5 mL"
+      amount="7.5 mL" />
+    <Add
+      vessel="Teflon-lined autoclave"
+      reagent="HCOOH"
+      volume="4.5 mL"
+      amount="4.5 mL" />
+    <HeatChill
+      vessel="Teflon-lined autoclave"
+      time="3.0 days"
+      temp="120.0 °C"
+      stir="False" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

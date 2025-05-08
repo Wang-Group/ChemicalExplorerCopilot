@@ -1,0 +1,114 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="reactor_1"
+      type="reactor" />
+    <Component
+      id="reactor_2"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="AA (0.1 M)"
+      id="AA (0.1 M)"
+      role="reagent" />
+    <Reagent
+      name="AgNO3 (0.01 M)"
+      id="AgNO3 (0.01 M)"
+      role="reagent" />
+    <Reagent
+      name="CTAB (0.1 M)"
+      id="CTAB (0.1 M)"
+      role="reagent" />
+    <Reagent
+      name="HAuCl4 (0.05 M)"
+      id="HAuCl4 (0.05 M)"
+      role="reagent" />
+    <Reagent
+      name="HCl (1.0 M)"
+      id="HCl (1.0 M)"
+      role="reagent" />
+    <Reagent
+      name="NaBH4 (0.01 M)"
+      id="NaBH4 (0.01 M)"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor_1"
+      reagent="CTAB (0.1 M)"
+      volume="4.7 mL"
+      stir="True"
+      stir_speed="300.0 rpm"
+      amount="4.7 mL" />
+    <Add
+      vessel="reactor_1"
+      reagent="HAuCl4 (0.05 M)"
+      volume="0.025 mL"
+      stir="True"
+      stir_speed="300.0 rpm"
+      amount="0.025 mL" />
+    <Add
+      vessel="reactor_1"
+      reagent="NaBH4 (0.01 M)"
+      volume="0.30000000000000004 mL"
+      stir="True"
+      stir_speed="300.0 rpm"
+      amount="0.30000000000000004 mL" />
+    <Stir
+      vessel="reactor_1"
+      time="30.0 min"
+      stir_speed="300.0 rpm" />
+    <Add
+      vessel="reactor_2"
+      reagent="CTAB (0.1 M)"
+      volume="10.0 mL"
+      stir="True"
+      stir_speed="300.0 rpm"
+      amount="10.0 mL" />
+    <Add
+      vessel="reactor_2"
+      reagent="HAuCl4 (0.05 M)"
+      volume="0.1 mL"
+      stir="True"
+      stir_speed="300.0 rpm"
+      amount="0.1 mL" />
+    <Add
+      vessel="reactor_2"
+      reagent="AA (0.1 M)"
+      volume="0.08 mL"
+      stir="True"
+      stir_speed="300.0 rpm"
+      amount="0.08 mL" />
+    <Add
+      vessel="reactor_2"
+      reagent="HCl (1.0 M)"
+      volume="0.19 mL"
+      stir="True"
+      stir_speed="300.0 rpm"
+      amount="0.19 mL" />
+    <Add
+      vessel="reactor_2"
+      reagent="AgNO3 (0.01 M)"
+      volume="0.12 mL"
+      stir="True"
+      stir_speed="300.0 rpm"
+      amount="0.12 mL" />
+    <Transfer
+      from_vessel="reactor_1"
+      to_vessel="reactor_2"
+      volume="0.024 mL"
+      amount="0.024 mL" />
+    <Wait
+      time="2.0 h" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

@@ -1,0 +1,90 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Reactor1"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="CuCl2·2H2O"
+      id="CuCl2·2H2O"
+      role="reagent" />
+    <Reagent
+      name="HCl (4.0 M)"
+      id="HCl (4.0 M)"
+      role="reagent" />
+    <Reagent
+      name="Na2HPO4·12H2O"
+      id="Na2HPO4·12H2O"
+      role="reagent" />
+    <Reagent
+      name="Na2MoO4·2H2O"
+      id="Na2MoO4·2H2O"
+      role="reagent" />
+    <Reagent
+      name="ethylenediamine (0.30000000000000004 M)"
+      id="ethylenediamine (0.30000000000000004 M)"
+      role="reagent" />
+    <Reagent
+      name="water"
+      id="water"
+      role="reagent" />
+    <Reagent
+      name="{'acid': 'HCl (4.0 M)', 'base': 'None'}"
+      id="{'acid': 'HCl (4.0 M)', 'base': 'None'}"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="Reactor1"
+      reagent="Na2MoO4·2H2O"
+      mass="2.42 g"
+      amount="2.42 g" />
+    <Add
+      vessel="Reactor1"
+      reagent="Na2HPO4·12H2O"
+      mass="2.4 g"
+      amount="2.4 g" />
+    <Add
+      vessel="Reactor1"
+      reagent="CuCl2·2H2O"
+      mass="1.71 g"
+      amount="1.71 g" />
+    <Add
+      vessel="Reactor1"
+      reagent="water"
+      volume="55.0 mL"
+      amount="55.0 mL" />
+    <Add
+      vessel="Reactor1"
+      reagent="ethylenediamine (0.30000000000000004 M)"
+      volume="5.0 mL"
+      amount="5.0 mL" />
+    <AdjustPH
+      vessel="Reactor1"
+      reagent="{'acid': 'HCl (4.0 M)', 'base': 'None'}"
+      pH="5.5" />
+    <HeatChillToTemp
+      vessel="Reactor1"
+      temp="85.0 ℃" />
+    <Wait
+      time="1.0 hours" />
+    <Filter
+      vessel="Reactor1"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="85.0 ℃" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

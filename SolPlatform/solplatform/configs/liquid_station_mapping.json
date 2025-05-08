@@ -1,0 +1,568 @@
+{
+    "Current": {
+        "Vials": {
+            "reactor0": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 0,
+                "capped": "cap_0"
+            },
+            "reactor1": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 1,
+                "capped": "cap_1"
+            },
+            "reactor2": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 2,
+                "capped": "cap_2"
+            },
+            "reactor3": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 3,
+                "capped": "cap_3"
+            },
+            "reactor4": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 4,
+                "capped": "cap_4"
+            },
+            "reactor5": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 5,
+                "capped": false
+            }, 
+            "reactor6": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 6,
+                "capped": false
+            }, 
+            "reactor7": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 7,
+                "capped": false
+            }, 
+            "reactor8": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 8,
+                "capped": false
+            }, 
+            "reactor9": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 9,
+                "capped": false
+            }, 
+            "storage_reactor0": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 0,
+                "capped": false
+            }, 
+            "storage_reactor1": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 1,
+                "capped": false
+            }, 
+            "storage_reactor2": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 2,
+                "capped": false
+            }, 
+            "storage_reactor3": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 3,
+                "capped": false
+            }, 
+            "storage_reactor4": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 4,
+                "capped": false
+            }, 
+            "storage_reactor5": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 5,
+                "capped": false
+            }, 
+            "storage_reactor6": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 6,
+                "capped": false
+            }, 
+            "storage_reactor7": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 7,
+                "capped": false
+            }, 
+            "storage_reactor8": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 8,
+                "capped": false
+            }, 
+            "storage_reactor9": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 9,
+                "capped": false
+            }, 
+            "storage_reactor10": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 10,
+                "capped": false
+            }, 
+            "storage_reactor11": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 11,
+                "capped": false
+            }, 
+            "storage_reactor12": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 12,
+                "capped": false
+            }, 
+            "storage_reactor13": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 13,
+                "capped": false
+            }, 
+            "storage_reactor14": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 14,
+                "capped": false
+            }, 
+            "storage_reactor15": {
+                "bottle_plate": "storage_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 15,
+                "capped": false
+            }
+        },
+        "Caps": {
+            "cap_0": {
+                "cap_plate": "reactor0",
+                "slot_index": 0
+            },
+            "cap_1": {
+                "cap_plate": "reactor1",
+                "slot_index": 0
+            },
+            "cap_2": {
+                "cap_plate": "reactor2",
+                "slot_index": 0
+            },
+            "cap_3": {
+                "cap_plate": "reactor3",
+                "slot_index": 0
+            },
+            "cap_4": {
+                "cap_plate": "reactor4",
+                "slot_index": 0
+            },
+            "cap_5": {
+                "cap_plate": "cap_holders",
+                "slot_index": 5
+            }, 
+            "cap_6": {
+                "cap_plate": "cap_holders",
+                "slot_index": 6
+            }, 
+            "cap_7": {
+                "cap_plate": "cap_holders",
+                "slot_index": 7
+            }, 
+            "cap_8": {
+                "cap_plate": "cap_holders",
+                "slot_index": 8
+            }, 
+            "cap_9": {
+                "cap_plate": "cap_holders",
+                "slot_index": 9
+            }
+        },
+        "Solutions": {
+            },
+        "Feeders": {
+            "feeder_0": "home",
+            "feeder_1": "home",
+            "feeder_2": "home"
+        },
+        "pHMeter": {
+            "position": "storage", 
+            "slot_index": 0
+        }, 
+        "Tips": {
+            "tip_0": 0,
+            "tip_1": 1,
+            "tip_2": 2,
+            "tip_3": 3,
+            "tip_4": 4,
+            "tip_5": 5,
+            "tip_6": 6,
+            "tip_7": 7,
+            "tip_8": 8,
+            "tip_9": 9,
+            "tip_10": 10,
+            "tip_11": 11,
+            "tip_12": 12,
+            "tip_13": 13,
+            "tip_14": 14,
+            "tip_15": 15,
+            "tip_16": 16,
+            "tip_17": 17,
+            "tip_18": 18,
+            "tip_19": 19,
+            "tip_20": 20,
+            "tip_21": 21,
+            "tip_22": 22,
+            "tip_23": 23,
+            "tip_24": 24,
+            "tip_25": 25,
+            "tip_26": 26,
+            "tip_27": 27,
+            "tip_28": 28,
+            "tip_29": 29,
+            "tip_30": 30,
+            "tip_31": 31,
+            "tip_32": 32,
+            "tip_33": 33,
+            "tip_34": 34,
+            "tip_35": 35,
+            "tip_36": 36,
+            "tip_37": 37,
+            "tip_38": 38,
+            "tip_39": 39,
+            "tip_40": 40,
+            "tip_41": 41,
+            "tip_42": 42,
+            "tip_43": 43,
+            "tip_44": 44,
+            "tip_45": 45,
+            "tip_46": 46,
+            "tip_47": 47,
+            "tip_48": 48,
+            "tip_49": 49,
+            "tip_50": 50,
+            "tip_51": 51,
+            "tip_52": 52,
+            "tip_53": 53,
+            "tip_54": 54,
+            "tip_55": 55,
+            "tip_56": 56,
+            "tip_57": 57,
+            "tip_58": 58,
+            "tip_59": 59,
+            "tip_60": 60,
+            "tip_61": 61,
+            "tip_62": 62,
+            "tip_63": 63,
+            "tip_64": 64,
+            "tip_65": 65,
+            "tip_66": 66,
+            "tip_67": 67,
+            "tip_68": 68,
+            "tip_69": 69,
+            "tip_70": 70,
+            "tip_71": 71,
+            "tip_72": 72,
+            "tip_73": 73,
+            "tip_74": 74,
+            "tip_75": 75,
+            "tip_76": 76,
+            "tip_77": 77,
+            "tip_78": 78,
+            "tip_79": 79,
+            "tip_80": 80,
+            "tip_81": 81,
+            "tip_82": 82,
+            "tip_83": 83,
+            "tip_84": 84,
+            "tip_85": 85,
+            "tip_86": 86,
+            "tip_87": 87,
+            "tip_88": 88,
+            "tip_89": 89,
+            "tip_90": 90,
+            "tip_91": 91,
+            "tip_92": 92,
+            "tip_93": 93,
+            "tip_94": 94,
+            "tip_95": 95,
+            "tip_96": 96,
+            "tip_97": 97,
+            "tip_98": 98,
+            "tip_99": 99
+        }
+    },
+    "Storage": {
+        "Vials": {
+            "reactor0": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 0,
+                "capped": "cap_0"
+            },
+            "reactor1": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 1,
+                "capped": "cap_1"
+            },
+            "reactor2": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 2,
+                "capped": "cap_2"
+            },
+            "reactor3": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 3,
+                "capped": "cap_3"
+            },
+            "reactor4": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 4,
+                "capped": "cap_4"
+            },
+            "reactor5": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 5,
+                "capped": "cap_5"
+            }, 
+            "reactor6": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 6,
+                "capped": "cap_6"
+            }, 
+            "reactor7": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 7,
+                "capped": "cap_7"
+            }, 
+            "reactor8": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 8,
+                "capped": "cap_8"
+            }, 
+            "reactor9": {
+                "bottle_plate": "bottle_holders",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 9,
+                "capped": "cap_9"
+            }
+        },
+        "Caps": {
+            "cap_0": {
+                "cap_plate": "reactor0",
+                "slot_index": 0
+            },
+            "cap_1": {
+                "cap_plate": "reactor1",
+                "slot_index": 0
+            },
+            "cap_2": {
+                "cap_plate": "reactor2",
+                "slot_index": 0
+            },
+            "cap_3": {
+                "cap_plate": "reactor3",
+                "slot_index": 0
+            },
+            "cap_4": {
+                "cap_plate": "reactor4",
+                "slot_index": 0
+            },
+            "cap_5": {
+                "cap_plate": "reactor5",
+                "slot_index": 0
+            }, 
+            "cap_6": {
+                "cap_plate": "reactor6",
+                "slot_index": 0
+            }, 
+            "cap_7": {
+                "cap_plate": "reactor7",
+                "slot_index": 0
+            }, 
+            "cap_8": {
+                "cap_plate": "reactor8",
+                "slot_index": 0
+            }, 
+            "cap_9": {
+                "cap_plate": "reactor9",
+                "slot_index": 0
+            }
+        },
+        "Solutions": {
+        }, 
+        "Feeders": {
+            "feeder_0": "home",
+            "feeder_1": "home",
+            "feeder_2": "home"
+        },
+        "Tips": {
+            "tip_0": 0,
+            "tip_1": 1,
+            "tip_2": 2,
+            "tip_3": 3,
+            "tip_4": 4,
+            "tip_5": 5,
+            "tip_6": 6,
+            "tip_7": 7,
+            "tip_8": 8,
+            "tip_9": 9,
+            "tip_10": 10,
+            "tip_11": 11,
+            "tip_12": 12,
+            "tip_13": 13,
+            "tip_14": 14,
+            "tip_15": 15,
+            "tip_16": 16,
+            "tip_17": 17,
+            "tip_18": 18,
+            "tip_19": 19,
+            "tip_20": 20,
+            "tip_21": 21,
+            "tip_22": 22,
+            "tip_23": 23,
+            "tip_24": 24,
+            "tip_25": 25,
+            "tip_26": 26,
+            "tip_27": 27,
+            "tip_28": 28,
+            "tip_29": 29,
+            "tip_30": 30,
+            "tip_31": 31,
+            "tip_32": 32,
+            "tip_33": 33,
+            "tip_34": 34,
+            "tip_35": 35,
+            "tip_36": 36,
+            "tip_37": 37,
+            "tip_38": 38,
+            "tip_39": 39,
+            "tip_40": 40,
+            "tip_41": 41,
+            "tip_42": 42,
+            "tip_43": 43,
+            "tip_44": 44,
+            "tip_45": 45,
+            "tip_46": 46,
+            "tip_47": 47,
+            "tip_48": 48,
+            "tip_49": 49,
+            "tip_50": 50,
+            "tip_51": 51,
+            "tip_52": 52,
+            "tip_53": 53,
+            "tip_54": 54,
+            "tip_55": 55,
+            "tip_56": 56,
+            "tip_57": 57,
+            "tip_58": 58,
+            "tip_59": 59,
+            "tip_60": 60,
+            "tip_61": 61,
+            "tip_62": 62,
+            "tip_63": 63,
+            "tip_64": 64,
+            "tip_65": 65,
+            "tip_66": 66,
+            "tip_67": 67,
+            "tip_68": 68,
+            "tip_69": 69,
+            "tip_70": 70,
+            "tip_71": 71,
+            "tip_72": 72,
+            "tip_73": 73,
+            "tip_74": 74,
+            "tip_75": 75,
+            "tip_76": 76,
+            "tip_77": 77,
+            "tip_78": 78,
+            "tip_79": 79,
+            "tip_80": 80,
+            "tip_81": 81,
+            "tip_82": 82,
+            "tip_83": 83,
+            "tip_84": 84,
+            "tip_85": 85,
+            "tip_86": 86,
+            "tip_87": 87,
+            "tip_88": 88,
+            "tip_89": 89,
+            "tip_90": 90,
+            "tip_91": 91,
+            "tip_92": 92,
+            "tip_93": 93,
+            "tip_94": 94,
+            "tip_95": 95,
+            "tip_96": 96,
+            "tip_97": 97,
+            "tip_98": 98,
+            "tip_99": 99
+        }
+    }
+}

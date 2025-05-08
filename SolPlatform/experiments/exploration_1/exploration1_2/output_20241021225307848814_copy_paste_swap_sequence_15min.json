@@ -1,0 +1,259 @@
+{
+    "reactants": [
+        {
+            "reactant": "Mn(CH3COO)2·4H2O"
+        },
+        {
+            "reactant": "CH3COOH"
+        },
+        {
+            "reactant": "KMnO4"
+        },
+        {
+            "reactant": "deionized water"
+        },
+        {
+            "reactant": "Na2WO4·2H2O"
+        }
+    ],
+    "function": [
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "CH3COOH"
+                        ]
+                    },
+                    "concentration": {
+                        "quantity": 60,
+                        "unit": "%"
+                    },
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 10,
+                    "unit": "mL"
+                },
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "Mn(CH3COO)2·4H2O"
+                        ]
+                    }
+                },
+                "mass": {
+                    "quantity": 1.0,
+                    "unit": "g"
+                },
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "StirForDuration",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "duration": {
+                    "quantity": 10,
+                    "unit": "minutes"
+                },
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "KMnO4"
+                        ]
+                    }
+                },
+                "mass": {
+                    "quantity": 0.25,
+                    "unit": "g"
+                },
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "StirForDuration",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "duration": {
+                    "quantity": 1,
+                    "unit": "hour"
+                },
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "deionized water"
+                        ]
+                    },
+                    "concentration": null,
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 8.9,
+                    "unit": "mL"
+                },
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "TransferLiquid",
+            "function_args": {
+                "from_reactor": "reactor_1",
+                "to_reactor": "reactor_2",
+                "volume": {
+                    "quantity": 1.1,
+                    "unit": "mL"
+                },
+                "stir": false
+            }
+        },
+        {
+            "function_name": "StirForDuration",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "duration": {
+                    "quantity": 15,
+                    "unit": "minutes"
+                },
+                "temperature": {
+                    "quantity": 20,
+                    "unit": "℃"
+                },
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "Na2WO4·2H2O"
+                        ]
+                    },
+                    "concentration": {
+                        "quantity": 0.15,
+                        "unit": "g/mL"
+                    },
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 20,
+                    "unit": "mL"
+                },
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureForDuration",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "temperature": {
+                    "quantity": 90,
+                    "unit": "℃"
+                },
+                "duration": {
+                    "quantity": 1,
+                    "unit": "hour"
+                },
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureTo",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "temperature": {
+                    "quantity": 20,
+                    "unit": "℃"
+                },
+                "stir": false
+            }
+        },
+        {
+            "function_name": "Filter",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "target_form": "liquid",
+                "filtrate_vessel": "reactor_3"
+            }
+        },
+        {
+            "function_name": "Evaporate",
+            "function_args": {
+                "reactor_name": "reactor_3",
+                "temperature": {
+                    "quantity": 20,
+                    "unit": "℃"
+                },
+                "duration": {
+                    "min": {
+                        "quantity": 1,
+                        "unit": "week"
+                    },
+                    "max": {
+                        "quantity": 2,
+                        "unit": "weeks"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Reactor1"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="(NH4)6Mo7O24·4H2O"
+      id="(NH4)6Mo7O24·4H2O"
+      role="reagent" />
+    <Reagent
+      name="3-tpt"
+      id="3-tpt"
+      role="reagent" />
+    <Reagent
+      name="ZnI2"
+      id="ZnI2"
+      role="reagent" />
+    <Reagent
+      name="water"
+      id="water"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="Reactor1"
+      reagent="ZnI2"
+      mass="appropriate"
+      amount="appropriate" />
+    <Add
+      vessel="Reactor1"
+      reagent="(NH4)6Mo7O24·4H2O"
+      mass="appropriate"
+      amount="appropriate" />
+    <Add
+      vessel="Reactor1"
+      reagent="3-tpt"
+      mass="appropriate"
+      amount="appropriate" />
+    <Add
+      vessel="Reactor1"
+      reagent="water"
+      volume="8.0 mL"
+      amount="8.0 mL" />
+    <HeatChill
+      vessel="Reactor1"
+      time="259200.0 second"
+      temp="160.0 °C"
+      stir="False" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

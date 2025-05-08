@@ -1,0 +1,111 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="reactor1"
+      type="reactor" />
+    <Component
+      id="reactor2"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="CTAB (0.1 M)"
+      id="CTAB (0.1 M)"
+      role="reagent" />
+    <Reagent
+      name="HAuCl4 (0.05 M)"
+      id="HAuCl4 (0.05 M)"
+      role="reagent" />
+    <Reagent
+      name="NaBH4 (0.025 M)"
+      id="NaBH4 (0.025 M)"
+      role="reagent" />
+    <Reagent
+      name="ascorbic acid (0.1 M)"
+      id="ascorbic acid (0.1 M)"
+      role="reagent" />
+    <Reagent
+      name="silver nitrate (0.01 M)"
+      id="silver nitrate (0.01 M)"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor1"
+      reagent="CTAB (0.1 M)"
+      volume="4.7 mL"
+      amount="4.7 mL" />
+    <Add
+      vessel="reactor1"
+      reagent="HAuCl4 (0.05 M)"
+      volume="0.025 mL"
+      amount="0.025 mL" />
+    <StartStir
+      vessel="reactor1"
+      stir_speed="300.0 rpm" />
+    <Wait
+      time="5.0 min" />
+    <Add
+      vessel="reactor1"
+      reagent="NaBH4 (0.025 M)"
+      volume="0.30000000000000004 mL"
+      stir="True"
+      stir_speed="300.0 rpm"
+      amount="0.30000000000000004 mL" />
+    <Wait
+      time="15.0 min" />
+    <HeatChill
+      vessel="reactor1"
+      time="40.0 min"
+      temp="{'max': '30.0 ℃', 'min': '28.0 ℃'}"
+      stir="False" />
+    <Add
+      vessel="reactor2"
+      reagent="CTAB (0.1 M)"
+      volume="10.0 mL"
+      amount="10.0 mL" />
+    <Add
+      vessel="reactor2"
+      reagent="HAuCl4 (0.05 M)"
+      volume="0.1 mL"
+      amount="0.1 mL" />
+    <StartStir
+      vessel="reactor2"
+      stir_speed="300.0 rpm" />
+    <Wait
+      time="5.0 min" />
+    <Add
+      vessel="reactor2"
+      reagent="ascorbic acid (0.1 M)"
+      volume="0.075 mL"
+      stir="True"
+      amount="0.075 mL" />
+    <Add
+      vessel="reactor2"
+      reagent="silver nitrate (0.01 M)"
+      volume="0.08 mL"
+      stir="True"
+      amount="0.08 mL" />
+    <Transfer
+      from_vessel="reactor1"
+      to_vessel="reactor2"
+      volume="0.05 mL"
+      amount="0.05 mL" />
+    <Wait
+      time="2.0 min" />
+    <HeatChill
+      vessel="reactor2"
+      time="20.0 min"
+      temp="{'max': '30.0 ℃', 'min': '28.0 ℃'}"
+      stir="False" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

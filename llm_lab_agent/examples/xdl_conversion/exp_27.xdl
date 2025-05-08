@@ -1,0 +1,95 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Teflon-lined reactor"
+      type="reactor" />
+    <Component
+      id="reactor1"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="Co(NO3)2·6H2O"
+      id="Co(NO3)2·6H2O"
+      role="reagent" />
+    <Reagent
+      name="H2O"
+      id="H2O"
+      role="reagent" />
+    <Reagent
+      name="H4[SiMo12O40]·xH2O"
+      id="H4[SiMo12O40]·xH2O"
+      role="reagent" />
+    <Reagent
+      name="NH4VO3"
+      id="NH4VO3"
+      role="reagent" />
+    <Reagent
+      name="phen"
+      id="phen"
+      role="reagent" />
+    <Reagent
+      name="trea"
+      id="trea"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor1"
+      reagent="H4[SiMo12O40]·xH2O"
+      mass="appropriate"
+      amount="appropriate" />
+    <Add
+      vessel="reactor1"
+      reagent="Co(NO3)2·6H2O"
+      mass="appropriate"
+      amount="appropriate" />
+    <Add
+      vessel="reactor1"
+      reagent="NH4VO3"
+      mass="appropriate"
+      amount="appropriate" />
+    <Add
+      vessel="reactor1"
+      reagent="phen"
+      mass="appropriate"
+      amount="appropriate" />
+    <Add
+      vessel="reactor1"
+      reagent="trea"
+      mass="appropriate"
+      amount="appropriate" />
+    <Add
+      vessel="reactor1"
+      reagent="H2O"
+      volume="9.0 mL"
+      amount="9.0 mL" />
+    <Stir
+      vessel="reactor1"
+      time="3600.0 second"
+      stir_speed="300.0 rpm" />
+    <Transfer
+      from_vessel="reactor1"
+      to_vessel="Teflon-lined reactor"
+      volume="all"
+      amount="all" />
+    <HeatChill
+      vessel="Teflon-lined reactor"
+      time="432000.0 second"
+      temp="160.0 °C"
+      stir="False" />
+    <HeatChillToTemp
+      vessel="Teflon-lined reactor"
+      temp="20.0 °C"
+      stir="False" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

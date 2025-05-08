@@ -1,0 +1,21 @@
+{
+    "time": "2024-12-04 20:55:32.240318",
+    "reactor": "reactor0",
+    "job finished": {
+        "Outcome": "Success",
+        "Substance Name": "Na2S2O4",
+        "Target Weight": {
+            "Value": 54.0,
+            "Unit": "Milligram"
+        },
+        "Tolerance": {
+            "Value": 5.0,
+            "Unit": "Milligram"
+        },
+        "Net Weight": {
+            "Value": "0.0550",
+            "Unit": "Gram",
+            "CustomUnitName": null
+        }
+    }
+}

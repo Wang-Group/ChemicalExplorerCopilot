@@ -1,0 +1,74 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="reactor1"
+      type="reactor" />
+    <Component
+      id="reactor2"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="CH3OH"
+      id="CH3OH"
+      role="reagent" />
+    <Reagent
+      name="Et3N"
+      id="Et3N"
+      role="reagent" />
+    <Reagent
+      name="Hacac"
+      id="Hacac"
+      role="reagent" />
+    <Reagent
+      name="SmCl3·6H2O"
+      id="SmCl3·6H2O"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor1"
+      reagent="SmCl3·6H2O"
+      mass="0.359 g"
+      amount="0.359 g" />
+    <Add
+      vessel="reactor1"
+      reagent="Hacac"
+      volume="0.26 mL"
+      amount="0.26 mL" />
+    <Add
+      vessel="reactor1"
+      reagent="CH3OH"
+      volume="10.0 mL"
+      amount="10.0 mL" />
+    <Stir
+      vessel="reactor1"
+      time="10.0 min"
+      stir_speed="300.0 rpm" />
+    <Add
+      vessel="reactor1"
+      reagent="Et3N"
+      volume="0.7000000000000001 mL"
+      amount="0.7000000000000001 mL" />
+    <Stir
+      vessel="reactor1"
+      time="12.0 hours"
+      stir_speed="300.0 rpm" />
+    <Filter
+      vessel="reactor1"
+      filtrate_vessel="reactor2"
+      stir="False"
+      temp="20.0 ℃" />
+    <Wait
+      time="2.0 days" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

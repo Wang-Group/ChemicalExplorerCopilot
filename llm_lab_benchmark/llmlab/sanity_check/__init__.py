@@ -1,0 +1,1 @@
+from llmlab.sanity_check import syntax

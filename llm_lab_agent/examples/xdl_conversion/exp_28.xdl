@@ -1,0 +1,60 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Reactor1"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="Nb2O5 · nH2O"
+      id="Nb2O5 · nH2O"
+      role="reagent" />
+    <Reagent
+      name="[N(CH3)4]OH·5H2O"
+      id="[N(CH3)4]OH·5H2O"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="Reactor1"
+      reagent="Nb2O5 · nH2O"
+      mass="1.0 g"
+      amount="1.0 g" />
+    <Add
+      vessel="Reactor1"
+      reagent="[N(CH3)4]OH·5H2O"
+      volume="5.3 mL"
+      amount="5.3 mL" />
+    <HeatChill
+      vessel="Reactor1"
+      time="64800.0 second"
+      temp="120.0 °C"
+      stir="False" />
+    <HeatChillToTemp
+      vessel="Reactor1"
+      temp="20.0 °C"
+      stir="False" />
+    <Filter
+      vessel="Reactor1"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 °C" />
+    <Dry
+      vessel="Reactor1"
+      time="900.0 second"
+      pressure="1 bar"
+      temp="20.0 °C" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

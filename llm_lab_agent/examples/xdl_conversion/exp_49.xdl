@@ -1,0 +1,41 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Reactor B"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="acetic acid solution (0.1 M)"
+      id="acetic acid solution (0.1 M)"
+      role="reagent" />
+    <Reagent
+      name="sodium hydroxide solution (0.1 M)"
+      id="sodium hydroxide solution (0.1 M)"
+      role="reagent" />
+    <Reagent
+      name="{'acid': 'None', 'base': 'sodium hydroxide solution (0.1 M)'}"
+      id="{'acid': 'None', 'base': 'sodium hydroxide solution (0.1 M)'}"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="Reactor B"
+      reagent="acetic acid solution (0.1 M)"
+      volume="5.0 mL"
+      amount="5.0 mL" />
+    <AdjustPH
+      vessel="Reactor B"
+      reagent="{'acid': 'None', 'base': 'sodium hydroxide solution (0.1 M)'}"
+      pH="4.5" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

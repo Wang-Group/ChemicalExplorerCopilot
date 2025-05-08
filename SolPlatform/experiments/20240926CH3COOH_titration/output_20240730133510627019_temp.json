@@ -1,0 +1,83 @@
+{
+    "NL": "Objective: Adjust the acidity of an acetic acid solution to a pH of 4.5.\nPrepare a container labeled \"Reactor B.\"\nAdd 5 milliliters of a 0.1 molar acetic acid solution to Reactor B.\nGradually add a 0.1 molar sodium hydroxide solution while stirring the mixture until the pH reaches 4.5.",
+    "function": [
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "Reactor B",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "acetic acid",
+                            "acetic acid solution"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.1,
+                        "unit": "mol/L"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 5.0,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": false,
+                "stir_speed": null,
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AdjustpH",
+            "function_args": {
+                "reactor_name": "Reactor B",
+                "pH": 4.5,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 600.0,
+                    "unit": "rpm"
+                },
+                "acid_reagent": {
+                    "identity": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "base_reagent": {
+                    "identity": {
+                        "chemical_id": [
+                            "NaOH"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.1,
+                        "unit": "mol/L"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ],
+                        "CAS_number": null
+                    }
+                }
+            }
+        }
+    ]
+}

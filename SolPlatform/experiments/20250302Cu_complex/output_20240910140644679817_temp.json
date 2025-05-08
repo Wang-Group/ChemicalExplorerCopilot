@@ -1,0 +1,109 @@
+{
+    "NL": "The [3,3-difluorocyclobutylammonium]Cl ([DF_x0002_CBA]Cl) and CuCl2 are commercially available. [DF-CBA]Cl (10 mmol) and CuCl2 (5 mmol) were\ncompletely dissolved in methanol (100 ml). Slow evaporation of the solvent at room temperature obtains the crystals of [DF-CBA]2CuCl4 (yield, 98.5%).",
+    "function": [
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "3,3-difluorocyclobutanamine hydrochloride",
+                            "[DF-CBA]Cl"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "mass": {
+                    "quantity": 1.4356,
+                    "unit": "g"
+                },
+                "stir": false,
+                "stir_speed": null
+            }
+        },
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "CuCl2.2H2O",
+                            "CuCl2"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "mass": {
+                    "quantity": 0.8523999999999999,
+                    "unit": "g"
+                },
+                "stir": false,
+                "stir_speed": null
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "methanol"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 100.0,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "Evaporate",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "pressure": null,
+                "stir": false,
+                "stir_speed": null,
+                "temperature": {
+                    "quantity": 20.0,
+                    "unit": "°C"
+                },
+                "duration": null
+            }
+        },
+        {
+            "function_name": "Yield",
+            "function_args": {
+                "product_name": "[DF-CBA]2CuCl4",
+                "product_quantity": {
+                    "quantity": null,
+                    "unit": null
+                },
+                "yield_percentage": {
+                    "quantity": 98.5,
+                    "unit": "%"
+                }
+            }
+        }
+    ]
+}

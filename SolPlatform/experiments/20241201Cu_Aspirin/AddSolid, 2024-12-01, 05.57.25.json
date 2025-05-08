@@ -1,0 +1,21 @@
+{
+    "time": "2024-12-01 17:57:25.156716",
+    "reactor": "reactor1",
+    "job finished": {
+        "Outcome": "Success",
+        "Substance Name": "Cu(OAc)2.H2O",
+        "Target Weight": {
+            "Value": 429.0,
+            "Unit": "Milligram"
+        },
+        "Tolerance": {
+            "Value": 5.0,
+            "Unit": "Milligram"
+        },
+        "Net Weight": {
+            "Value": "0.4404",
+            "Unit": "Gram",
+            "CustomUnitName": null
+        }
+    }
+}

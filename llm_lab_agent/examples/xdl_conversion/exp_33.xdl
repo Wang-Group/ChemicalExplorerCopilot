@@ -1,0 +1,110 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Teflon-lined stainless steel autoclave"
+      type="reactor" />
+    <Component
+      id="reactor1"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="HCl (4.0 mol/L)"
+      id="HCl (4.0 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="Na2MoO4·2H2O"
+      id="Na2MoO4·2H2O"
+      role="reagent" />
+    <Reagent
+      name="NaVO3"
+      id="NaVO3"
+      role="reagent" />
+    <Reagent
+      name="NiCl2 (1.0 mol/L)"
+      id="NiCl2 (1.0 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="distilled water"
+      id="distilled water"
+      role="reagent" />
+    <Reagent
+      name="enMe"
+      id="enMe"
+      role="reagent" />
+    <Reagent
+      name="{'acid': 'HCl (4.0 mol/L)', 'base': 'None'}"
+      id="{'acid': 'HCl (4.0 mol/L)', 'base': 'None'}"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor1"
+      reagent="NaVO3"
+      mass="0.06 g"
+      stir="True"
+      stir_speed="vigorously"
+      amount="0.06 g" />
+    <Add
+      vessel="reactor1"
+      reagent="Na2MoO4·2H2O"
+      mass="0.33 g"
+      stir="True"
+      stir_speed="vigorously"
+      amount="0.33 g" />
+    <Add
+      vessel="reactor1"
+      reagent="distilled water"
+      volume="15.0 mL"
+      stir="True"
+      stir_speed="vigorously"
+      amount="15.0 mL" />
+    <AdjustPH
+      vessel="reactor1"
+      reagent="{'acid': 'HCl (4.0 mol/L)', 'base': 'None'}"
+      pH="3.7" />
+    <Stir
+      vessel="reactor1"
+      time="1800.0 second"
+      stir_speed="vigorously" />
+    <Add
+      vessel="reactor1"
+      reagent="enMe"
+      volume="0.4 mL"
+      stir="True"
+      amount="0.4 mL" />
+    <Add
+      vessel="reactor1"
+      reagent="NiCl2 (1.0 mol/L)"
+      volume="1.0 mL"
+      stir="True"
+      amount="1.0 mL" />
+    <Transfer
+      from_vessel="reactor1"
+      to_vessel="Teflon-lined stainless steel autoclave"
+      volume="all"
+      amount="all" />
+    <HeatChillToTemp
+      vessel="Teflon-lined stainless steel autoclave"
+      temp="160.0 °C"
+      stir="False" />
+    <HeatChill
+      vessel="Teflon-lined stainless steel autoclave"
+      time="345600.0 second"
+      temp="160.0 °C"
+      stir="False" />
+    <HeatChillToTemp
+      vessel="Teflon-lined stainless steel autoclave"
+      temp="20.0 °C"
+      stir="False" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

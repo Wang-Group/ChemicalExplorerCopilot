@@ -1,0 +1,626 @@
+SolidStation:
+  IO:
+    XRP_balance:
+      ip: "192.168.1.17:81"
+    MG400:
+      ip: "192.168.1.6"
+    pgse: 
+      connection_param:
+        port: "COM21"  
+        baudrate: 115200
+        parity: "N"
+        timeout: 0.1
+      slave_param: 4
+
+  plates: ["plate_0", "plate_1", "balance", "motor_0_ss"]
+
+  coordinates:
+    MG400:
+      # The initail postions.
+      Initial_Position: 
+        head: [200.3, -210, 43, -90]
+        bottle: [211.3, -108.7, 20, 0]
+
+      # The position of the first dosing head.
+      Dosing_Head_Coordinates: [
+        [200.6, -290.4, 41.3, -90], [149.7, -290.4, 41.5, -90], [100, -290.4, 41.6, -90], [49.8, -290.4, 41, -90], [-0.6, -290.4, 41, -90], 
+        [-50.7, -290.4, 41, -90], [-101.4, -290.4, 41, -90], [-151.5, -290.4, 41, -90], [-201.7, -290.4, 41, -90], [-251.7, -290.4, 41, -90], 
+        [200.3, -290.4, -27, -90], [150, -290.4, -27, -90], [100, -290.4, -27, -90], [49.8, -290.4, -27, -90], [-0.6, -290.4, -27, -90], 
+        [-50.7, -290.4, -27, -90], [-101.4, -290.4, -27, -90], [-151.5, -290.4, -27, -90], [-201.7, -290.4, -27, -90], [-251.7, -290.4, -27, -90], 
+        [200.3, -290.4, -97, -90], [150, -290.4, -97, -90], [100, -290.4, -97, -90], [49.8, -290.4, -97, -90], [-0.6, -290.4, -97, -90], 
+        [-50.7, -290.4, -97, -90], [-101.4, -290.4, -97, -90], [-151.5, -290.4, -97, -90], [-201.7, -290.4, -97, -90], [-251.7, -290.4, -97, -90]
+        ]
+        
+      Bottle_Coordinates: 
+        plate_0: [
+          [211.3, -108.7, -60, 0], [236.5, -109.3, -60, 0], [262, -109.8, -60, 0], [287, -109.8, -60, 0], [211.3, -147.5, -60, 0], 
+          [286.8, -148, -60, 0], [211.3, -184.5, -60, 0], [235.3, -185.5, -60, 0], [259.3, -185.5, -60, 0], [284.5, -185, -60, 0]
+        ]
+        plate_1: [
+          [211.3, -109.7, -60, 0], [236.5, -110.3, -60, 0], [262, -110.8, -60, 0], [287, -110.8, -60, 0], [211.3, -147.5, -60, 0], 
+          [286.8, -148, -60, 0], [211.3, -184.5, -60, 0], [235.3, -185.5, -60, 0], [259.3, -185.5, -60, 0], [284.5, -185, -60, 0]
+        ]
+      # The route of dosing head to balance.  
+      Dosing_Head_Route: [
+        [253, -193, 44.3, 0], 
+        [253, -193, 124, 0], 
+        [380, -95, 124, 90], 
+        [387.7, -21.70, 102.25, 90], 
+        [387.7, -8.705, 102.25, 90], 
+        [387.7, -8.705, 99.25, 90]
+        ]
+
+      # The postion of bottle:
+      Holder_Param:
+        dosing_head_holder: [70, 3, [0, 30]] # y_offset, z_offset, capacity
+        plate_0: [80, [0, 10]]  # z_offset, capacity
+        plate_1: [80, [0, 10]]  # z_offset, capacity
+
+      Initial_Param:
+        load: 0.25
+        x_offset: 100
+        y_offset: 0
+        z_offset: 0
+
+      # The route of bottle to balance.
+      Bottle_Balance_Route: [
+        [211.3, -108.7, 20, 0], 
+        [211.3, -108.7, 20, 72], 
+        [187, 105, 20, 72], 
+        [187, 105, 20, 0], 
+        [268.5, 144.5, 20, 0], 
+        [268.5, 144.5, -26.8, 0]
+        ]
+
+      # The route of bottle to liquid station.
+      Bottle_LS_Route: [
+        [-12.2, 416, -10, 90], 
+        [-12.2, 416, -100, 90]
+        ]
+    
+
+LiquidStation:
+  IO:
+    # gripper param
+    grippers:
+      connection_param:
+        port: "COM22"  
+        baudrate: 115200
+        parity: "N"
+        timeout: 0.1
+      slave_param:
+        rgi30: 1
+        pge50: 5
+
+    uv_vis_setup:
+      connection_param:
+        commanduino:
+          ios: 
+           - port: "COM10" 
+          devices:  
+            A1: 
+              command_id: "A1"
+            A2: 
+              command_id: "A2"
+      uv_source: "A1"
+      vis_source: "A2"
+        
+    injector: 
+      connection_param:
+        port: "COM4"  
+        baudrate: 115200
+        parity: "N"
+        timeout: 0.1
+      config_param: 
+        model: SY-08
+        slave: 3
+        max_volume: 5
+        tip_volume: 1
+      
+    runze_0: 
+      connection_param:
+        port: "COM15"
+        baudrate: 115200
+        parity: "N"
+        timeout: 0.1
+      config_param:
+        syringe_pump: 
+          model: "SY-03B"
+          slave: 1
+          max_volume: 5
+        switch_valve: 
+          model: "SV-07"
+          slave: 2
+          channel_num: 10
+      channels: 
+        syringe_pump: 
+          feeder_0: 14
+          feeder_1: 15
+          feeder_2: 1
+          air_1: 6
+          wasteout: 7
+          switch_valve: 8
+          storage_liquid1: 2
+          storage_liquid2: 12
+          storage_liquid3: 3
+          storage_liquid4: 4
+          storage_liquid5: 5
+          storage_liquid6: 9
+        switch_valve: 
+          H2O: 6
+          air: 1
+          DMF: 8
+          HCOOH: 9
+          CH3OH: 3
+          C2H5OH: 2
+          MeCN: 10
+
+    runze_1: 
+      connection_param:
+        port: "COM24"
+        baudrate: 115200
+        parity: "N"
+        timeout: 0.1
+      config_param: 
+        pump_acid: 
+          model: SY-08
+          slave: 1
+          max_volume: 5
+        pump_base: 
+          model: SY-08
+          slave: 2
+          max_volume: 5
+        pump_waste: 
+          model: MC-21C
+          slave: 3
+        pump_KCl: 
+          model: MC-21C
+          slave: 4
+        pump_water: 
+          model: MC-21C
+          slave: 5
+
+    pHmeter:
+      port: COM26
+
+    bopai_controller:
+      connection_param:
+        port: "COM28"
+        baudrate: 115200
+        parity: "N"
+        timeout: 0.1
+
+      axis:
+        z: 1
+        spin: 2
+        stir: 3
+        spec_waste_pump: 4 
+        stir_storage: 5
+      axis_list: [1, 2, 3, 4, 5]
+
+      ip: # [LimitN, LimitP]
+
+      op:
+        stir: 0
+        actuator: 1 
+        air_gripper: 2
+        magnetic: 3
+      dac: 
+
+      adc:
+
+      motor_param: # [pulse/rev, pitch_of_screws]
+        1: [6400, 1]
+        2: [25600, 360]
+        3: [6400, 60]
+        4: [6400, 60]
+        5: [6400, 60]
+      trap_param: # [dAcc, dDec, dSmoothTime, dVelStart]
+        1: [5, 5, 0, 0]
+        2: [40, 450, 0, 0]
+      jog_param: # [dAcc, dDec, dSmoothTime]
+        1: [50, 30, 0]
+        2: [50, 30, 0]
+        3: [200, 300, 0]
+        4: [200, 300, 0]
+        5: [200, 300, 0]
+      home_param: # [nHomeMode, nHomeDir, lOffset, dHomeRapidVel, dHomeLocatVel, dHomeIndexVel, dHomeAcc]
+        1: [1, 0, 0, 10, 1, 0, 100]
+        2: [1, 0, 0, 10, 1, 0, 100]
+      safe_coordiniate:
+        z: 0
+
+    hotplate: 
+      connection_param:
+        port: "COM29"
+        baudrate: 9600
+        parity: "N"
+        timeout: 0.1
+
+    # controller param
+    axismotion:
+      ipaddr: "192.168.1.31" # controller ip address
+      # AXIS_NUMBER
+      axis:
+        x: 0
+        y: 1
+        z1: 2
+        z2: 3
+      # INPUT [datum_in, fwd_in, rev_in, alm_in]
+      ip:
+        0: [2, 4, 3, 24]
+        1: [5, 7, 6, 25]
+        2: [8, 10, 9, 26]
+        3: [11, 13, 12, 27]
+      # OUTPUT [enable]
+      op:
+        0: [12]
+        1: [13]
+        2: [14]
+        3: [15]
+        actuator_relay: 8
+        fans: 9
+        valve_acid: 10
+        valve_base: 11
+      # AXIS_PARAM [atype, invert_step, units, accel, decel, fastdec, speed(mm/s), sramp, creep(mm/s), datum_mode, datum_speed(mm/s)]
+      param:
+        0: [4, 8, 1000, 500, 300, 2000, 100, 200, 5, 114, 30] #x axis parameters
+        1: [4, 8, 1000, 500, 300, 2000, 100, 200, 5, 114, 30] #y axis parameters
+        2: [4, 8, 1000, 500, 300, 2000, 100, 200, 5, 114, 30] #z1 axis parameters
+        3: [4, 8, 1000, 500, 300, 2000, 100, 200, 5, 114, 30] #z2 axis parameters
+        # 4: [4, 8, 0, 1000, 500, 300, 100, 200, 5, 114, 50] # x2 axis parameters
+      default_safe_coordinates:
+        2: -40
+        3: -40
+      max_motion_range:
+        x: 400
+        y: 605
+        z1: 300
+        z2: 300
+      offsets:
+        mix: 10
+        absorb: 10
+        inject: 38
+        add: 38
+
+
+  plates: ["motor_0_ls", 
+           "motor_1_ls", 
+           "liquid_feeders", 
+           "liquid_feed", 
+           "cap_holders", 
+           "bottle_holders", 
+           "heat_bottle_holders", 
+           "pge50_platform", 
+           "uv_vis_holder", 
+           "pH_storage",
+           "pH_buffer",  
+           "rubbish_bin", 
+           "storage_holders"
+            ]
+
+  info:
+    liquid_station_init: 
+      position_0: [292, 0, 157, 0]
+      info: [1, 1] # x_num, y_num
+    liquid_feeders: 
+      position_0: [16.5, 265.5, 126, 0]
+      info: [1, 3] # x_num, y_num
+    liquid_feed: 
+      position_0: [74.5, 1, 157, 0]
+      info: [5, 2] # x_num, y_num
+    cap_holders: 
+      position_0: [3, 358.3, 229, 0]
+      info: [5, 2] # x_num, y_num
+    bottle_holders: 
+      position_0: [65.5, 287.8, 164, 0]
+      info: [5, 2] # x_num, y_num
+    heat_bottle_holders: 
+      position_0: [1, 1, 1, 1]
+      info: [3, 3] # x_num, y_num
+    pge50_platform: 
+      position_0: [15, 485.2, 111.8, 0]
+      info: [1, 1] # x_num, y_num
+    uv_vis_holder: 
+      position_0:  [26.8, 551.1, 196.5, 0]
+      info: [1, 1] # x_num, y_num
+    rubbish_bin: 
+      position_0:  [355, 400, 0, 0]
+      info: [1, 1] # x_num, y_num
+    pipette_tips:
+      position_0: []
+      info: [60]
+    storage_holders: 
+      position_0: []
+      info: [3 ,3] # x_num, y_num
+
+  coordinates: 
+    motor_0_ls: 
+      [
+        [260.5, 14.7, 123, 0]
+       ]
+    motor_1_ls: 
+      [
+        [353, 536.7, 82.5, 0], [353, 595.7, 82.5, 0]
+      ]
+    liquid_feeders: 
+      [
+        [16.5, 265.7, 134.5, 0], [16.8, 355.7, 134.5, 0], [53.2, 569.7, 144.5, 0]
+      ]
+    bottle_holders: 
+      [
+        [65.8, 287.4, 170, 0], [94, 287.7, 170, 0], [121.5, 287.7, 170, 0], [150, 287.7, 170, 0], [178, 287.4, 170, 0],
+        [66.6, 377.7, 170, 0], [94.8, 377.7, 170, 0], [123, 377.4, 170, 0], [150.6, 377.3, 170, 0], [178.7, 377.3, 170, 0]
+      ]
+    liquid_feed: # dz = -38.5
+      [
+        [65.5, 288.0, 134, 0], [94, 287.7, 134, 0], [121.5, 287.7, 134, 0], [150, 287.7, 134, 0], [178, 287.4, 134, 0],
+        [66.6, 377.7, 134, 0], [94.8, 377.7, 134, 0], [123, 377.4, 134, 0], [150.6, 377.3, 134, 0], [178.7, 377.3, 134, 0]
+      ]
+    liquid_inject: # dx = -1.3, dy = -97.3 , z2 = 128
+      [
+        [63.2, 185.8, 0, 131], [91.1, 185.8, 0, 131], [118.7, 185.8, 0, 131], [146.7, 185.8, 0, 131], [174.7, 185.8, 0, 131],
+        [64.6, 275.8, 0, 131], [92.2, 275.8, 0, 131], [120.2, 275.8, 0, 131], [148.2, 275.8, 0, 131], [175.8, 275.8, 0, 131]
+      ]
+    cap_holders: # dy = -45, dz = 24
+      [
+        [65.5, 243.0, 194, 0], [93.4, 243.1, 194, 0], [121, 243.0, 194, 0], [149, 242.7, 194, 0], [177, 242.7, 194, 0],
+        [66.9, 332.9, 194, 0], [94.5, 332.7, 194, 0], [122.5, 332.7, 194, 0], [150.5, 332.7, 194, 0], [178.1, 332.7, 194, 0]
+      ]
+    heat_bottle_holders: 
+      [
+        [156.8, 532.2, 85, 0], [191, 532.4, 85, 0], [226.5, 532.0, 85, 0],
+        [156.8, 567.2, 85, 0], [192, 567.5, 85, 0], [227.2, 567.4, 85, 0],
+        [157.2, 602.7, 85, 0], [192.2, 602.7, 85, 0], [227, 602.5, 85, 0]
+      ]
+    heater_feed: 
+      [
+        [156.8, 532.2, 48, 0], [191, 532.4, 48, 0], [226.5, 532.0, 48, 0],
+        [156.8, 567.2, 48, 0], [192, 567.5, 48, 0], [227.2, 567.4, 48, 0],
+        [157.2, 602.7, 48, 0], [192.2, 602.7, 48, 0], [227, 602.5, 48, 0]
+      ]
+    heater_inject:
+      [
+        [154.5, 431.0, 0, 48], [188.7, 431.2, 0, 48], [224.2, 430.8, 0, 48],
+        [154.5, 466.0, 0, 48], [189.7, 466.3, 0, 48], [224.9, 466.2, 0, 48],
+        [154.9, 501.5, 0, 48], [189.9, 501.5, 0, 48], [224.7, 501.3, 0, 48]
+      ]
+    pge50_platform: 
+      [
+        [14.5, 485.9, 117.8, 0]
+      ]
+    uv_vis_holder: 
+      [
+        [-9.2, 110.7, 156, 0]
+      ]
+    uv_vis_feed:
+      [
+        [-9.2, 110.7, 120, 0]
+      ]
+    uv_vis_inject: 
+      [
+        [-12.2, 10.6, 0, 113]
+      ]
+    pipette_tips:
+      [
+        [228.4, 245.9, 0, 202], [238.8, 245.9, 0, 202], [249.6, 245.9, 0, 202], [260.0, 245.8, 0, 202], [270.6, 245.8, 0, 202], [280.8, 245.8, 0, 202], [291.5, 245.8, 0, 202], [301.9, 245.6, 0, 202], [312.7, 245.6, 0, 202],
+        [228.4, 258.9, 0, 199], [238.9, 258.9, 0, 199], [249.4, 258.9, 0, 199], [259.9, 258.9, 0, 199], [270.4, 258.9, 0, 199], [280.9, 258.9, 0, 199], [291.4, 258.9, 0, 199], [301.9, 258.9, 0, 199], [312.4, 258.9, 0, 199],
+        [228.4, 269.4, 0, 199], [238.9, 269.4, 0, 199], [249.4, 269.4, 0, 199], [291.4, 269.4, 0, 199], [301.9, 269.4, 0, 199], [312.4, 269.4, 0, 199],
+        [228.4, 279.9, 0, 199], [238.9, 279.9, 0, 199], [301.9, 279.9, 0, 199], [312.4, 279.9, 0, 199],
+        [228.4, 290.4, 0, 199], [238.9, 290.4, 0, 199], [301.9, 290.4, 0, 199], [312.4, 290.4, 0, 199],
+        [228.4, 300.9, 0, 199], [238.9, 300.9, 0, 199], [301.9, 300.9, 0, 199], [312.4, 300.9, 0, 199],
+        [228.4, 311.4, 0, 199], [238.9, 311.4, 0, 199], [249.4, 311.4, 0, 199], [291.4, 311.4, 0, 199], [301.9, 311.4, 0, 199], [312.4, 311.4, 0, 199],
+        [228.4, 321.9, 0, 199], [238.9, 321.9, 0, 199], [249.4, 321.9, 0, 199], [259.9, 321.9, 0, 199], [270.4, 321.9, 0, 199], [280.9, 321.9, 0, 199], [291.4, 321.9, 0, 199], [301.9, 321.9, 0, 199], [312.4, 321.9, 0, 199],
+        [228.4, 332.4, 0, 199], [238.9, 332.4, 0, 199], [249.4, 332.4, 0, 199], [259.9, 332.4, 0, 199], [270.4, 332.4, 0, 199], [280.9, 332.4, 0, 199], [291.4, 332.4, 0, 199], [301.9, 332.4, 0, 199], [312.4, 332.4, 0, 199]
+      ]
+    storage_holders:
+      [
+        [], [], [], [], 
+        [], [], [], [], 
+        [], [], [], [], 
+        [], [], [], []
+      ]
+    storage_inject: 
+      [
+        [234, 92.8, 0, 67], [269, 92.8, 0, 67], [304, 92.8, 0, 67],
+        [234, 127.8, 0, 67], [269, 127.8, 0, 67], [304, 127.8, 0, 67],
+        [234, 162.8, 0, 67], [269, 162.8, 0, 67], [304, 162.8, 0, 67]
+      ]
+    pH_storage:
+      [
+        []
+      ]
+    pH_buffer:
+      [
+        [], [], []
+      ]
+    pH_adjust:
+      [
+        []
+      ]
+    rubbish_bin:
+      [
+        [320, 465, 0, 0]
+      ]
+    rubbish_bin_tip:
+      [
+        [115, 75, 0, 160]
+      ]
+
+FiltrationStation:
+  IO: 
+    bopai_controller: 
+      connection_param:
+        port: "COM23"
+        baudrate: 115200
+        parity: "N"
+        timeout: 0.1
+
+      axis:
+        x: 3
+        y: 2
+        z: 1
+        pump: 4
+      axis_list: [1, 2, 3, 4]
+
+      ip: # [LimitN, LimitP]
+
+      op:
+        stir: 0
+        actuator: 1 
+        air_gripper: 2
+        magnetic: 3
+      dac: 
+
+      adc:
+
+      motor_param: # [pulse/rev, pitch_of_screws]
+        1: [12800, 5]
+        2: [12800, 72]
+        3: [12800, 72]
+        4: [3200, 60]
+      trap_param: # [dAcc, dDec, dSmoothTime, dVelStart]
+        1: [50, 100, 0, 0]
+        2: [50, 100, 0, 0]
+        3: [50, 100, 0, 0]
+        4: [200, 300, 0, 0]
+      jog_param: # [dAcc, dDec, dSmoothTime]
+        1: [50, 30, 0]
+        2: [50, 30, 0]
+        3: [20, 10, 0]
+        4: [200, 300, 0]
+      home_param: # [nHomeMode, nHomeDir, lOffset, dHomeRapidVel, dHomeLocatVel, dHomeIndexVel, dHomeAcc]
+        1: [1, 0, 0, 20, 1, 0, 100]
+        2: [1, 0, 0, 20, 1, 0, 100]
+        3: [1, 0, 0, 20, 1, 0, 100]
+        4: [1, 0, 0, 20, 1, 0, 100]
+      safe_coordiniate:
+        z: 0
+
+    rgi100:
+      connection_param:
+        port: "COM16"  
+        baudrate: 115200
+        parity: "N"
+        timeout: 0.1
+      slave_param: 1
+
+    fs_switch_valve: 
+      connection_param: 
+        port: "COM35"  
+        baudrate: 115200
+        parity: "N"
+        timeout: 0.1
+      config_param: 
+        slave: 0
+        model: SV-07
+        channel_num: 8
+      channels: 
+        H2O: 2
+        DMF: 4
+        CH3OH: 3
+        C2H5OH: 6
+        C2H5OC2H5: 7
+        wasteout: 5
+        collect: 8
+        air: 1
+
+      solvent_factor:
+        H2O: 0.65
+        C2H5OH: 0.65
+        Ketone: 0.65
+        C2H5OC2H5: 0.65
+        DMF: 0.65
+        CH3OH: 0.65
+        
+
+  plates: [
+            'funnel_holders', 
+            'liquid_acc_holders', 
+            'prepare_bottle_route', 
+            'dump_mixture_route', 
+            'stir', 
+            'motor_1_fs'
+           ]
+  coordinates: 
+    funnel_holders: [
+      [12.5, 104, 170], [12.5, 161, 170], [68.5, 104, 170], [68.5, 161, 170], 
+      [12.5, 216, 170], [12.5, 272, 170], [68.5, 216, 170], [68.5, 272, 170]
+    ]
+    liquid_accpters: [
+      [130, 102.5, 127.5], [130, 161, 127.5], [190, 102.5, 127.5], [190, 161, 127.5], 
+      [130, 212.5, 127.5], [130, 272, 127.5], [190, 212.5, 127.5], [190, 272, 127.5]
+    ]
+    prepare_bottle_route: [
+      [160, -2, 60], 242, 160
+    ]
+    dumped_bottle: [
+      [92, 153, 145], [92, 213, 145], [152, 153, 145], [152, 213, 145], 
+      [92, 165, 145], [92, 225, 145], [152, 165, 145], [152, 225, 145]
+    ]
+    dump_mixture_route: [
+      [60, 102, 65], 96, 77
+    ]
+    stir: [
+      [10, 45, 170]
+    ]
+    feeder: [
+      [241, 191.5, 103]
+    ]
+    wash: [
+      [130, 102.5, 30], [130, 161, 30], [190, 102.5, 30], [190, 161, 30], 
+      [130, 212.5, 30], [130, 272, 30], [190, 212.5, 30], [190, 272, 30] 
+    ]
+    solvent: [
+      [241, 274, 119.3]
+    ]
+    bottles: [788.5, 730, 704, 645]
+    collect: [
+      [130, 102.5, 92.3], [130, 161, 92.3], [190, 102.5, 92.3], [190, 161, 92.3], 
+      [130, 212.5, 92.3], [130, 272, 92.3], [190, 212.5, 92.3], [190, 272, 92.3]
+    ]
+    
+LeadShineMotor: 
+  IO:
+    SS_LS:
+      connection_param:
+        port: "COM17"
+        baudrate: 115200
+        parity: "N"
+        timeout: 0.1
+
+      slave_param: 1
+
+      motion_param:
+        peak_current: 30 # unit: 0.1 A
+        pulse_circle: 10000
+        pitch_of_screws: 4
+        moving_param: [10, 30, 50] # [acc, dec, defualt_speed] 
+        datum_param: [20, 1, 500, 500, 5] # [datum_rapid_speed, datum_slow_speed, datum_acc, datum_dec, datum_mode]
+        ip: 
+          datum_in: Pr4.04
+        op:
+          
+    LS_FS: 
+      connection_param:
+        port: "COM14"
+        baudrate: 115200
+        parity: "N"
+        timeout: 0.1
+
+      slave_param: 1
+
+      motion_param:
+        peak_current: 30 # unit: 0.1 A
+        pulse_circle: 10000
+        pitch_of_screws: 10
+        moving_param: [10, 30, 50] # [acc, dec, defualt_speed] 
+        datum_param: [20, 1, 500, 500, 5] # [datum_rapid_speed, datum_slow_speed, datum_acc, datum_dec, datum_mode]
+        ip: 
+          datum_in: Pr4.04
+        op:
+  coordinates:
+    motor_0: 293.2
+    motor_1: 788.5
+  
+

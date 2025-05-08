@@ -1,0 +1,60 @@
+{
+    "Reactor": {},
+    "Property": {},
+    "ChemicalNames": {},
+    "Solid": [
+        {
+            "Manganese(II) acetate tetrahydrate": {
+                "head": "Mn(CH3COO)2.4H2O",
+                "maximum_mass (g)": 5
+            }
+        }, 
+        {
+            "KMnO4": {
+                "head": "KMnO4",
+                "maximum_mass (g)": 5
+            }
+        }
+    ],
+    "Liquid": [
+        {
+            "Sodium tungstate dihydrate": {
+                "connection": {
+                    "pump": "storage_liquid1"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 0.15,
+                    "unit": "g/mL"
+                }
+            }
+        }, 
+        {
+            "CH3COOH": {
+                "connection": {
+                    "reactor": "reactor8"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 60,
+                    "unit": "%"
+                }
+            }
+        }, 
+        {
+            "H2O": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "reactor": "reactor9"
+                }
+            }
+        }
+    ]
+}

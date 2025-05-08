@@ -1,0 +1,102 @@
+{
+    "NL": "Objective: Form solid calcium carbonate from solutions of calcium chloride and sodium carbonate.\nPrepare two containers labeled \"Reactor C\" and \"Reactor D.\"\nAdd 5 milliliters of a 0.1 molar calcium chloride solution to Reactor C.\nAdd 5 milliliters of a 0.1 molar sodium carbonate solution to Reactor D.\nPour the solution from Reactor D into Reactor C while stirring. Continue stirring for 5 minutes to form calcium carbonate precipitate.",
+    "function": [
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor0",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "CaCl2",
+                            "calcium chloride solution"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.1,
+                        "unit": "mol/L"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "H2O"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 5.0,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": false,
+                "stir_speed": null,
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "Na2CO3",
+                            "sodium carbonate solution"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.1,
+                        "unit": "mol/L"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "H2O"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 5.0,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": false,
+                "stir_speed": null,
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "TransferLiquid",
+            "function_args": {
+                "from_reactor": "reactor1",
+                "to_reactor": "reactor0",
+                "volume": "all",
+                "dropwise": false,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "StirForDuration",
+            "function_args": {
+                "reactor_name": "reactor0",
+                "temperature": null,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "duration": {
+                    "quantity": 300.0,
+                    "unit": "second"
+                }
+            }
+        }
+    ]
+}

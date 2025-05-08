@@ -1,0 +1,21 @@
+{
+    "time": "2024-11-20 17:22:13.098416",
+    "reactor": "reactor0",
+    "job finished": {
+        "Outcome": "Success",
+        "Substance Name": "H3BO3",
+        "Target Weight": {
+            "Value": 234.0,
+            "Unit": "Milligram"
+        },
+        "Tolerance": {
+            "Value": 5.0,
+            "Unit": "Milligram"
+        },
+        "Net Weight": {
+            "Value": "0.2388",
+            "Unit": "Gram",
+            "CustomUnitName": null
+        }
+    }
+}

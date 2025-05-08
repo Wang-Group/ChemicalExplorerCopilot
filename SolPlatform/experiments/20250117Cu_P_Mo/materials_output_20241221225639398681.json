@@ -1,0 +1,98 @@
+{
+    "Reactor": {},
+    "Property": {},
+    "ChemicalNames": {},
+    "Solid": [
+        {
+            "Na2MoO4.2H2O": {
+                "head": "Na2MoO4.2H2O",
+                "maximum_mass (g)": 5
+            }
+        }, 
+        {
+            "Na2HPO4.12H2O": {
+                "head": "Na2HPO4.12H2O",
+                "maximum_mass (g)": 5
+            }
+        }, 
+        {
+            "CuCl2.2H2O": {
+                "head": "CuCl2.2H2O",
+                "maximum_mass (g)": 5
+            }
+        }
+    ],
+    "Liquid": [
+        {
+            "ethylenediamine": {
+                "connection": {
+                    "reactor": "storage_reactor2"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 0.3,
+                    "unit": "M"
+                }
+            }
+        },
+        {
+            "hydrochloric acid": {
+                "connection": {
+                    "pump": "HCl", 
+                    "pump_pH_acid": "HCl"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 4,
+                    "unit": "M"
+                }
+            }
+        },
+        {
+            "H2O": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "pump": "H2O", 
+                    "pump_filtration": "H2O"
+                }
+            }
+        }, 
+        {
+            "CuCl2": {
+                "connection": {
+                    "reactor": "storage_reactor1"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 1,
+                    "unit": "M"
+                }
+            }
+        }, 
+        {
+            "sodium dihydrogen phosphate": {
+                "connection": {
+                    "reactor": "storage_reactor0"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 0.5,
+                    "unit": "M"
+                }
+            }
+        }
+    ]
+}

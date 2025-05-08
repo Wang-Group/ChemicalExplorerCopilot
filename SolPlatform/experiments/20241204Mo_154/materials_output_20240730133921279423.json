@@ -1,0 +1,46 @@
+{
+    "Reactor": {},
+    "Property": {},
+    "ChemicalNames": {},
+    "Solid": [
+        {
+            "Na2MoO4.2H2O": {
+                "head": "Na2MoO4.2H2O",
+                "maximum_mass (g)": 5
+            }
+        }, 
+        {
+            "Na2S2O4": {
+                "head": "Na2S2O4",
+                "maximum_mass (g)": 5
+            }
+        }
+    ],
+    "Liquid": [
+        {
+            "hydrochloric acid": {
+                "connection": {
+                    "reactor": "storage_reactor1"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 32,
+                    "unit": "%"
+                }
+            }
+        },
+        {
+            "H2O": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "reactor": "storage_reactor0", 
+                    "pump_filtration": "H2O"
+                }
+            }
+        }
+    ]
+}

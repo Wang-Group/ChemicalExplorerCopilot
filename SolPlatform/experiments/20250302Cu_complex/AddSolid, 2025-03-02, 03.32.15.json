@@ -1,0 +1,21 @@
+{
+    "time": "2025-03-02 15:32:15.307163",
+    "reactor": "reactor0",
+    "job finished": {
+        "Outcome": "Success",
+        "Substance Name": "CuCl2.2H2O",
+        "Target Weight": {
+            "Value": 85.0,
+            "Unit": "Milligram"
+        },
+        "Tolerance": {
+            "Value": 5.0,
+            "Unit": "Milligram"
+        },
+        "Net Weight": {
+            "Value": "0.0879",
+            "Unit": "Gram",
+            "CustomUnitName": null
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "time": "2024-10-26 19:36:05.293744",
+    "reactor": "reactor0",
+    "job finished": {
+        "Outcome": "Success",
+        "Substance Name": "Mn(CH3COO)2.4H2O",
+        "Target Weight": {
+            "Value": 333.0,
+            "Unit": "Milligram"
+        },
+        "Tolerance": {
+            "Value": 5.0,
+            "Unit": "Milligram"
+        },
+        "Net Weight": {
+            "Value": "335.5",
+            "Unit": "Milligram",
+            "CustomUnitName": null
+        }
+    }
+}

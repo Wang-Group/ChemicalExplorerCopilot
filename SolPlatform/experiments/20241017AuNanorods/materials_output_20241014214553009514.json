@@ -1,0 +1,109 @@
+{
+    "Reactor": {},
+    "Property": {},
+    "ChemicalNames": {},
+    "Solid": [
+    ],
+    "Liquid": [
+        {
+            "CTAB": {
+                "connection": {
+                    "reactor": "reactor5"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 0.1,
+                    "unit": "mol/L"
+                }
+            }
+        },
+        {
+            "NaBH4": {
+                "connection": {
+                    "reactor": "reactor6"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 0.01,
+                    "unit": "mol/L"
+                }
+            }
+        },
+
+        {
+            "HAuCl4": {
+                "connection": {
+                    "reactor": "reactor9"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 0.05,
+                    "unit": "mol/L"
+                }
+            }
+        },
+        {
+            "ascorbic acid": {
+                "connection": {
+                    "reactor": "reactor7"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 0.1,
+                    "unit": "mol/L"
+                }
+            }
+        },
+        {
+            "AgNO3": {
+                "connection": {
+                    "reactor": "reactor8"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 0.01,
+                    "unit": "mol/L"
+                }
+            }
+        },
+        {
+            "hydrochloric acid": {
+                "connection": {
+                    "reactor": "reactor4"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 1,
+                    "unit": "mol/L"
+                }
+            }
+        },
+        {
+            "H2O": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "pump": "H2O"
+                }
+            }
+        }
+    ]
+}

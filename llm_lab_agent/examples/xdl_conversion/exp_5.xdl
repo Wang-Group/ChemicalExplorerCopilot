@@ -1,0 +1,198 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Reactor1"
+      type="reactor" />
+    <Component
+      id="Reactor2"
+      type="reactor" />
+    <Component
+      id="Reactor3"
+      type="reactor" />
+    <Component
+      id="Reactor4"
+      type="reactor" />
+    <Component
+      id="Reactor5"
+      type="reactor" />
+    <Component
+      id="Reactor6"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="CF3COOAg"
+      id="CF3COOAg"
+      role="reagent" />
+    <Reagent
+      name="DI H2O"
+      id="DI H2O"
+      role="reagent" />
+    <Reagent
+      name="EG"
+      id="EG"
+      role="reagent" />
+    <Reagent
+      name="EG (282.0 mM)"
+      id="EG (282.0 mM)"
+      role="reagent" />
+    <Reagent
+      name="EG (3.0 mM)"
+      id="EG (3.0 mM)"
+      role="reagent" />
+    <Reagent
+      name="HCl (3.0 mM)"
+      id="HCl (3.0 mM)"
+      role="reagent" />
+    <Reagent
+      name="NaSH"
+      id="NaSH"
+      role="reagent" />
+    <Reagent
+      name="PVP"
+      id="PVP"
+      role="reagent" />
+    <Reagent
+      name="acetone"
+      id="acetone"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="Reactor1"
+      reagent="EG"
+      volume="50.0 mL"
+      amount="50.0 mL" />
+    <HeatChill
+      vessel="Reactor1"
+      time="30.0 min"
+      temp="150.0 ℃"
+      stir="False" />
+    <Add
+      vessel="Reactor2"
+      reagent="NaSH"
+      mass="2.0 mg"
+      stir="True"
+      amount="2.0 mg" />
+    <Add
+      vessel="Reactor2"
+      reagent="EG (3.0 mM)"
+      volume="11.89 mL"
+      stir="True"
+      amount="11.89 mL" />
+    <Add
+      vessel="Reactor3"
+      reagent="HCl (3.0 mM)"
+      volume="3.0 μL"
+      stir="True"
+      amount="3.0 μL" />
+    <Add
+      vessel="Reactor3"
+      reagent="EG"
+      volume="12.0 mL"
+      stir="True"
+      amount="12.0 mL" />
+    <Add
+      vessel="Reactor4"
+      reagent="PVP"
+      mass="0.35000000000000003 g"
+      stir="True"
+      amount="0.35000000000000003 g" />
+    <Add
+      vessel="Reactor4"
+      reagent="EG"
+      volume="17.5 mL"
+      stir="True"
+      amount="17.5 mL" />
+    <Add
+      vessel="Reactor5"
+      reagent="CF3COOAg"
+      mass="0.30000000000000004 g"
+      stir="True"
+      amount="0.30000000000000004 g" />
+    <Add
+      vessel="Reactor5"
+      reagent="EG (282.0 mM)"
+      volume="4.18 mL"
+      stir="True"
+      amount="4.18 mL" />
+    <Transfer
+      from_vessel="Reactor2"
+      to_vessel="Reactor1"
+      volume="0.6000000000000001 mL"
+      amount="0.6000000000000001 mL" />
+    <Wait
+      time="4.0 min" />
+    <Transfer
+      from_vessel="Reactor3"
+      to_vessel="Reactor1"
+      volume="5.0 mL"
+      amount="5.0 mL" />
+    <Wait
+      time="2.0 min" />
+    <Transfer
+      from_vessel="Reactor4"
+      to_vessel="Reactor1"
+      volume="12.5 mL"
+      amount="12.5 mL" />
+    <Wait
+      time="2.0 min" />
+    <Transfer
+      from_vessel="Reactor5"
+      to_vessel="Reactor1"
+      volume="4.0 mL"
+      amount="4.0 mL" />
+    <HeatChill
+      vessel="Reactor1"
+      time="60.0 min"
+      temp="150.0 ℃"
+      stir="False" />
+    <HeatChillToTemp
+      vessel="Reactor1"
+      temp="cool"
+      stir="False" />
+    <Centrifugate
+      vessel="Reactor1"
+      rotation_speed="4900.0 rpm"
+      time="8.0 min" />
+    <WashSolid
+      vessel="Reactor1"
+      solvent="acetone"
+      volume="appropriate"
+      filtrate_vessel="waste"
+      stir="False" />
+    <Centrifugate
+      vessel="Reactor1"
+      rotation_speed="14000.0 rpm"
+      time="15.0 min" />
+    <WashSolid
+      vessel="Reactor1"
+      solvent="DI H2O"
+      volume="appropriate"
+      filtrate_vessel="waste"
+      stir="False"
+      repeats="3" />
+    <Transfer
+      from_vessel="Reactor1"
+      to_vessel="Reactor6"
+      amount="all"
+      solid="True" />
+    <Add
+      vessel="Reactor6"
+      reagent="DI H2O"
+      volume="8.0 mL"
+      amount="8.0 mL" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

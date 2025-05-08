@@ -1,0 +1,59 @@
+{
+    "Reactor": {},
+    "Property": {},
+    "ChemicalNames": {},
+    "Solid": [
+    ],
+    "Liquid": [
+        {
+            "Na2WO4.2H2O": {
+                "connection": {
+                    "reactor": "storage_reactor2"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 0.15,
+                    "unit": "g/mL"
+                }
+            }
+        },
+        {
+            "H2O": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "pump": "H2O", 
+                    "pump_filtration": "H2O"
+                }
+            }
+        }, 
+        {
+            "sol.Mn": {
+                "solvent": null, 
+                "concentration": null, 
+                "connection": {
+                    "reactor": "storage_reactor0"
+                }
+                
+            }
+        }, 
+        {
+            "Gd(ClO4)3": {
+                "connection": {
+                    "reactor": "storage_reactor1"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 1,
+                    "unit": "M"
+                }
+            }
+        }
+    ]
+}

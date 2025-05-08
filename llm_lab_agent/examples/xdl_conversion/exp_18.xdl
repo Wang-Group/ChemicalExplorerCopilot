@@ -1,0 +1,102 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="reactor_1"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="HCl (1.0 mol/L)"
+      id="HCl (1.0 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="K8[γ-SiW10O36]·12H2O"
+      id="K8[γ-SiW10O36]·12H2O"
+      role="reagent" />
+    <Reagent
+      name="NaVO3 (0.5 mol/L)"
+      id="NaVO3 (0.5 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="[(n-C4H9)4N]Br"
+      id="[(n-C4H9)4N]Br"
+      role="reagent" />
+    <Reagent
+      name="water"
+      id="water"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor_1"
+      reagent="K8[γ-SiW10O36]·12H2O"
+      mass="8.0 g"
+      amount="8.0 g" />
+    <Add
+      vessel="reactor_1"
+      reagent="HCl (1.0 mol/L)"
+      volume="28.0 mL"
+      amount="28.0 mL" />
+    <Add
+      vessel="reactor_1"
+      reagent="NaVO3 (0.5 mol/L)"
+      volume="11.0 mL"
+      stir="True"
+      stir_speed="gently"
+      amount="11.0 mL" />
+    <Stir
+      vessel="reactor_1"
+      time="300.0 second"
+      stir_speed="gently" />
+    <Filter
+      vessel="reactor_1"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 °C" />
+    <Add
+      vessel="reactor_1"
+      reagent="[(n-C4H9)4N]Br"
+      mass="8.0 g"
+      amount="8.0 g" />
+    <Precipitate
+      vessel="reactor_1"
+      temp="20.0 °C" />
+    <Filter
+      vessel="reactor_1"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 °C" />
+    <WashSolid
+      vessel="reactor_1"
+      solvent="water"
+      volume="300.0 mL"
+      filtrate_vessel="waste"
+      stir="False" />
+    <Precipitate
+      vessel="reactor_1"
+      temp="20.0 °C" />
+    <Filter
+      vessel="reactor_1"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 °C" />
+    <WashSolid
+      vessel="reactor_1"
+      solvent="water"
+      volume="300.0 mL"
+      filtrate_vessel="waste"
+      stir="False" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

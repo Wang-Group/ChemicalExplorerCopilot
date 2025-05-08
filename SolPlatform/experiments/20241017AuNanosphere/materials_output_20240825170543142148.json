@@ -1,0 +1,48 @@
+{
+    "Reactor": {},
+    "Property": {},
+    "ChemicalNames": {},
+    "Solid": [
+    ],
+    "Liquid": [
+        {
+            "NaAuCl4": {
+                "connection": {
+                    "reactor": "reactor9"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 0.125,
+                    "unit": "mol/L"
+                }
+            }
+        },
+        {
+            "sodium citrate": {
+                "connection": {
+                    "reactor": "reactor8"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 0.01,
+                    "unit": "g/mL"
+                }
+            }
+        },
+        {
+            "H2O": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "pump": "H2O"
+                }
+            }
+        }
+    ]
+}

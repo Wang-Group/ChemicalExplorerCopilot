@@ -1,0 +1,260 @@
+{
+    "NL": "具体实施方式\n[0018] 称取1.80g(10mmol)阿司匹林到100mL三口瓶中，用15mL甲醇溶解；称取1.5g(7.5mmol)Cu(OAc)₂·H₂O溶于20mL水中，在磁力搅拌下缓慢滴加到三口瓶中，保持反应温度低于20℃，反应40分钟。过滤，所得固体分别用乙醇、水充分洗涤后，自然干燥，得1.94g兰色粉末，mp:238-239℃，产率92%。",
+    "function": [
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "100mL three-necked flask",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "Aspirin"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "mass": {
+                    "quantity": 1.8,
+                    "unit": "g"
+                },
+                "stir": false,
+                "stir_speed": null
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "100mL three-necked flask",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "methanol",
+                            "Methanol"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 15.0,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": false,
+                "stir_speed": null,
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "separate container",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "Cu(OAc)2.H2O",
+                            "Cu(OAc)2·H2O"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "mass": {
+                    "quantity": 1.5,
+                    "unit": "g"
+                },
+                "stir": false,
+                "stir_speed": null
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "separate container",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "H2O",
+                            "Water"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 20.0,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": false,
+                "stir_speed": null,
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "TransferLiquid",
+            "function_args": {
+                "from_reactor": "separate container",
+                "to_reactor": "100mL three-necked flask",
+                "volume": "all",
+                "dropwise": true,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureTo",
+            "function_args": {
+                "reactor_name": "100mL three-necked flask",
+                "temperature": {
+                    "quantity": 25.0,
+                    "unit": "°C"
+                },
+                "adjust_method": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "ramp_rate": null
+            }
+        },
+        {
+            "function_name": "Wait",
+            "function_args": {
+                "time": {
+                    "quantity": 2400.0,
+                    "unit": "second"
+                }
+            }
+        },
+        {
+            "function_name": "Filter",
+            "function_args": {
+                "reactor_name": "100mL three-necked flask",
+                "target_form": "solid",
+                "filtrate_vessel": "waste",
+                "stir": false,
+                "stir_speed": null,
+                "temperature": {
+                    "quantity": 20.0,
+                    "unit": "°C"
+                },
+                "atmosphere": "air"
+            }
+        },
+        {
+            "function_name": "WashSolid",
+            "function_args": {
+                "reactor_name": "100mL three-necked flask",
+                "solvent": {
+                    "identity": {
+                        "chemical_id": [
+                            "ethanol",
+                            "Ethanol"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "solvent_temperature": null,
+                "volume": {
+                    "quantity": 10.0,
+                    "unit": "mL"
+                },
+                "waste_vessel": "waste",
+                "stir": false,
+                "stir_speed": null,
+                "atmosphere": "air",
+                "repeat": 1
+            }
+        },
+        {
+            "function_name": "WashSolid",
+            "function_args": {
+                "reactor_name": "100mL three-necked flask",
+                "solvent": {
+                    "identity": {
+                        "chemical_id": [
+                            "H2O",
+                            "Water"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "solvent_temperature": null,
+                "volume": {
+                    "quantity": 10.0,
+                    "unit": "mL"
+                },
+                "waste_vessel": "waste",
+                "stir": false,
+                "stir_speed": null,
+                "atmosphere": "air",
+                "repeat": 1
+            }
+        },
+        {
+            "function_name": "Dry",
+            "function_args": {
+                "reactor_name": "100mL three-necked flask",
+                "time": {
+                    "quantity": 600.0,
+                    "unit": "second"
+                },
+                "temperature": {
+                    "quantity": 20.0,
+                    "unit": "°C"
+                },
+                "atmosphere": "air"
+            }
+        },
+        {
+            "function_name": "Yield",
+            "function_args": {
+                "product_name": "blue powder",
+                "product_quantity": {
+                    "quantity": 1.94,
+                    "unit": "g"
+                },
+                "yield_percentage": {
+                    "quantity": 92.0,
+                    "unit": "%"
+                }
+            }
+        }
+    ]
+}

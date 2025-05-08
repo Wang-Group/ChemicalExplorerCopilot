@@ -1,0 +1,114 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="reactor1"
+      type="reactor" />
+    <Component
+      id="reactor2"
+      type="reactor" />
+    <Component
+      id="reactor3"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="Co(OAc)2 (1.0 mol/L)"
+      id="Co(OAc)2 (1.0 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="Gd(ClO4)3 (1.0 mol/L)"
+      id="Gd(ClO4)3 (1.0 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="H2IDA"
+      id="H2IDA"
+      role="reagent" />
+    <Reagent
+      name="MeCN"
+      id="MeCN"
+      role="reagent" />
+    <Reagent
+      name="Na2CO3 (0.4 mol/L)"
+      id="Na2CO3 (0.4 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="NaOH (0.5 mol/L)"
+      id="NaOH (0.5 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="NaOH (1.0 mol/L)"
+      id="NaOH (1.0 mol/L)"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor1"
+      reagent="MeCN"
+      volume="5.0 mL"
+      stir="True"
+      amount="5.0 mL" />
+    <Add
+      vessel="reactor2"
+      reagent="H2IDA"
+      mass="0.333 g"
+      stir="True"
+      amount="0.333 g" />
+    <Add
+      vessel="reactor2"
+      reagent="NaOH (0.5 mol/L)"
+      volume="5.0 mL"
+      stir="True"
+      amount="5.0 mL" />
+    <Transfer
+      from_vessel="reactor2"
+      to_vessel="reactor1"
+      volume="1.0 mL"
+      amount="1.0 mL" />
+    <Add
+      vessel="reactor1"
+      reagent="Co(OAc)2 (1.0 mol/L)"
+      volume="1.5 mL"
+      stir="True"
+      amount="1.5 mL" />
+    <Add
+      vessel="reactor1"
+      reagent="Gd(ClO4)3 (1.0 mol/L)"
+      volume="1.0 mL"
+      stir="True"
+      amount="1.0 mL" />
+    <Add
+      vessel="reactor1"
+      reagent="NaOH (1.0 mol/L)"
+      volume="1.8 mL"
+      stir="True"
+      amount="1.8 mL" />
+    <Add
+      vessel="reactor1"
+      reagent="Na2CO3 (0.4 mol/L)"
+      volume="0.30000000000000004 mL"
+      stir="True"
+      amount="0.30000000000000004 mL" />
+    <HeatChill
+      vessel="reactor1"
+      time="2.0 hours"
+      temp="80.0 ℃" />
+    <Filter
+      vessel="reactor1"
+      filtrate_vessel="reactor3"
+      stir="False"
+      temp="20.0 ℃" />
+    <Evaporate
+      vessel="reactor3"
+      time="3.0 days"
+      temp="20.0 ℃" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

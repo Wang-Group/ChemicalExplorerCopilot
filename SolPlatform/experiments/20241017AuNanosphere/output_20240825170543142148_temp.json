@@ -1,0 +1,177 @@
+{
+    "NL": "Stock solutions of sodium citrate (10 mg mL−1) and sodium tetrachloroaurate (NaAuCl4) (0.125 mol L−1) were prepared. Subsequently, 420 µL of NaAuCl4 was added to 94.6 mL of deionized water, and the solution was agitated and heated to 90 °C. When the required temperature was achieved, 5 mL of sodium citrate was quickly added. Agitation and heating at 90 °C were performed for 20 min. The color of the suspension changed from light yellow to grey and then to red, indicating the formation of AuNPs. The AuNPs suspension was then slowly cooled to room temperature and maintained at 4 °C.",
+    "function": [
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "H2O",
+                            "deionized water"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 94.6,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": false,
+                "stir_speed": null,
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "NaAuCl4",
+                            "sodium tetrachloroaurate (NaAuCl4)"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.125,
+                        "unit": "mol/L"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 0.42000000000000004,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureTo",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "temperature": {
+                    "quantity": 90.0,
+                    "unit": "°C"
+                },
+                "adjust_method": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "ramp_rate": null
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "sodium citrate"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.01,
+                        "unit": "g/mL"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 5.0,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureForDuration",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "temperature": {
+                    "quantity": 90.0,
+                    "unit": "°C"
+                },
+                "duration": {
+                    "quantity": 1200.0,
+                    "unit": "second"
+                },
+                "adjust_method": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "ramp_rate": null,
+                "reflux": false
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureTo",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "temperature": {
+                    "quantity": 20.0,
+                    "unit": "°C"
+                },
+                "adjust_method": null,
+                "stir": false,
+                "stir_speed": null,
+                "ramp_rate": null
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureTo",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "temperature": {
+                    "quantity": 4.0,
+                    "unit": "°C"
+                },
+                "adjust_method": null,
+                "stir": false,
+                "stir_speed": null,
+                "ramp_rate": null
+            }
+        }
+    ]
+}

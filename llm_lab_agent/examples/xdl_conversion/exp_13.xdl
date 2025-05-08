@@ -1,0 +1,98 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="100mL three-necked flask"
+      type="reactor" />
+    <Component
+      id="separate container"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="Aspirin"
+      id="Aspirin"
+      role="reagent" />
+    <Reagent
+      name="Cu(OAc)2·H2O"
+      id="Cu(OAc)2·H2O"
+      role="reagent" />
+    <Reagent
+      name="Ethanol"
+      id="Ethanol"
+      role="reagent" />
+    <Reagent
+      name="Methanol"
+      id="Methanol"
+      role="reagent" />
+    <Reagent
+      name="Water"
+      id="Water"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="100mL three-necked flask"
+      reagent="Aspirin"
+      mass="1.8 g"
+      amount="1.8 g" />
+    <Add
+      vessel="100mL three-necked flask"
+      reagent="Methanol"
+      volume="15.0 mL"
+      amount="15.0 mL" />
+    <Add
+      vessel="separate container"
+      reagent="Cu(OAc)2·H2O"
+      mass="1.5 g"
+      amount="1.5 g" />
+    <Add
+      vessel="separate container"
+      reagent="Water"
+      volume="20.0 mL"
+      amount="20.0 mL" />
+    <Transfer
+      from_vessel="separate container"
+      to_vessel="100mL three-necked flask"
+      volume="all"
+      amount="all" />
+    <HeatChillToTemp
+      vessel="100mL three-necked flask"
+      temp="25.0 ℃"
+      stir_speed="300.0 rpm" />
+    <Wait
+      time="40.0 minutes" />
+    <Filter
+      vessel="100mL three-necked flask"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 ℃" />
+    <WashSolid
+      vessel="100mL three-necked flask"
+      solvent="Ethanol"
+      volume="appropriate"
+      filtrate_vessel="waste"
+      stir="False" />
+    <WashSolid
+      vessel="100mL three-necked flask"
+      solvent="Water"
+      volume="appropriate"
+      filtrate_vessel="waste"
+      stir="False" />
+    <Dry
+      vessel="100mL three-necked flask"
+      pressure="1 bar"
+      temp="20.0 ℃" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

@@ -1,0 +1,123 @@
+{
+    "NL": " In this experiment, a mixture of HfCl4 (14 mg) and H3BTB (12.5 mg) was dissolved\nin a mixture of DMF (2.05 mL), HCOOH (0.88 mL) and water (0.3 mL) in pyrex vials, and kept at 120 oC for 2 days. The products were obtained as white precipitates or crystals after heating for two days. ",
+    "function": [
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "pyrex vials",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "HfOCl2.8H2O"
+                        ]
+                    }
+                },
+                "mass": {
+                    "quantity": 17.9,
+                    "unit": "mg"
+                }
+            }
+        },
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "pyrex vials",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "H3BTB"
+                        ]
+                    }
+                },
+                "mass": {
+                    "quantity": 12.5,
+                    "unit": "mg"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "pyrex vials",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "DMF"
+                        ]
+                    },
+                    "concentration": null,
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 2.05,
+                    "unit": "mL"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "pyrex vials",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "HCOOH"
+                        ]
+                    },
+                    "concentration": null,
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 0.88,
+                    "unit": "mL"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "pyrex vials",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "water"
+                        ]
+                    },
+                    "concentration": null,
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 0.3,
+                    "unit": "mL"
+                }
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureForDuration",
+            "function_args": {
+                "reactor_name": "pyrex vials",
+                "temperature": {
+                    "quantity": 120,
+                    "unit": "℃"
+                },
+                "duration": {
+                    "quantity": 2,
+                    "unit": "days"
+                },
+                "stir": false
+            }
+        },
+        {
+            "function_name": "Precipitate",
+            "function_args": {
+                "reactor_name": "pyrex vials",
+                "temperature": null,
+                "stirring_time": null,
+                "stir_speed": null,
+                "reagent": null,
+                "reagent_quantity": null,
+                "repeat": 1
+            }
+        }
+    ]
+}

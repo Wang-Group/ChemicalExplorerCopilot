@@ -1,0 +1,112 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Teflon-lined autoclave"
+      type="reactor" />
+    <Component
+      id="reactor_1"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="(NH4)3Mo7O24"
+      id="(NH4)3Mo7O24"
+      role="reagent" />
+    <Reagent
+      name="Cu(CH3COO)2"
+      id="Cu(CH3COO)2"
+      role="reagent" />
+    <Reagent
+      name="H2C2O4"
+      id="H2C2O4"
+      role="reagent" />
+    <Reagent
+      name="HCl (2.0 mol/L)"
+      id="HCl (2.0 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="NaH2PO4"
+      id="NaH2PO4"
+      role="reagent" />
+    <Reagent
+      name="Sb2O3"
+      id="Sb2O3"
+      role="reagent" />
+    <Reagent
+      name="deionized water"
+      id="deionized water"
+      role="reagent" />
+    <Reagent
+      name="im"
+      id="im"
+      role="reagent" />
+    <Reagent
+      name="{'acid': 'HCl (2.0 mol/L)', 'base': 'None'}"
+      id="{'acid': 'HCl (2.0 mol/L)', 'base': 'None'}"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor_1"
+      reagent="deionized water"
+      volume="20.0 mL"
+      amount="20.0 mL" />
+    <Add
+      vessel="reactor_1"
+      reagent="(NH4)3Mo7O24"
+      mass="0.618 g"
+      amount="0.618 g" />
+    <Add
+      vessel="reactor_1"
+      reagent="Sb2O3"
+      mass="0.29 g"
+      amount="0.29 g" />
+    <Add
+      vessel="reactor_1"
+      reagent="NaH2PO4"
+      mass="0.14 g"
+      amount="0.14 g" />
+    <Add
+      vessel="reactor_1"
+      reagent="H2C2O4"
+      mass="0.18 g"
+      amount="0.18 g" />
+    <Add
+      vessel="reactor_1"
+      reagent="im"
+      mass="0.14 g"
+      amount="0.14 g" />
+    <Add
+      vessel="reactor_1"
+      reagent="Cu(CH3COO)2"
+      mass="0.27 g"
+      amount="0.27 g" />
+    <Stir
+      vessel="reactor_1"
+      time="3600.0 second"
+      stir_speed="300.0 rpm" />
+    <AdjustPH
+      vessel="reactor_1"
+      reagent="{'acid': 'HCl (2.0 mol/L)', 'base': 'None'}"
+      pH="2.0" />
+    <Transfer
+      from_vessel="reactor_1"
+      to_vessel="Teflon-lined autoclave"
+      volume="all"
+      amount="all" />
+    <HeatChill
+      vessel="Teflon-lined autoclave"
+      time="345600.0 second"
+      temp="165.0 °C"
+      stir="False" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

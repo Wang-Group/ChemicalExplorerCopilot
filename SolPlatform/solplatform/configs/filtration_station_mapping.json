@@ -1,0 +1,47 @@
+{
+    "Current": {
+        "Vials": {
+        },
+        "Funnels": {
+            "funnel_0": {
+                "position": "funnel_holders", 
+                "slot_index": 0, 
+                "solid": false
+            },
+            "funnel_1": {
+                "position": "funnel_holders", 
+                "slot_index": 1, 
+                "solid": false
+            }, 
+            "funnel_2": {
+                "position": "funnel_holders", 
+                "slot_index": 2, 
+                "solid": false
+            }, 
+            "funnel_3": {
+                "position": "funnel_holders", 
+                "slot_index": 3, 
+                "solid": false
+            }, 
+            "funnel_4": {
+                "position": "funnel_holders", 
+                "slot_index": 4, 
+                "solid": false
+            } 
+            
+        },
+        "Caps": {
+
+        }, 
+        "Solutions": {
+            }
+    },
+    "Storage": {
+        "Vials": {
+        },
+        "Caps": {
+        },
+        "Solutions": {
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "Reactor": {},
+    "Property": {},
+    "ChemicalNames": {},
+    "Solid": [
+        {
+            "3,3-difluorocyclobutanamine hydrochloride": {
+                "head": "[DF-CBA]Cl",
+                "maximum_mass (g)": 5
+            }
+        }, 
+        {
+            "CuCl2.2H2O": {
+                "head": "CuCl2.2H2O",
+                "maximum_mass (g)": 5
+            }
+        }
+    ],
+    "Liquid": [
+        {
+            "methanol": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "pump": "CH3OH"
+                }
+            }
+        }
+    ]
+}

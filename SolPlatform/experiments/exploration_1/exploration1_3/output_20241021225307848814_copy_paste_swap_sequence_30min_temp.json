@@ -1,0 +1,306 @@
+{
+    "reactants": [
+        {
+            "reactant": "Mn(CH3COO)2·4H2O"
+        },
+        {
+            "reactant": "CH3COOH"
+        },
+        {
+            "reactant": "KMnO4"
+        },
+        {
+            "reactant": "deionized water"
+        },
+        {
+            "reactant": "Na2WO4·2H2O"
+        }
+    ],
+    "function": [
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "CH3COOH"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 60.0,
+                        "unit": "%"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "H2O"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 10.0,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "Manganese(II) acetate tetrahydrate",
+                            "Mn(CH3COO)2·4H2O"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "mass": {
+                    "quantity": 1.0,
+                    "unit": "g"
+                },
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "StirForDuration",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "temperature": null,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "duration": {
+                    "quantity": 600.0,
+                    "unit": "second"
+                }
+            }
+        },
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "KMnO4"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "mass": {
+                    "quantity": 0.25,
+                    "unit": "g"
+                },
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "StirForDuration",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "temperature": null,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "duration": {
+                    "quantity": 3600.0,
+                    "unit": "second"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "H2O",
+                            "deionized water"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 8.9,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "TransferLiquid",
+            "function_args": {
+                "from_reactor": "reactor_1",
+                "to_reactor": "reactor_2",
+                "volume": {
+                    "quantity": 1.1,
+                    "unit": "mL"
+                },
+                "dropwise": false,
+                "stir": false,
+                "stir_speed": null
+            }
+        },
+        {
+            "function_name": "StirForDuration",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "temperature": {
+                    "quantity": 20.0,
+                    "unit": "°C"
+                },
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "duration": {
+                    "quantity": 1800.0,
+                    "unit": "second"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "Sodium tungstate dihydrate",
+                            "Na2WO4·2H2O"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.15,
+                        "unit": "g/mL"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "H2O"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 20.0,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureForDuration",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "temperature": {
+                    "quantity": 90.0,
+                    "unit": "°C"
+                },
+                "duration": {
+                    "quantity": 3600.0,
+                    "unit": "second"
+                },
+                "adjust_method": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "ramp_rate": null,
+                "reflux": false
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureTo",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "temperature": {
+                    "quantity": 20.0,
+                    "unit": "°C"
+                },
+                "adjust_method": null,
+                "stir": false,
+                "stir_speed": null,
+                "ramp_rate": null
+            }
+        },
+        {
+            "function_name": "Filter",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "target_form": "liquid",
+                "filtrate_vessel": "reactor_3",
+                "stir": false,
+                "stir_speed": null,
+                "temperature": {
+                    "quantity": 20.0,
+                    "unit": "°C"
+                },
+                "atmosphere": "air"
+            }
+        },
+        {
+            "function_name": "Evaporate",
+            "function_args": {
+                "reactor_name": "reactor_3",
+                "pressure": null,
+                "stir": false,
+                "stir_speed": null,
+                "temperature": {
+                    "quantity": 20.0,
+                    "unit": "°C"
+                },
+                "duration": {
+                    "quantity": 604800.0,
+                    "unit": "second"
+                }
+            }
+        }
+    ]
+}

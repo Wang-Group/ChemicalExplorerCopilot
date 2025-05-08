@@ -1,0 +1,79 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Teflon-lined stainless steel vessel"
+      type="reactor" />
+    <Component
+      id="reactor_1"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="3-tpt"
+      id="3-tpt"
+      role="reagent" />
+    <Reagent
+      name="MoO3"
+      id="MoO3"
+      role="reagent" />
+    <Reagent
+      name="NaOH (1.0 mol/L)"
+      id="NaOH (1.0 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="water"
+      id="water"
+      role="reagent" />
+    <Reagent
+      name="{'acid': 'None', 'base': 'NaOH (1.0 mol/L)'}"
+      id="{'acid': 'None', 'base': 'NaOH (1.0 mol/L)'}"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor_1"
+      reagent="MoO3"
+      mass="0.00016 mol"
+      amount="0.00016 mol" />
+    <Add
+      vessel="reactor_1"
+      reagent="3-tpt"
+      mass="8e-05 mol"
+      amount="8e-05 mol" />
+    <Add
+      vessel="reactor_1"
+      reagent="water"
+      volume="5.0 mL"
+      stir="True"
+      stir_speed="300.0 rpm"
+      amount="5.0 mL" />
+    <Stir
+      vessel="reactor_1"
+      time="1800.0 second"
+      stir_speed="300.0 rpm" />
+    <AdjustPH
+      vessel="reactor_1"
+      reagent="{'acid': 'None', 'base': 'NaOH (1.0 mol/L)'}"
+      pH="{'min': 5.0, 'max': 6.0}"
+      stir_speed="300.0 rpm" />
+    <Transfer
+      from_vessel="reactor_1"
+      to_vessel="Teflon-lined stainless steel vessel"
+      volume="all"
+      amount="all" />
+    <HeatChill
+      vessel="Teflon-lined stainless steel vessel"
+      time="259200.0 second"
+      temp="180.0 °C"
+      stir="False" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

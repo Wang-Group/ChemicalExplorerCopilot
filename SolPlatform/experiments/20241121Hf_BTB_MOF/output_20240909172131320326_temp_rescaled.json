@@ -1,0 +1,128 @@
+{
+    "NL": "A mixture of HfOCl2·8H2O (61 mg) and H3BTB (65 mg) was dissolved in a mixture of DMF (7.5 mL) and HCOOH (4.5mL) in a Teflon-lined autoclave, and kept at 120 oC for 3 days.",
+    "function": [
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "Teflon-lined autoclave",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "HfOCl2.8H2O",
+                            "HfOCl2·8H2O"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "mass": {
+                    "quantity": 0.050833333333333335,
+                    "unit": "g"
+                },
+                "stir": false,
+                "stir_speed": null
+            }
+        },
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "Teflon-lined autoclave",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "1,3,5-Tris(4-carboxyphenyl)benzene",
+                            "H3BTB"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "mass": {
+                    "quantity": 0.05416666666666667,
+                    "unit": "g"
+                },
+                "stir": false,
+                "stir_speed": null
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "Teflon-lined autoclave",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "DMF"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 6.25,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": false,
+                "stir_speed": null,
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "Teflon-lined autoclave",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "HCOOH"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 3.75,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": false,
+                "stir_speed": null,
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureForDuration",
+            "function_args": {
+                "reactor_name": "Teflon-lined autoclave",
+                "temperature": {
+                    "quantity": 120.0,
+                    "unit": "°C"
+                },
+                "duration": {
+                    "quantity": 259200.0,
+                    "unit": "second"
+                },
+                "adjust_method": null,
+                "stir": false,
+                "stir_speed": null,
+                "ramp_rate": null,
+                "reflux": false
+            }
+        }
+    ]
+}

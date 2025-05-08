@@ -1,0 +1,465 @@
+10-17-24 12:07:24 root         INFO     successful connection to the controller
+10-17-24 12:07:24 root         INFO     output port enable successful
+10-17-24 12:07:24 root         INFO     setting parameters succeed
+10-17-24 12:07:24 commanduino.commandmanager.CommandManager WARNING  No command handler type provided in configuration. Falling back to serial.
+10-17-24 12:07:24 commanduino.commandmanager.CommandManager INFO     Created serial-based command handler for :COM26.
+10-17-24 12:07:26 commanduino.commandmanager.CommandManager INFO     Found Arduino CommandManager at :COM26, init time was 2.01 seconds
+10-17-24 12:07:26 root         INFO     send:b'\xfe\xa0\x00\x00\x00\xa0'
+10-17-24 12:07:27 root         INFO     receive:b'\xfd\xa0\x00\x00\x00\xa0'
+10-17-24 12:07:27 root         INFO     HotPlate Connected
+10-17-24 12:07:29 commanduino.commandmanager.CommandManager WARNING  No command handler type provided in configuration. Falling back to serial.
+10-17-24 12:07:29 commanduino.commandmanager.CommandManager INFO     Created serial-based command handler for :COM10.
+10-17-24 12:07:31 commanduino.commandmanager.CommandManager INFO     Found Arduino CommandManager at :COM10, init time was 2.01 seconds
+10-17-24 12:07:41 root         INFO     gripper pgse is initializing
+10-17-24 12:07:42 root         INFO     gripper pgse initialization successful
+10-17-24 12:07:51 root         INFO     pump_restoration succeed, current volume is 0.
+10-17-24 12:08:00 root         INFO     pump_restoration succeed, current volume is 0.
+10-17-24 12:08:28 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:08:33 root         INFO     Injector initialization succeed :) 
+10-17-24 12:08:33 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:08:34 root         INFO     absolute_move succeed!
+10-17-24 12:08:34 root         INFO     axis z1's speed change, current speed 30
+10-17-24 12:08:34 root         INFO     axis z2's speed change, current speed 30
+10-17-24 12:08:35 root         INFO     axis z1's speed change, current speed 100
+10-17-24 12:08:35 root         INFO     axis z1 return home successful
+10-17-24 12:08:40 root         INFO     axis z2's speed change, current speed 100
+10-17-24 12:08:40 root         INFO     axis z2 return home successful
+10-17-24 12:08:40 root         INFO     axis x's speed change, current speed 30
+10-17-24 12:08:40 root         INFO     axis y's speed change, current speed 30
+10-17-24 12:08:44 root         INFO     axis y's speed change, current speed 100
+10-17-24 12:08:44 root         INFO     axis y return home successful
+10-17-24 12:08:45 root         INFO     axis x's speed change, current speed 100
+10-17-24 12:08:45 root         INFO     axis x return home successful
+10-17-24 12:08:45 root         INFO     all axes return home successful
+10-17-24 12:08:45 root         INFO     gripper rgi30 is initializing
+10-17-24 12:08:52 root         INFO     gripper rgi30 set_rotation_angle successful, rotation_angle: -90
+10-17-24 12:08:53 root         INFO     gripper rgi30 initialization successful
+10-17-24 12:08:53 root         INFO     gripper pge50 is initializing
+10-17-24 12:08:59 root         INFO     gripper pge50 initialization successful
+10-17-24 12:09:01 root         INFO     valve_restoration succeed, current channel is 15!
+10-17-24 12:09:02 root         INFO     restoration succeed.
+10-17-24 12:09:04 root         INFO     current channel: 7
+10-17-24 12:09:10 root         INFO     pump_restoration succeed, current volume is 0.
+10-17-24 12:09:10 root         INFO     current channel: 8
+10-17-24 12:09:11 root         INFO     current channel: 1
+10-17-24 12:09:11 root         INFO     current_speed is 0.7.
+10-17-24 12:09:23 root         INFO     move_to_absolute_position succeed, current position is 3000 step & 5.0 mL.
+10-17-24 12:09:24 root         INFO     current channel: 7
+10-17-24 12:09:24 root         INFO     current_speed is 1.75.
+10-17-24 12:09:29 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+10-17-24 12:09:29 root         INFO     send:b'\xfe\xa0\x00\x00\x00\xa0'
+10-17-24 12:09:30 root         INFO     receive:b'\xfd\xa0\x00\x00\x00\xa0'
+10-17-24 12:09:30 root         INFO     HotPlate Connected
+10-17-24 12:09:34 root         INFO     gripper rgi100 is initializing
+10-17-24 12:09:37 root         INFO     gripper rgi100 set_rotation_angle successful, rotation_angle: -90
+10-17-24 12:09:38 root         INFO     gripper rgi100 initialization successful
+10-17-24 12:09:38 root         INFO     gripper rgi100 set_force successful, force: 50
+10-17-24 12:09:39 root         INFO     restoration succeed.
+10-17-24 12:10:02 root         INFO     move to x:65.8, y:287.4, z1:170, z2:0
+10-17-24 12:10:10 root         INFO     move to x:14.5, y:485.9, z1:117.8, z2:0
+10-17-24 12:10:22 root         INFO     gripper rgi30 set_rotation_angle successful, rotation_angle: 900
+10-17-24 12:10:22 root         INFO     move to x:65.5, y:243.0, z1:194, z2:0
+10-17-24 12:10:31 root         INFO     send:b'\xfe\xb1\x01,\x00\xde'
+10-17-24 12:10:32 root         INFO     receive:b'\xfd\xb1\x00\x00\x00\xb1'
+10-17-24 12:10:32 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:10:34 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:10:34 root         INFO     already stirring!
+10-17-24 12:10:34 root         INFO     move to x:14.5, y:485.9, z1:117.8, z2:0
+10-17-24 12:10:44 root         INFO     move to x:156.8, y:532.2, z1:85, z2:0
+10-17-24 12:10:51 root         INFO     move to x:228.7, y:248.1, z1:0, z2:199
+10-17-24 12:10:59 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:11:00 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:11:00 root         INFO     move to x:65.6, y:278, z1:0, z2:197.5
+10-17-24 12:11:09 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:11:11 root         INFO     absorb succeed!
+10-17-24 12:11:11 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:11:11 root         INFO     move to x:155.5, y:433.2, z1:0, z2:50
+10-17-24 12:11:19 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:11:21 root         INFO     injecting succeed!
+10-17-24 12:11:22 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:11:23 root         INFO     absorb succeed!
+10-17-24 12:11:23 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:11:23 root         INFO     inject succeed.
+10-17-24 12:11:23 root         INFO     move to x:65.6, y:278, z1:0, z2:197.5
+10-17-24 12:11:31 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:11:33 root         INFO     absorb succeed!
+10-17-24 12:11:33 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:11:33 root         INFO     move to x:155.5, y:433.2, z1:0, z2:50
+10-17-24 12:11:40 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:11:42 root         INFO     injecting succeed!
+10-17-24 12:11:44 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:11:45 root         INFO     absorb succeed!
+10-17-24 12:11:45 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:11:45 root         INFO     inject succeed.
+10-17-24 12:11:45 root         INFO     move to x:65.6, y:278, z1:0, z2:197.5
+10-17-24 12:11:53 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:11:54 root         INFO     absorb succeed!
+10-17-24 12:11:55 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:11:55 root         INFO     move to x:155.5, y:433.2, z1:0, z2:50
+10-17-24 12:12:02 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:12:04 root         INFO     injecting succeed!
+10-17-24 12:12:05 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:12:06 root         INFO     absorb succeed!
+10-17-24 12:12:06 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:12:06 root         INFO     inject succeed.
+10-17-24 12:12:06 root         INFO     move to x:65.6, y:278, z1:0, z2:197.5
+10-17-24 12:12:14 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:12:16 root         INFO     absorb succeed!
+10-17-24 12:12:16 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:12:16 root         INFO     move to x:155.5, y:433.2, z1:0, z2:50
+10-17-24 12:12:23 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:12:25 root         INFO     injecting succeed!
+10-17-24 12:12:27 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:12:28 root         INFO     absorb succeed!
+10-17-24 12:12:28 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:12:28 root         INFO     inject succeed.
+10-17-24 12:12:28 root         INFO     move to x:65.6, y:278, z1:0, z2:197.5
+10-17-24 12:12:36 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:12:37 root         INFO     absorb succeed!
+10-17-24 12:12:37 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:12:37 root         INFO     move to x:155.5, y:433.2, z1:0, z2:105
+10-17-24 12:12:45 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:12:46 root         INFO     injecting succeed!
+10-17-24 12:12:48 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:12:49 root         INFO     absorb succeed!
+10-17-24 12:12:49 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:12:49 root         INFO     inject succeed.
+10-17-24 12:12:49 root         INFO     move to x:115, y:75, z1:0, z2:160
+10-17-24 12:13:08 root         INFO     send:b'\xfe\xb1\x01,\x00\xde'
+10-17-24 12:13:09 root         INFO     receive:b'\xfd\xb1\x00\x00\x00\xb1'
+10-17-24 12:13:09 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:13:10 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:13:10 root         INFO     already stirring!
+10-17-24 12:13:10 root         INFO     move to x:239.1, y:248.1, z1:0, z2:199
+10-17-24 12:13:18 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:13:19 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:13:19 root         INFO     move to x:176.8, y:278, z1:0, z2:197.5
+10-17-24 12:13:28 root         INFO     current_speed is 0.1 mL/s.
+10-17-24 12:13:30 root         WARNING  the absorbed volume is not so correct, set volume is 0.02377782004945787, current volume is 0.023333333333333317
+10-17-24 12:13:30 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:13:30 root         INFO     move to x:155.5, y:433.2, z1:0, z2:105
+10-17-24 12:13:37 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:13:39 root         INFO     injecting succeed!
+10-17-24 12:13:40 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:13:41 root         INFO     absorb succeed!
+10-17-24 12:13:42 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:13:42 root         INFO     inject succeed.
+10-17-24 12:13:42 root         INFO     move to x:155.5, y:433.2, z1:0, z2:105
+10-17-24 12:13:44 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:13:44 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:13:46 root         INFO     absolute_move succeed!
+10-17-24 12:13:46 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:13:48 root         INFO     absolute_move succeed!
+10-17-24 12:13:48 root         INFO     mix succeed!
+10-17-24 12:13:48 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:13:50 root         INFO     absolute_move succeed!
+10-17-24 12:13:50 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:13:52 root         INFO     absolute_move succeed!
+10-17-24 12:13:52 root         INFO     mix succeed!
+10-17-24 12:13:52 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:13:52 root         INFO     move to x:115, y:75, z1:0, z2:160
+10-17-24 12:14:11 root         WARNING  controlling the temperature of the added liquid is not supported for now. Currently all the reagents are in room temperature.
+10-17-24 12:14:11 root         INFO     send:b'\xfe\xb1\x01,\x00\xde'
+10-17-24 12:14:12 root         INFO     receive:b'\xfd\xb1\x00\x00\x00\xb1'
+10-17-24 12:14:12 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:14:13 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:14:13 root         INFO     already stirring!
+10-17-24 12:14:13 root         INFO     move to x:249.9, y:248.1, z1:0, z2:199
+10-17-24 12:14:21 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:14:22 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:14:22 root         INFO     move to x:93.2, y:278, z1:0, z2:197.5
+10-17-24 12:14:32 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:14:33 root         INFO     absorb succeed!
+10-17-24 12:14:33 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:14:33 root         INFO     move to x:155.5, y:433.2, z1:0, z2:105
+10-17-24 12:14:41 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:14:42 root         INFO     injecting succeed!
+10-17-24 12:14:44 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:14:45 root         INFO     absorb succeed!
+10-17-24 12:14:45 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:14:45 root         INFO     inject succeed.
+10-17-24 12:14:45 root         INFO     move to x:115, y:75, z1:0, z2:160
+10-17-24 12:15:04 root         INFO     move to x:156.8, y:532.2, z1:85, z2:0
+10-17-24 12:15:14 root         INFO     move to x:-9.2, y:110.7, z1:156, z2:0
+10-17-24 12:45:26 root         INFO     move to x:-9.2, y:110.7, z1:156, z2:0
+10-17-24 12:45:27 root         INFO     move to x:156.8, y:532.2, z1:85, z2:0
+10-17-24 12:45:37 root         INFO     move to x:94, y:287.7, z1:170, z2:0
+10-17-24 12:45:46 root         INFO     move to x:14.5, y:485.9, z1:117.8, z2:0
+10-17-24 12:45:58 root         INFO     gripper rgi30 set_rotation_angle successful, rotation_angle: 900
+10-17-24 12:45:58 root         INFO     move to x:93.4, y:243.1, z1:194, z2:0
+10-17-24 12:46:07 root         INFO     send:b'\xfe\xb1\x01,\x00\xde'
+10-17-24 12:46:08 root         INFO     receive:b'\xfd\xb1\x00\x00\x00\xb1'
+10-17-24 12:46:08 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:46:09 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:46:09 root         INFO     already stirring!
+10-17-24 12:46:10 root         INFO     move to x:14.5, y:485.9, z1:117.8, z2:0
+10-17-24 12:46:19 root         INFO     move to x:191, y:532.4, z1:85, z2:0
+10-17-24 12:46:27 root         INFO     move to x:260.3, y:248, z1:0, z2:199
+10-17-24 12:46:35 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:46:36 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:46:36 root         INFO     move to x:65.6, y:278, z1:0, z2:197.5
+10-17-24 12:46:46 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:46:48 root         INFO     absorb succeed!
+10-17-24 12:46:48 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:46:48 root         INFO     move to x:189.7, y:433.4, z1:0, z2:50
+10-17-24 12:46:55 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:46:57 root         INFO     injecting succeed!
+10-17-24 12:46:58 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:47:00 root         INFO     absorb succeed!
+10-17-24 12:47:00 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:47:00 root         INFO     inject succeed.
+10-17-24 12:47:00 root         INFO     move to x:65.6, y:278, z1:0, z2:197.5
+10-17-24 12:47:07 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:47:09 root         INFO     absorb succeed!
+10-17-24 12:47:09 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:47:09 root         INFO     move to x:189.7, y:433.4, z1:0, z2:50
+10-17-24 12:47:16 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:47:19 root         INFO     injecting succeed!
+10-17-24 12:47:20 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:47:21 root         INFO     absorb succeed!
+10-17-24 12:47:21 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:47:21 root         INFO     inject succeed.
+10-17-24 12:47:21 root         INFO     move to x:65.6, y:278, z1:0, z2:197.5
+10-17-24 12:47:29 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:47:31 root         INFO     absorb succeed!
+10-17-24 12:47:31 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:47:31 root         INFO     move to x:189.7, y:433.4, z1:0, z2:50
+10-17-24 12:47:38 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:47:40 root         INFO     injecting succeed!
+10-17-24 12:47:41 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:47:43 root         INFO     absorb succeed!
+10-17-24 12:47:43 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:47:43 root         INFO     inject succeed.
+10-17-24 12:47:43 root         INFO     move to x:65.6, y:278, z1:0, z2:197.5
+10-17-24 12:47:50 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:47:52 root         INFO     absorb succeed!
+10-17-24 12:47:52 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:47:52 root         INFO     move to x:189.7, y:433.4, z1:0, z2:50
+10-17-24 12:47:59 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:48:02 root         INFO     injecting succeed!
+10-17-24 12:48:03 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:48:04 root         INFO     absorb succeed!
+10-17-24 12:48:04 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:48:04 root         INFO     inject succeed.
+10-17-24 12:48:04 root         INFO     move to x:65.6, y:278, z1:0, z2:197.5
+10-17-24 12:48:12 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:48:14 root         INFO     absorb succeed!
+10-17-24 12:48:14 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:48:14 root         INFO     move to x:189.7, y:433.4, z1:0, z2:50
+10-17-24 12:48:21 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:48:23 root         INFO     injecting succeed!
+10-17-24 12:48:24 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:48:26 root         INFO     absorb succeed!
+10-17-24 12:48:26 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:48:26 root         INFO     inject succeed.
+10-17-24 12:48:26 root         INFO     move to x:65.6, y:278, z1:0, z2:197.5
+10-17-24 12:48:33 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:48:35 root         INFO     absorb succeed!
+10-17-24 12:48:35 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:48:35 root         INFO     move to x:189.7, y:433.4, z1:0, z2:50
+10-17-24 12:48:42 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:48:45 root         INFO     injecting succeed!
+10-17-24 12:48:46 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:48:47 root         INFO     absorb succeed!
+10-17-24 12:48:47 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:48:47 root         INFO     inject succeed.
+10-17-24 12:48:47 root         INFO     move to x:65.6, y:278, z1:0, z2:197.5
+10-17-24 12:48:55 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:48:57 root         INFO     absorb succeed!
+10-17-24 12:48:57 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:48:57 root         INFO     move to x:189.7, y:433.4, z1:0, z2:50
+10-17-24 12:49:04 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:49:06 root         INFO     injecting succeed!
+10-17-24 12:49:07 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:49:09 root         INFO     absorb succeed!
+10-17-24 12:49:09 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:49:09 root         INFO     inject succeed.
+10-17-24 12:49:09 root         INFO     move to x:65.6, y:278, z1:0, z2:197.5
+10-17-24 12:49:16 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:49:18 root         INFO     absorb succeed!
+10-17-24 12:49:18 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:49:18 root         INFO     move to x:189.7, y:433.4, z1:0, z2:50
+10-17-24 12:49:25 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:49:28 root         INFO     injecting succeed!
+10-17-24 12:49:29 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:49:30 root         INFO     absorb succeed!
+10-17-24 12:49:30 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:49:30 root         INFO     inject succeed.
+10-17-24 12:49:30 root         INFO     move to x:65.6, y:278, z1:0, z2:197.5
+10-17-24 12:49:38 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:49:40 root         INFO     absorb succeed!
+10-17-24 12:49:40 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:49:40 root         INFO     move to x:189.7, y:433.4, z1:0, z2:50
+10-17-24 12:49:47 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:49:49 root         INFO     injecting succeed!
+10-17-24 12:49:50 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:49:52 root         INFO     absorb succeed!
+10-17-24 12:49:52 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:49:52 root         INFO     inject succeed.
+10-17-24 12:49:52 root         INFO     move to x:65.6, y:278, z1:0, z2:197.5
+10-17-24 12:49:59 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:50:01 root         INFO     absorb succeed!
+10-17-24 12:50:01 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:50:01 root         INFO     move to x:189.7, y:433.4, z1:0, z2:105
+10-17-24 12:50:09 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:50:10 root         INFO     injecting succeed!
+10-17-24 12:50:12 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:50:13 root         INFO     absorb succeed!
+10-17-24 12:50:13 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:50:13 root         INFO     inject succeed.
+10-17-24 12:50:13 root         INFO     move to x:115, y:75, z1:0, z2:160
+10-17-24 12:50:32 root         INFO     send:b'\xfe\xb1\x01,\x00\xde'
+10-17-24 12:50:33 root         INFO     receive:b'\xfd\xb1\x00\x00\x00\xb1'
+10-17-24 12:50:33 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:50:34 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:50:34 root         INFO     already stirring!
+10-17-24 12:50:34 root         INFO     move to x:270.9, y:248, z1:0, z2:199
+10-17-24 12:50:42 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:50:43 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:50:43 root         INFO     move to x:176.8, y:278, z1:0, z2:197.5
+10-17-24 12:50:52 root         INFO     current_speed is 0.1 mL/s.
+10-17-24 12:50:55 root         WARNING  the absorbed volume is not so correct, set volume is 0.09511128019783148, current volume is 0.09458333333333335
+10-17-24 12:50:55 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:50:55 root         INFO     move to x:189.7, y:433.4, z1:0, z2:105
+10-17-24 12:51:02 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:51:04 root         INFO     injecting succeed!
+10-17-24 12:51:05 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:51:06 root         INFO     absorb succeed!
+10-17-24 12:51:07 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:51:07 root         INFO     inject succeed.
+10-17-24 12:51:07 root         INFO     move to x:189.7, y:433.4, z1:0, z2:105
+10-17-24 12:51:09 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:51:09 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:51:11 root         INFO     absolute_move succeed!
+10-17-24 12:51:11 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:51:13 root         INFO     absolute_move succeed!
+10-17-24 12:51:13 root         INFO     mix succeed!
+10-17-24 12:51:13 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:51:15 root         INFO     absolute_move succeed!
+10-17-24 12:51:15 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:51:17 root         INFO     absolute_move succeed!
+10-17-24 12:51:17 root         INFO     mix succeed!
+10-17-24 12:51:17 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:51:17 root         INFO     move to x:115, y:75, z1:0, z2:160
+10-17-24 12:51:36 root         INFO     send:b'\xfe\xb1\x01,\x00\xde'
+10-17-24 12:51:37 root         INFO     receive:b'\xfd\xb1\x00\x00\x00\xb1'
+10-17-24 12:51:37 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:51:38 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:51:38 root         INFO     already stirring!
+10-17-24 12:51:38 root         INFO     move to x:281.1, y:248, z1:0, z2:199
+10-17-24 12:51:46 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:51:47 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:51:47 root         INFO     move to x:121.2, y:278, z1:0, z2:197.5
+10-17-24 12:51:57 root         INFO     current_speed is 0.1 mL/s.
+10-17-24 12:52:00 root         INFO     absorb succeed!
+10-17-24 12:52:00 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:52:00 root         INFO     move to x:189.7, y:433.4, z1:0, z2:105
+10-17-24 12:52:07 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:52:08 root         INFO     injecting succeed!
+10-17-24 12:52:10 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:52:11 root         INFO     absorb succeed!
+10-17-24 12:52:11 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:52:11 root         INFO     inject succeed.
+10-17-24 12:52:11 root         INFO     move to x:189.7, y:433.4, z1:0, z2:105
+10-17-24 12:52:14 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:52:14 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:52:16 root         INFO     absolute_move succeed!
+10-17-24 12:52:16 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:52:18 root         INFO     absolute_move succeed!
+10-17-24 12:52:18 root         INFO     mix succeed!
+10-17-24 12:52:18 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:52:20 root         INFO     absolute_move succeed!
+10-17-24 12:52:20 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:52:22 root         INFO     absolute_move succeed!
+10-17-24 12:52:22 root         INFO     mix succeed!
+10-17-24 12:52:22 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:52:22 root         INFO     move to x:115, y:75, z1:0, z2:160
+10-17-24 12:52:41 root         INFO     send:b'\xfe\xb1\x01,\x00\xde'
+10-17-24 12:52:42 root         INFO     receive:b'\xfd\xb1\x00\x00\x00\xb1'
+10-17-24 12:52:42 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:52:43 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:52:43 root         INFO     already stirring!
+10-17-24 12:52:44 root         INFO     move to x:178, y:287.4, z1:170, z2:0
+10-17-24 12:52:53 root         INFO     move to x:14.5, y:485.9, z1:117.8, z2:0
+10-17-24 12:53:05 root         INFO     gripper rgi30 set_rotation_angle successful, rotation_angle: 900
+10-17-24 12:53:05 root         INFO     move to x:121, y:243.0, z1:194, z2:0
+10-17-24 12:53:15 root         INFO     move to x:14.5, y:485.9, z1:117.8, z2:0
+10-17-24 12:53:24 root         INFO     move to x:178, y:287.4, z1:170, z2:0
+10-17-24 12:53:32 root         INFO     move to x:291.8, y:248, z1:0, z2:199
+10-17-24 12:53:40 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:53:41 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:53:41 root         INFO     move to x:175.7, y:188, z1:0, z2:197.5
+10-17-24 12:53:50 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:53:51 root         INFO     absorb succeed!
+10-17-24 12:53:51 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:53:51 root         INFO     move to x:189.7, y:433.4, z1:0, z2:105
+10-17-24 12:54:00 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:54:01 root         INFO     injecting succeed!
+10-17-24 12:54:03 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:54:04 root         INFO     absorb succeed!
+10-17-24 12:54:04 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:54:04 root         INFO     inject succeed.
+10-17-24 12:54:04 root         INFO     move to x:115, y:75, z1:0, z2:160
+10-17-24 12:54:22 root         INFO     send:b'\xfe\xb1\x01,\x00\xde'
+10-17-24 12:54:24 root         INFO     receive:b'\xfd\xb1\x00\x00\x00\xb1'
+10-17-24 12:54:24 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:54:25 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:54:25 root         INFO     already stirring!
+10-17-24 12:54:25 root         INFO     move to x:302.2, y:247.8, z1:0, z2:199
+10-17-24 12:54:33 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:54:34 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:54:34 root         INFO     move to x:149.2, y:278, z1:0, z2:197.5
+10-17-24 12:54:43 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:54:44 root         INFO     absorb succeed!
+10-17-24 12:54:44 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:54:44 root         INFO     move to x:189.7, y:433.4, z1:0, z2:105
+10-17-24 12:54:52 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:54:53 root         INFO     injecting succeed!
+10-17-24 12:54:55 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:54:56 root         INFO     absorb succeed!
+10-17-24 12:54:56 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:54:56 root         INFO     inject succeed.
+10-17-24 12:54:56 root         INFO     move to x:115, y:75, z1:0, z2:160
+10-17-24 12:55:15 root         INFO     send:b'\xfe\xb1\x01,\x00\xde'
+10-17-24 12:55:16 root         INFO     receive:b'\xfd\xb1\x00\x00\x00\xb1'
+10-17-24 12:55:16 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:55:17 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:55:17 root         INFO     already stirring!
+10-17-24 12:55:17 root         INFO     move to x:313, y:247.8, z1:0, z2:199
+10-17-24 12:55:25 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:55:26 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:55:26 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:55:27 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+10-17-24 12:55:27 root         INFO     send:b'\xfe\xb9\x00\x00\x00\xb9'
+10-17-24 12:55:29 root         INFO     receive:b'\xfd\xb9\x00\x00\x00\xb9'
+10-17-24 12:55:29 root         INFO     stirring is off!
+10-17-24 12:55:29 root         INFO     move to x:155.5, y:433.2, z1:0, z2:114.5
+10-17-24 12:55:38 root         INFO     current_speed is 0.1 mL/s.
+10-17-24 12:55:40 root         INFO     absorb succeed!
+10-17-24 12:55:40 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:55:40 root         INFO     move to x:189.7, y:433.4, z1:0, z2:105
+10-17-24 12:55:45 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+10-17-24 12:55:47 root         INFO     receive:b'\xfd\xa1\x02\x01\x01\x01\xa6'
+10-17-24 12:55:47 root         INFO     send:b'\xfe\xb9\x00\x00\x00\xb9'
+10-17-24 12:55:48 root         INFO     receive:b'\xfd\xb9\x00\x00\x00\xb9'
+10-17-24 12:55:48 root         INFO     stirring is on!
+10-17-24 12:55:48 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:55:49 root         INFO     injecting succeed!
+10-17-24 12:55:51 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:55:52 root         INFO     absorb succeed!
+10-17-24 12:55:52 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:55:52 root         INFO     inject succeed.
+10-17-24 12:55:52 root         INFO     move to x:189.7, y:433.4, z1:0, z2:105
+10-17-24 12:55:54 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:55:55 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:55:56 root         INFO     absolute_move succeed!
+10-17-24 12:55:57 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:55:58 root         INFO     absolute_move succeed!
+10-17-24 12:55:58 root         INFO     mix succeed!
+10-17-24 12:55:58 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:56:00 root         INFO     absolute_move succeed!
+10-17-24 12:56:01 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:56:02 root         INFO     absolute_move succeed!
+10-17-24 12:56:02 root         INFO     mix succeed!
+10-17-24 12:56:02 root         INFO     current_speed is 0.8333333333333334 mL/s.
+10-17-24 12:56:02 root         INFO     move to x:115, y:75, z1:0, z2:160

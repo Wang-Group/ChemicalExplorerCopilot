@@ -1,0 +1,269 @@
+{
+    "NL": "2.42 g (10.00 mmol) of disodium molybdate dihydrate (Na2MoO4·2H2O) is dissolved in 35 mL of distilled water under the condition of vigorous stirring. While maintaining continuous stirring, 13.5 mL of a sodium dihydrogen phosphate solution (0.5 mol/L), 10 mL of copper(II) chloride solution (1 mol/L), and 5 mL of ethylenediamine solution (0.3 mol/L) are sequentially and slowly added to the solution. Following these additions, the pH of the resulting mixture is carefully adjusted to 5.5 using 4.0 M hydrochloric acid (HCl). The mixture is then heated to 85°C with continuous stirring and held at this temperature for one hour. After this period, the mixture undergoes hot filtration to get the solution. Crystals will form upon cooling to room temperature.",
+    "function": [
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "reactor1",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "Na2MoO4.2H2O",
+                            "Na2MoO4·2H2O"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "mass": {
+                    "quantity": 2.42,
+                    "unit": "g"
+                },
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "H2O",
+                            "distilled water"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 35.0,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "sodium dihydrogen phosphate"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.5,
+                        "unit": "mol/L"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 13.5,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "dropwise": true
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "CuCl2",
+                            "copper(II) chloride"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 1.0,
+                        "unit": "mol/L"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 10.0,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "dropwise": true
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "ethylenediamine"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.3,
+                        "unit": "mol/L"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 5.0,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "dropwise": true
+            }
+        },
+        {
+            "function_name": "AdjustpH",
+            "function_args": {
+                "reactor_name": "reactor1",
+                "pH": 5.5,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "acid_reagent": {
+                    "identity": {
+                        "chemical_id": [
+                            "hydrochloric acid",
+                            "HCl"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 4.0,
+                        "unit": "mol/L"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "base_reagent": {
+                    "identity": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                }
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureForDuration",
+            "function_args": {
+                "reactor_name": "reactor1",
+                "temperature": {
+                    "quantity": 85.0,
+                    "unit": "°C"
+                },
+                "duration": {
+                    "quantity": 3600.0,
+                    "unit": "second"
+                },
+                "adjust_method": null,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300.0,
+                    "unit": "rpm"
+                },
+                "ramp_rate": null,
+                "reflux": false
+            }
+        },
+        {
+            "function_name": "Filter",
+            "function_args": {
+                "reactor_name": "reactor1",
+                "target_form": "liquid",
+                "filtrate_vessel": "reactor2",
+                "stir": false,
+                "stir_speed": null,
+                "temperature": {
+                    "quantity": 85.0,
+                    "unit": "°C"
+                },
+                "atmosphere": "air"
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureTo",
+            "function_args": {
+                "reactor_name": "reactor2",
+                "temperature": {
+                    "quantity": 20.0,
+                    "unit": "°C"
+                },
+                "adjust_method": null,
+                "stir": false,
+                "stir_speed": null,
+                "ramp_rate": null
+            }
+        }
+    ]
+}

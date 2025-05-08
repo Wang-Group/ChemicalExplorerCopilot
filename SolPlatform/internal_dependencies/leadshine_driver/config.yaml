@@ -1,0 +1,10 @@
+peak_current: 30 # unit: 0.1 A
+pulse_circle: 10000
+pitch_of_screws: 4
+moving_param: [10, 30, 20] # [acc, dec, defualt_speed] 
+datum_param: [20, 1, 500, 500, 5] # [datum_rapid_speed, datum_slow_speed, datum_acc, datum_dec, datum_mode]
+ip: 
+  datum_in: Pr4.04
+op: 
+  brk: Pr4.12
+  relay: Pr4.11

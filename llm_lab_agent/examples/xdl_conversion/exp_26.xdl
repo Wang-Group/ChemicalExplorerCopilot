@@ -1,0 +1,80 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="reactor_A"
+      type="reactor" />
+    <Component
+      id="reactor_B"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="(NH4)6Mo7O24·4H2O"
+      id="(NH4)6Mo7O24·4H2O"
+      role="reagent" />
+    <Reagent
+      name="H2O"
+      id="H2O"
+      role="reagent" />
+    <Reagent
+      name="ZnSO4·7H2O"
+      id="ZnSO4·7H2O"
+      role="reagent" />
+    <Reagent
+      name="distilled H2O"
+      id="distilled H2O"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor_A"
+      reagent="(NH4)6Mo7O24·4H2O"
+      mass="2.5 g"
+      amount="2.5 g" />
+    <Add
+      vessel="reactor_A"
+      reagent="H2O"
+      volume="40.0 mL"
+      amount="40.0 mL" />
+    <Add
+      vessel="reactor_B"
+      reagent="ZnSO4·7H2O"
+      mass="0.5 g"
+      amount="0.5 g" />
+    <Add
+      vessel="reactor_B"
+      reagent="distilled H2O"
+      volume="29.0 mL"
+      amount="29.0 mL" />
+    <Transfer
+      from_vessel="reactor_B"
+      to_vessel="reactor_A"
+      volume="all"
+      amount="all" />
+    <Evaporate
+      vessel="reactor_A"
+      temp="115.0 °C" />
+    <Filter
+      vessel="reactor_A"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="115.0 °C" />
+    <HeatChill
+      vessel="reactor_A"
+      time="appropriate"
+      temp="20.0 °C"
+      stir="False" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

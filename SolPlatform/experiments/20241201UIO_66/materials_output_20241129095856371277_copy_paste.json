@@ -1,0 +1,49 @@
+{
+    "Reactor": {},
+    "Property": {},
+    "ChemicalNames": {},
+    "Solid": [
+        {
+            "ZrCl4": {
+                "head": "ZrCl4",
+                "maximum_mass (g)": 5
+            }
+        }, 
+        {
+            "1,4-benzenedicarboxylic acid": {
+                "head": "TPA",
+                "maximum_mass (g)": 5
+            }
+        }
+    ],
+    "Liquid": [
+        {
+            "H2O": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "pump": "H2O"
+                }
+            }
+        }, 
+        {
+            "DMF": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "reactor": "storage_reactor0", 
+                    "pump_filtration": "DMF"
+                }
+            }
+        }, 
+        {
+            "HCOOH": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "reactor": "storage_reactor1"
+                }
+            }
+        }
+    ]
+}

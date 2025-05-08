@@ -1,0 +1,50 @@
+{
+    "Reactor": {},
+    "Property": {},
+    "ChemicalNames": {},
+    "Solid": [
+        {
+            "Aspirin": {
+                "head": "Aspirin",
+                "maximum_mass (g)": 5
+            }
+        }, 
+        {
+            "Cu(OAc)2.H2O": {
+                "head": "Cu(OAc)2.H2O",
+                "maximum_mass (g)": 5
+            }
+        }
+    ],
+    "Liquid": [
+        {
+            "methanol": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "pump": "CH3OH"
+                }
+            }
+        }, 
+        {
+            "Ethanol": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "pump": "C2H5OH",
+                    "pump_filtration": "C2H5OH"
+                }
+            }
+        }, 
+        {
+            "H2O": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "pump": "H2O", 
+                    "pump_filtration": "H2O"
+                }
+            }
+        } 
+    ]
+}

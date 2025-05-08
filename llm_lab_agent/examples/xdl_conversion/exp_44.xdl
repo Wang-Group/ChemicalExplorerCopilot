@@ -1,0 +1,86 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Teflon-lined autoclave"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="4,4′-bpy"
+      id="4,4′-bpy"
+      role="reagent" />
+    <Reagent
+      name="HCl solution"
+      id="HCl solution"
+      role="reagent" />
+    <Reagent
+      name="Na2MoO4·2H2O"
+      id="Na2MoO4·2H2O"
+      role="reagent" />
+    <Reagent
+      name="Na2SiO3·9H2O"
+      id="Na2SiO3·9H2O"
+      role="reagent" />
+    <Reagent
+      name="NiCl2·6H2O"
+      id="NiCl2·6H2O"
+      role="reagent" />
+    <Reagent
+      name="distilled water"
+      id="distilled water"
+      role="reagent" />
+    <Reagent
+      name="{'acid': 'HCl solution', 'base': 'None'}"
+      id="{'acid': 'HCl solution', 'base': 'None'}"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="Teflon-lined autoclave"
+      reagent="Na2MoO4·2H2O"
+      mass="0.5 g"
+      amount="0.5 g" />
+    <Add
+      vessel="Teflon-lined autoclave"
+      reagent="Na2SiO3·9H2O"
+      mass="0.5 g"
+      amount="0.5 g" />
+    <Add
+      vessel="Teflon-lined autoclave"
+      reagent="NiCl2·6H2O"
+      mass="0.333 g"
+      amount="0.333 g" />
+    <Add
+      vessel="Teflon-lined autoclave"
+      reagent="4,4′-bpy"
+      mass="0.267 g"
+      amount="0.267 g" />
+    <Add
+      vessel="Teflon-lined autoclave"
+      reagent="distilled water"
+      volume="18.0 mL"
+      amount="18.0 mL" />
+    <AdjustPH
+      vessel="Teflon-lined autoclave"
+      reagent="{'acid': 'HCl solution', 'base': 'None'}"
+      pH="4.0" />
+    <HeatChill
+      vessel="Teflon-lined autoclave"
+      time="432000.0 second"
+      temp="160.0 °C"
+      stir="False" />
+    <HeatChillToTemp
+      vessel="Teflon-lined autoclave"
+      temp="20.0 °C"
+      stir="False" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

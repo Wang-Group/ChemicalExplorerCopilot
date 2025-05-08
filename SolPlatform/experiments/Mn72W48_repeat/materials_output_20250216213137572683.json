@@ -1,0 +1,35 @@
+{
+    "Reactor": {},
+    "Property": {},
+    "ChemicalNames": {},
+    "Solid": [
+        {
+            "Sodium tungstate dihydrate": {
+                "head": "Na2WO4.2H2O",
+                "maximum_mass (g)": 5
+            }
+        }
+    ],
+    "Liquid": [
+        {
+            "H2O": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "pump": "H2O", 
+                    "pump_filtration": "H2O"
+                }
+            }
+        }, 
+        {
+            "sol.Mn": {
+                "solvent": null, 
+                "concentration": null, 
+                "connection": {
+                    "reactor": "storage_reactor0"
+                }
+                
+            }
+        }
+    ]
+}

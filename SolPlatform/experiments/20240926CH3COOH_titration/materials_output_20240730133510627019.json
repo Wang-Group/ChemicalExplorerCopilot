@@ -1,0 +1,50 @@
+{
+    "Reactor": {},
+    "Property": {},
+    "ChemicalNames": {},
+    "Solid": [
+        
+    ],
+    "Liquid": [
+        {
+            "acetic acid": {
+                "connection": {
+                    "pump": "storage_liquid1", 
+                    "pump_pH_acid": "acetic acid"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 0.1,
+                    "unit": "mol/L"
+                }
+            }
+        },
+        {
+            "NaOH": {
+                "connection": {
+                    "pump_pH_base": "NaOH"
+                }
+                , 
+                "solvent": {
+                    "chemical_id": ["H2O"]
+                },
+                "concentration": {
+                    "quantity": 0.1,
+                    "unit": "mol/L"
+                }
+            }
+        }, 
+        {
+            "H2O": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "pump": "H2O"
+                }
+            }
+        }
+    ]
+}

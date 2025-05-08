@@ -1,0 +1,147 @@
+{
+    "reactants": [
+        {
+            "reactant": "Na2WO4·2H2O"
+        },
+        {
+            "reactant": "H2O"
+        },
+        {
+            "reactant": "sol.Mn"
+        }
+    ],
+    "function": [
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "beaker_50mL",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "Na2WO4·2H2O"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "mass": {
+                    "quantity": 3.0,
+                    "unit": "g"
+                },
+                "stir": false
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "beaker_50mL",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "H2O"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": null,
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 30.0,
+                    "unit": "mL"
+                },
+                "stir": false
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "beaker_50mL",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "sol.Mn"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": null,
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 1.1,
+                    "unit": "mL"
+                },
+                "stir": false
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureTo",
+            "function_args": {
+                "reactor_name": "beaker_50mL",
+                "temperature": {
+                    "quantity": 90.0,
+                    "unit": "℃"
+                },
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureForDuration",
+            "function_args": {
+                "reactor_name": "beaker_50mL",
+                "temperature": {
+                    "quantity": 90.0,
+                    "unit": "℃"
+                },
+                "duration": {
+                    "quantity": 1.0,
+                    "unit": "hours"
+                },
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureTo",
+            "function_args": {
+                "reactor_name": "beaker_50mL",
+                "temperature": {
+                    "quantity": 20.0,
+                    "unit": "℃"
+                },
+                "stir": false
+            }
+        },
+        {
+            "function_name": "Filter",
+            "function_args": {
+                "reactor_name": "beaker_50mL",
+                "target_form": "liquid",
+                "filtrate_vessel": "filtrate_container",
+                "stir": false
+            }
+        },
+        {
+            "function_name": "Wait",
+            "function_args": {
+                "time": {
+                    "quantity": 7.0,
+                    "unit": "days"
+                }
+            }
+        },
+        {
+            "function_name": "Yield",
+            "function_args": {
+                "product_name": "Mn72W48",
+                "product_quantity": null,
+                "yield_percentage": null
+            }
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Reactor A"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="sodium chloride"
+      id="sodium chloride"
+      role="reagent" />
+    <Reagent
+      name="water"
+      id="water"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="Reactor A"
+      reagent="sodium chloride"
+      mass="0.5 g"
+      amount="0.5 g" />
+    <Add
+      vessel="Reactor A"
+      reagent="water"
+      volume="10.0 mL"
+      stir="True"
+      stir_speed="300.0 rpm"
+      amount="10.0 mL" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

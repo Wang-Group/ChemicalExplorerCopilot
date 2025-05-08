@@ -1,0 +1,86 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Teflon-lined autoclave"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="2,2′-bpy"
+      id="2,2′-bpy"
+      role="reagent" />
+    <Reagent
+      name="H2C2O4·2H2O"
+      id="H2C2O4·2H2O"
+      role="reagent" />
+    <Reagent
+      name="H4SiW12O40·nH2O"
+      id="H4SiW12O40·nH2O"
+      role="reagent" />
+    <Reagent
+      name="MnCl2·4H2O"
+      id="MnCl2·4H2O"
+      role="reagent" />
+    <Reagent
+      name="NH3·H2O"
+      id="NH3·H2O"
+      role="reagent" />
+    <Reagent
+      name="distilled water"
+      id="distilled water"
+      role="reagent" />
+    <Reagent
+      name="{'acid': 'None', 'base': 'NH3·H2O'}"
+      id="{'acid': 'None', 'base': 'NH3·H2O'}"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="Teflon-lined autoclave"
+      reagent="H4SiW12O40·nH2O"
+      mass="0.722 g"
+      amount="0.722 g" />
+    <Add
+      vessel="Teflon-lined autoclave"
+      reagent="H2C2O4·2H2O"
+      mass="0.253 g"
+      amount="0.253 g" />
+    <Add
+      vessel="Teflon-lined autoclave"
+      reagent="MnCl2·4H2O"
+      mass="0.197 g"
+      amount="0.197 g" />
+    <Add
+      vessel="Teflon-lined autoclave"
+      reagent="2,2′-bpy"
+      mass="0.156 g"
+      amount="0.156 g" />
+    <Add
+      vessel="Teflon-lined autoclave"
+      reagent="distilled water"
+      volume="20.0 mL"
+      amount="20.0 mL" />
+    <AdjustPH
+      vessel="Teflon-lined autoclave"
+      reagent="{'acid': 'None', 'base': 'NH3·H2O'}"
+      pH="5.0" />
+    <HeatChill
+      vessel="Teflon-lined autoclave"
+      time="432000.0 second"
+      temp="160.0 °C"
+      stir="False" />
+    <HeatChillToTemp
+      vessel="Teflon-lined autoclave"
+      temp="20.0 °C"
+      stir="False" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

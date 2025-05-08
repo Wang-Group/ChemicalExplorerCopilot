@@ -1,0 +1,43 @@
+ipaddr: "192.168.1.31" # controller ip address
+# AXIS_NUMBER
+axis:
+  x: 0
+  y: 1
+  z1: 2
+  z2: 3
+# INPUT [datum_in, fwd_in, rev_in, alm_in]
+ip:
+  0: [2, 4, 3, 24]
+  1: [5, 7, 6, 25]
+  2: [8, 10, 9, 26]
+  3: [11, 13, 12, 27]
+# OUTPUT [enable]
+op:
+  0: [12]
+  1: [13]
+  2: [14]
+  3: [15]
+  actuator_relay: 8
+  fans: 9
+  valve_acid: 10
+  valve_base: 11
+# AXIS_PARAM [atype, invert_step, units, accel, decel, fastdec, speed(mm/s), sramp, creep(mm/s), datum_mode, datum_speed(mm/s)]
+param:
+  0: [4, 8, 1000, 500, 300, 2000, 100, 200, 5, 114, 30] #x axis parameters
+  1: [4, 8, 1000, 500, 300, 2000, 100, 200, 5, 114, 30] #y axis parameters
+  2: [4, 8, 1000, 500, 300, 2000, 100, 200, 5, 114, 30] #z1 axis parameters
+  3: [4, 8, 1000, 500, 300, 2000, 100, 200, 5, 114, 30] #z2 axis parameters
+  # 4: [4, 8, 0, 1000, 500, 300, 100, 200, 5, 114, 50] # x2 axis parameters
+default_safe_coordinates:
+  2: -40
+  3: -40
+max_motion_range:
+  x: 400
+  y: 605
+  z1: 300
+  z2: 300
+offsets:
+  mix: 10
+  absorb: 10
+  inject: 38
+  add: 38

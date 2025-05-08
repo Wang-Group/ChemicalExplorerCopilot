@@ -1,0 +1,73 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="pyrex vials"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="DMF"
+      id="DMF"
+      role="reagent" />
+    <Reagent
+      name="H3BTB"
+      id="H3BTB"
+      role="reagent" />
+    <Reagent
+      name="HCOOH"
+      id="HCOOH"
+      role="reagent" />
+    <Reagent
+      name="HfCl4"
+      id="HfCl4"
+      role="reagent" />
+    <Reagent
+      name="water"
+      id="water"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="pyrex vials"
+      reagent="HfCl4"
+      mass="14.0 mg"
+      amount="14.0 mg" />
+    <Add
+      vessel="pyrex vials"
+      reagent="H3BTB"
+      mass="12.5 mg"
+      amount="12.5 mg" />
+    <Add
+      vessel="pyrex vials"
+      reagent="DMF"
+      volume="2.05 mL"
+      amount="2.05 mL" />
+    <Add
+      vessel="pyrex vials"
+      reagent="HCOOH"
+      volume="0.88 mL"
+      amount="0.88 mL" />
+    <Add
+      vessel="pyrex vials"
+      reagent="water"
+      volume="0.30000000000000004 mL"
+      amount="0.30000000000000004 mL" />
+    <HeatChill
+      vessel="pyrex vials"
+      time="2.0 days"
+      temp="120.0 ℃"
+      stir="False" />
+    <Precipitate
+      vessel="pyrex vials"
+      temp="20.0 ℃" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

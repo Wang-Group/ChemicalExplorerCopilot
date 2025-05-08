@@ -1,0 +1,73 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="reactor_1"
+      type="reactor" />
+    <Component
+      id="teflon_vessel"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="4-tpt"
+      id="4-tpt"
+      role="reagent" />
+    <Reagent
+      name="H3PMo12O40·H2O"
+      id="H3PMo12O40·H2O"
+      role="reagent" />
+    <Reagent
+      name="MnSO4·H2O"
+      id="MnSO4·H2O"
+      role="reagent" />
+    <Reagent
+      name="water"
+      id="water"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor_1"
+      reagent="MnSO4·H2O"
+      mass="0.32mmol"
+      amount="0.32mmol" />
+    <Add
+      vessel="reactor_1"
+      reagent="H3PMo12O40·H2O"
+      mass="0.17mmol"
+      amount="0.17mmol" />
+    <Add
+      vessel="reactor_1"
+      reagent="4-tpt"
+      mass="0.08mmol"
+      amount="0.08mmol" />
+    <Add
+      vessel="reactor_1"
+      reagent="water"
+      volume="8.0 mL"
+      amount="8.0 mL" />
+    <Stir
+      vessel="reactor_1"
+      time="1800.0 second"
+      stir_speed="300.0 rpm" />
+    <Transfer
+      from_vessel="reactor_1"
+      to_vessel="teflon_vessel"
+      volume="all"
+      amount="all" />
+    <HeatChill
+      vessel="teflon_vessel"
+      time="259200.0 second"
+      temp="180.0 °C"
+      stir="False" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

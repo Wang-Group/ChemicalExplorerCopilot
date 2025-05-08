@@ -1,0 +1,71 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="1.5-dram vial"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="Ce(NH4)2(NO3)6 solution (0.5 M)"
+      id="Ce(NH4)2(NO3)6 solution (0.5 M)"
+      role="reagent" />
+    <Reagent
+      name="H2SO4 solution (1.0 M)"
+      id="H2SO4 solution (1.0 M)"
+      role="reagent" />
+    <Reagent
+      name="TBACl solution (1.0 M)"
+      id="TBACl solution (1.0 M)"
+      role="reagent" />
+    <Reagent
+      name="deionized water"
+      id="deionized water"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="1.5-dram vial"
+      reagent="Ce(NH4)2(NO3)6 solution (0.5 M)"
+      volume="0.30000000000000004 mL"
+      amount="0.30000000000000004 mL" />
+    <Add
+      vessel="1.5-dram vial"
+      reagent="H2SO4 solution (1.0 M)"
+      volume="0.7000000000000001 mL"
+      amount="0.7000000000000001 mL" />
+    <Add
+      vessel="1.5-dram vial"
+      reagent="TBACl solution (1.0 M)"
+      volume="20.0 μL"
+      amount="20.0 μL" />
+    <Add
+      vessel="1.5-dram vial"
+      reagent="deionized water"
+      volume="2.0 mL"
+      amount="2.0 mL" />
+    <HeatChillToTemp
+      vessel="1.5-dram vial"
+      temp="70.0 C"
+      stir="False" />
+    <Wait
+      time="20.0 minutes" />
+    <HeatChillToTemp
+      vessel="1.5-dram vial"
+      temp="20.0 C"
+      stir="False" />
+    <Wait
+      time="18.0 hours" />
+    <Precipitate
+      vessel="1.5-dram vial"
+      temp="20.0 C" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

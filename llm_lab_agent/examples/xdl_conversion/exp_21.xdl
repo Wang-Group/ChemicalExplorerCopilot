@@ -1,0 +1,133 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="reactor_1"
+      type="reactor" />
+    <Component
+      id="reactor_2"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="HCl (6.0 mol/L)"
+      id="HCl (6.0 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="Na2CO3"
+      id="Na2CO3"
+      role="reagent" />
+    <Reagent
+      name="Na2WO4·2H2O"
+      id="Na2WO4·2H2O"
+      role="reagent" />
+    <Reagent
+      name="NaCl (4.0 mol/L)"
+      id="NaCl (4.0 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="NaSiO3"
+      id="NaSiO3"
+      role="reagent" />
+    <Reagent
+      name="ethanol"
+      id="ethanol"
+      role="reagent" />
+    <Reagent
+      name="water"
+      id="water"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor_1"
+      reagent="Na2WO4·2H2O"
+      mass="18.2 g"
+      amount="18.2 g" />
+    <Add
+      vessel="reactor_1"
+      reagent="NaSiO3"
+      mass="11.0 g"
+      amount="11.0 g" />
+    <Add
+      vessel="reactor_1"
+      reagent="water"
+      volume="20.0 mL"
+      stir="True"
+      amount="20.0 mL" />
+    <Add
+      vessel="reactor_1"
+      reagent="HCl (6.0 mol/L)"
+      volume="13.0 mL"
+      dropwise="True"
+      stir="True"
+      amount="13.0 mL" />
+    <HeatChillToTemp
+      vessel="reactor_1"
+      temp="boiling"
+      stir="False" />
+    <Evaporate
+      vessel="reactor_1"
+      temp="boiling" />
+    <Filter
+      vessel="reactor_1"
+      filtrate_vessel="reactor_2"
+      stir="False"
+      temp="20.0 °C" />
+    <Add
+      vessel="reactor_2"
+      reagent="Na2CO3"
+      mass="5.0 g"
+      stir="True"
+      amount="5.0 g" />
+    <Add
+      vessel="reactor_2"
+      reagent="water"
+      volume="15.0 mL"
+      stir="True"
+      amount="15.0 mL" />
+    <Precipitate
+      vessel="reactor_2"
+      temp="20.0 °C"
+      time="3600.0 second" />
+    <Filter
+      vessel="reactor_2"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 °C" />
+    <WashSolid
+      vessel="reactor_2"
+      solvent="NaCl (4.0 mol/L)"
+      volume="100.0 mL"
+      filtrate_vessel="waste"
+      stir="False" />
+    <Filter
+      vessel="reactor_2"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 °C" />
+    <WashSolid
+      vessel="reactor_2"
+      solvent="ethanol"
+      volume="100.0 mL"
+      filtrate_vessel="waste"
+      stir="False"
+      repeats="2" />
+    <Dry
+      vessel="reactor_2"
+      time="900.0 second"
+      pressure="1 bar"
+      temp="20.0 °C" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

@@ -1,0 +1,111 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="autoclave"
+      type="reactor" />
+    <Component
+      id="reactor1"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="C2H5OH"
+      id="C2H5OH"
+      role="reagent" />
+    <Reagent
+      name="CoCl2·6H2O"
+      id="CoCl2·6H2O"
+      role="reagent" />
+    <Reagent
+      name="H2O"
+      id="H2O"
+      role="reagent" />
+    <Reagent
+      name="H3PO4 (8.0 mol/L)"
+      id="H3PO4 (8.0 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="HCl (1.0 mol/L)"
+      id="HCl (1.0 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="Na2MoO4·2H2O"
+      id="Na2MoO4·2H2O"
+      role="reagent" />
+    <Reagent
+      name="tib"
+      id="tib"
+      role="reagent" />
+    <Reagent
+      name="{'acid': 'HCl (1.0 mol/L)', 'base': 'None'}"
+      id="{'acid': 'HCl (1.0 mol/L)', 'base': 'None'}"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor1"
+      reagent="Na2MoO4·2H2O"
+      mass="0.5 g"
+      amount="0.5 g" />
+    <Add
+      vessel="reactor1"
+      reagent="H3PO4 (8.0 mol/L)"
+      volume="0.53 mL"
+      amount="0.53 mL" />
+    <Add
+      vessel="reactor1"
+      reagent="tib"
+      mass="0.27 g"
+      amount="0.27 g" />
+    <Add
+      vessel="reactor1"
+      reagent="CoCl2·6H2O"
+      mass="0.2 g"
+      amount="0.2 g" />
+    <Add
+      vessel="reactor1"
+      reagent="C2H5OH"
+      volume="1.0 mL"
+      amount="1.0 mL" />
+    <Add
+      vessel="reactor1"
+      reagent="H2O"
+      volume="5.0 mL"
+      amount="5.0 mL" />
+    <Stir
+      vessel="reactor1"
+      time="1800.0 second"
+      stir_speed="300.0 rpm" />
+    <AdjustPH
+      vessel="reactor1"
+      reagent="{'acid': 'HCl (1.0 mol/L)', 'base': 'None'}"
+      pH="3.9" />
+    <Transfer
+      from_vessel="reactor1"
+      to_vessel="autoclave"
+      volume="all"
+      amount="all" />
+    <HeatChill
+      vessel="autoclave"
+      time="259200.0 second"
+      temp="160.0 °C"
+      stir="False" />
+    <Filter
+      vessel="autoclave"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 °C" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

@@ -1,0 +1,41 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="reactor_1"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="NaOH (0.5 mol/L)"
+      id="NaOH (0.5 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="citrate acid (0.1 mol/L)"
+      id="citrate acid (0.1 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="{'acid': 'None', 'base': 'NaOH (0.5 mol/L)'}"
+      id="{'acid': 'None', 'base': 'NaOH (0.5 mol/L)'}"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor_1"
+      reagent="citrate acid (0.1 mol/L)"
+      volume="5.0 mL"
+      amount="5.0 mL" />
+    <AdjustPH
+      vessel="reactor_1"
+      reagent="{'acid': 'None', 'base': 'NaOH (0.5 mol/L)'}"
+      pH="12.0" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

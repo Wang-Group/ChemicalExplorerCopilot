@@ -1,0 +1,21 @@
+{
+    "time": "2024-12-01 21:58:28.553965",
+    "reactor": "reactor0",
+    "job finished": {
+        "Outcome": "Success",
+        "Substance Name": "TPA",
+        "Target Weight": {
+            "Value": 100.0,
+            "Unit": "Milligram"
+        },
+        "Tolerance": {
+            "Value": 5.0,
+            "Unit": "Milligram"
+        },
+        "Net Weight": {
+            "Value": "0.1025",
+            "Unit": "Gram",
+            "CustomUnitName": null
+        }
+    }
+}

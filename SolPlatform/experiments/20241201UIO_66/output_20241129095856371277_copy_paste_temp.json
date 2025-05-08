@@ -1,0 +1,191 @@
+{
+    "reactants": [
+        {
+            "reactant": "ZrCl₄"
+        },
+        {
+            "reactant": "1,4-benzenedicarboxylic acid"
+        },
+        {
+            "reactant": "dimethylformamide"
+        },
+        {
+            "reactant": "water"
+        },
+        {
+            "reactant": "formic acid"
+        }
+    ],
+    "function": [
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "20 mL reaction vial",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "ZrCl4",
+                            "ZrCl₄"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "mass": {
+                    "quantity": 0.192,
+                    "unit": "g"
+                },
+                "stir": false,
+                "stir_speed": null
+            }
+        },
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "20 mL reaction vial",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "1,4-benzenedicarboxylic acid"
+                        ],
+                        "CAS_number": null
+                    }
+                },
+                "mass": {
+                    "quantity": 0.1,
+                    "unit": "g"
+                },
+                "stir": false,
+                "stir_speed": null
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "20 mL reaction vial",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "DMF",
+                            "dimethylformamide"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 8.0,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": false,
+                "stir_speed": null,
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "20 mL reaction vial",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "H2O",
+                            "water"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 0.2,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": false,
+                "stir_speed": null,
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "20 mL reaction vial",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "HCOOH",
+                            "formic acid"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": null,
+                        "unit": null
+                    },
+                    "solvent": {
+                        "chemical_id": null,
+                        "CAS_number": null
+                    }
+                },
+                "volume": {
+                    "quantity": 1.0,
+                    "unit": "mL"
+                },
+                "liquid_temperature": null,
+                "pH": null,
+                "stir": false,
+                "stir_speed": null,
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureForDuration",
+            "function_args": {
+                "reactor_name": "20 mL reaction vial",
+                "temperature": {
+                    "quantity": 120.0,
+                    "unit": "°C"
+                },
+                "duration": {
+                    "quantity": 86400.0,
+                    "unit": "second"
+                },
+                "adjust_method": null,
+                "stir": false,
+                "stir_speed": null,
+                "ramp_rate": null,
+                "reflux": false
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureTo",
+            "function_args": {
+                "reactor_name": "20 mL reaction vial",
+                "temperature": {
+                    "quantity": 20.0,
+                    "unit": "°C"
+                },
+                "adjust_method": null,
+                "stir": false,
+                "stir_speed": null,
+                "ramp_rate": null
+            }
+        }
+    ]
+}

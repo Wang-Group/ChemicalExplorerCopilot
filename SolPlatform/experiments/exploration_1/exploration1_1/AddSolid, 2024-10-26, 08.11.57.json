@@ -1,0 +1,21 @@
+{
+    "time": "2024-10-26 20:11:57.863428",
+    "reactor": "reactor0",
+    "job finished": {
+        "Outcome": "Success",
+        "Substance Name": "KMnO4",
+        "Target Weight": {
+            "Value": 83.0,
+            "Unit": "Milligram"
+        },
+        "Tolerance": {
+            "Value": 5.0,
+            "Unit": "Milligram"
+        },
+        "Net Weight": {
+            "Value": "84.4",
+            "Unit": "Milligram",
+            "CustomUnitName": null
+        }
+    }
+}

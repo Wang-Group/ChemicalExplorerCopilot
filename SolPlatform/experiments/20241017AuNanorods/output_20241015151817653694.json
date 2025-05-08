@@ -1,0 +1,351 @@
+{
+    "reactants": [
+        {
+            "reactant": "HAuCl4"
+        },
+        {
+            "reactant": "NaBH4"
+        },
+        {
+            "reactant": "CTAB"
+        },
+        {
+            "reactant": "AA"
+        },
+        {
+            "reactant": "HCl"
+        },
+        {
+            "reactant": "AgNO3"
+        }
+    ],
+    "function": [
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "CTAB"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.1,
+                        "unit": "M"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ]
+                    }
+                },
+                "liquid_temperature": null,
+                "volume": {
+                    "quantity": 4.7,
+                    "unit": "mL"
+                },
+                "pH": null,
+                "dropwise": false,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "HAuCl4"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.05,
+                        "unit": "M"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ]
+                    }
+                },
+                "liquid_temperature": null,
+                "volume": {
+                    "quantity": 0.025,
+                    "unit": "mL"
+                },
+                "pH": null,
+                "dropwise": false,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "NaBH4"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.01,
+                        "unit": "M"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ]
+                    }
+                },
+                "liquid_temperature": {
+                    "quantity": 0,
+                    "unit": "℃"
+                },
+                "volume": {
+                    "quantity": 0.3,
+                    "unit": "mL"
+                },
+                "pH": null,
+                "dropwise": false,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "StirForDuration",
+            "function_args": {
+                "reactor_name": "reactor_1",
+                "duration": {
+                    "quantity": 30,
+                    "unit": "min"
+                },
+                "temperature": {
+                    "quantity": 20,
+                    "unit": "℃"
+                },
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "CTAB"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.1,
+                        "unit": "M"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ]
+                    }
+                },
+                "liquid_temperature": null,
+                "volume": {
+                    "quantity": 10,
+                    "unit": "mL"
+                },
+                "pH": null,
+                "dropwise": false,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "HAuCl4"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.05,
+                        "unit": "M"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ]
+                    }
+                },
+                "liquid_temperature": null,
+                "volume": {
+                    "quantity": 0.1,
+                    "unit": "mL"
+                },
+                "pH": null,
+                "dropwise": false,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "AA"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.1,
+                        "unit": "M"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ]
+                    }
+                },
+                "liquid_temperature": null,
+                "volume": {
+                    "quantity": 0.08,
+                    "unit": "mL"
+                },
+                "pH": null,
+                "dropwise": false,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "HCl"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 1,
+                        "unit": "M"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ]
+                    }
+                },
+                "liquid_temperature": null,
+                "volume": {
+                    "quantity": 0.19,
+                    "unit": "mL"
+                },
+                "pH": null,
+                "dropwise": false,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "reactor_2",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "AgNO3"
+                        ],
+                        "CAS_number": null
+                    },
+                    "concentration": {
+                        "quantity": 0.01,
+                        "unit": "M"
+                    },
+                    "solvent": {
+                        "chemical_id": [
+                            "water"
+                        ]
+                    }
+                },
+                "liquid_temperature": null,
+                "volume": {
+                    "quantity": 0.12,
+                    "unit": "mL"
+                },
+                "pH": null,
+                "dropwise": false,
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "TransferLiquid",
+            "function_args": {
+                "from_reactor": "reactor_1",
+                "to_reactor": "reactor_2",
+                "volume": {
+                    "quantity": 0.024,
+                    "unit": "mL"
+                },
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                },
+                "dropwise": false
+            }
+        },
+        {
+            "function_name": "Wait",
+            "function_args": {
+                "time": {
+                    "quantity": 2,
+                    "unit": "h"
+                }
+            }
+        }
+    ]
+}

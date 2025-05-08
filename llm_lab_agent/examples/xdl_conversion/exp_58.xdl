@@ -1,0 +1,144 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="glass beaker"
+      type="reactor" />
+    <Component
+      id="reactor1"
+      type="reactor" />
+    <Component
+      id="reactor2"
+      type="reactor" />
+    <Component
+      id="reactor3"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="H2IDA"
+      id="H2IDA"
+      role="reagent" />
+    <Reagent
+      name="La(NO3)3·6H2O"
+      id="La(NO3)3·6H2O"
+      role="reagent" />
+    <Reagent
+      name="NaOH"
+      id="NaOH"
+      role="reagent" />
+    <Reagent
+      name="NaOH (1.0 M)"
+      id="NaOH (1.0 M)"
+      role="reagent" />
+    <Reagent
+      name="Ni(NO3)2·6H2O"
+      id="Ni(NO3)2·6H2O"
+      role="reagent" />
+    <Reagent
+      name="distilled water"
+      id="distilled water"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor1"
+      reagent="La(NO3)3·6H2O"
+      mass="1.0 mmol"
+      amount="1.0 mmol" />
+    <Add
+      vessel="reactor1"
+      reagent="Ni(NO3)2·6H2O"
+      mass="0.5 mmol"
+      amount="0.5 mmol" />
+    <Add
+      vessel="reactor1"
+      reagent="H2IDA"
+      mass="0.5 mmol"
+      amount="0.5 mmol" />
+    <Add
+      vessel="reactor1"
+      reagent="distilled water"
+      volume="6.0 mL"
+      amount="6.0 mL" />
+    <HeatChillToTemp
+      vessel="reactor1"
+      temp="80.0 ℃" />
+    <Add
+      vessel="reactor1"
+      reagent="NaOH"
+      volume="2.2 mL"
+      stir="True"
+      amount="2.2 mL" />
+    <Add
+      vessel="reactor2"
+      reagent="La(NO3)3·6H2O"
+      mass="2.0 mmol"
+      amount="2.0 mmol" />
+    <Add
+      vessel="reactor2"
+      reagent="Ni(NO3)2·6H2O"
+      mass="6.0 mmol"
+      amount="6.0 mmol" />
+    <Add
+      vessel="reactor2"
+      reagent="H2IDA"
+      mass="6.0 mmol"
+      amount="6.0 mmol" />
+    <Add
+      vessel="reactor2"
+      reagent="distilled water"
+      volume="10.0 mL"
+      amount="10.0 mL" />
+    <Transfer
+      from_vessel="reactor2"
+      to_vessel="reactor3"
+      volume="0.89 mL"
+      amount="0.89 mL" />
+    <Add
+      vessel="reactor3"
+      reagent="NaOH (1.0 M)"
+      volume="1.13 mL"
+      stir="True"
+      amount="1.13 mL" />
+    <Transfer
+      from_vessel="reactor3"
+      to_vessel="reactor1"
+      volume="all"
+      amount="all" />
+    <Stir
+      vessel="reactor1"
+      time="2.0 hours"
+      stir_speed="300.0 rpm" />
+    <Filter
+      vessel="reactor1"
+      filtrate_vessel="glass beaker"
+      stir="False"
+      temp="20.0 ℃" />
+    <HeatChill
+      vessel="glass beaker"
+      time="1.0 night"
+      temp="20.0 ℃"
+      stir="False" />
+    <Filter
+      vessel="glass beaker"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 ℃" />
+    <Dry
+      vessel="glass beaker"
+      pressure="1 bar"
+      temp="20.0 ℃" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

@@ -1,0 +1,101 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="reactor_1"
+      type="reactor" />
+    <Component
+      id="reactor_2"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="ammonium metavanadate"
+      id="ammonium metavanadate"
+      role="reagent" />
+    <Reagent
+      name="distilled water"
+      id="distilled water"
+      role="reagent" />
+    <Reagent
+      name="ethanol"
+      id="ethanol"
+      role="reagent" />
+    <Reagent
+      name="glacial acetic acid"
+      id="glacial acetic acid"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor_1"
+      reagent="ammonium metavanadate"
+      mass="3.0 g"
+      amount="3.0 g" />
+    <Add
+      vessel="reactor_1"
+      reagent="distilled water"
+      volume="50.0 mL"
+      amount="50.0 mL" />
+    <HeatChillToTemp
+      vessel="reactor_1"
+      temp="hot"
+      stir="False" />
+    <Filter
+      vessel="reactor_1"
+      filtrate_vessel="reactor_2"
+      stir="False"
+      temp="20.0 °C" />
+    <HeatChillToTemp
+      vessel="reactor_2"
+      temp="20.0 °C"
+      stir="False" />
+    <Add
+      vessel="reactor_2"
+      reagent="glacial acetic acid"
+      volume="4.0 mL"
+      amount="4.0 mL" />
+    <HeatChillToTemp
+      vessel="reactor_2"
+      temp="ice bath"
+      stir="False" />
+    <Add
+      vessel="reactor_2"
+      reagent="ethanol"
+      volume="100.0 mL"
+      stir="True"
+      stir_speed="300.0 rpm"
+      amount="100.0 mL" />
+    <Precipitate
+      vessel="reactor_2"
+      temp="20.0 °C" />
+    <Filter
+      vessel="reactor_2"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 °C" />
+    <WashSolid
+      vessel="reactor_2"
+      solvent="ethanol"
+      volume="appropriate"
+      filtrate_vessel="waste"
+      temp="0.0 °C"
+      stir="False" />
+    <Dry
+      vessel="reactor_2"
+      time="900.0 second"
+      pressure="1 bar"
+      temp="20.0 °C" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

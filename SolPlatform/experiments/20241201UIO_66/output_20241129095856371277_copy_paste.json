@@ -1,0 +1,135 @@
+{
+    "reactants": [
+        {
+            "reactant": "ZrCl₄"
+        },
+        {
+            "reactant": "1,4-benzenedicarboxylic acid"
+        },
+        {
+            "reactant": "dimethylformamide"
+        },
+        {
+            "reactant": "water"
+        },
+        {
+            "reactant": "formic acid"
+        }
+    ],
+    "function": [
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "20 mL reaction vial",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "ZrCl₄"
+                        ]
+                    }
+                },
+                "mass": {
+                    "quantity": 192,
+                    "unit": "mg"
+                }
+            }
+        },
+        {
+            "function_name": "AddSolid",
+            "function_args": {
+                "reactor_name": "20 mL reaction vial",
+                "solid": {
+                    "identity": {
+                        "chemical_id": [
+                            "1,4-benzenedicarboxylic acid"
+                        ]
+                    }
+                },
+                "mass": {
+                    "quantity": 100,
+                    "unit": "mg"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "20 mL reaction vial",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "dimethylformamide"
+                        ]
+                    },
+                    "concentration": null,
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 8,
+                    "unit": "mL"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "20 mL reaction vial",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "water"
+                        ]
+                    },
+                    "concentration": null,
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 200,
+                    "unit": "μL"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "20 mL reaction vial",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "formic acid"
+                        ]
+                    },
+                    "concentration": null,
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 1,
+                    "unit": "mL"
+                }
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureForDuration",
+            "function_args": {
+                "reactor_name": "20 mL reaction vial",
+                "temperature": {
+                    "quantity": 120,
+                    "unit": "°C"
+                },
+                "duration": {
+                    "quantity": 24,
+                    "unit": "hours"
+                },
+                "stir": false
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureTo",
+            "function_args": {
+                "reactor_name": "20 mL reaction vial",
+                "temperature": "room temperature",
+                "stir": false
+            }
+        }
+    ]
+}

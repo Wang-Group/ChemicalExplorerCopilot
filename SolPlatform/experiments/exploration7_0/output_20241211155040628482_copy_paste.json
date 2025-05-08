@@ -1,0 +1,220 @@
+{
+    "reactants": [
+        {
+            "reactant": "deionized water"
+        },
+        {
+            "reactant": "sol.Mn"
+        },
+        {
+            "reactant": "Na₂WO₄ stock solution"
+        },
+        {
+            "reactant": "Gd(ClO₄)₃ solution"
+        }
+    ],
+    "function": [
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "50 mL beaker",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "deionized water"
+                        ]
+                    },
+                    "concentration": null,
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 8.9,
+                    "unit": "mL"
+                },
+                "stir": false
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "50 mL beaker",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "sol.Mn"
+                        ]
+                    },
+                    "concentration": null,
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 1.1,
+                    "unit": "mL"
+                },
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "StirForDuration",
+            "function_args": {
+                "reactor_name": "50 mL beaker",
+                "duration": {
+                    "quantity": 15,
+                    "unit": "seconds"
+                },
+                "temperature": {
+                    "quantity": 20,
+                    "unit": "℃"
+                },
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "50 mL beaker",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "Na₂WO₄ stock solution"
+                        ]
+                    },
+                    "concentration": {
+                        "quantity": 0.15,
+                        "unit": "g/mL"
+                    },
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 5,
+                    "unit": "mL"
+                },
+                "stir": true
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "50 mL beaker",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "Gd(ClO₄)₃ solution"
+                        ]
+                    },
+                    "concentration": {
+                        "quantity": 1,
+                        "unit": "M"
+                    },
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 0.5,
+                    "unit": "mL"
+                },
+                "stir": true
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureForDuration",
+            "function_args": {
+                "reactor_name": "50 mL beaker",
+                "temperature": {
+                    "quantity": 70,
+                    "unit": "℃"
+                },
+                "duration": {
+                    "quantity": 30,
+                    "unit": "minutes"
+                },
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AddLiquid",
+            "function_args": {
+                "reactor_name": "50 mL beaker",
+                "liquid": {
+                    "identity": {
+                        "chemical_id": [
+                            "Na₂WO₄ stock solution"
+                        ]
+                    },
+                    "concentration": {
+                        "quantity": 0.15,
+                        "unit": "g/mL"
+                    },
+                    "solvent": null
+                },
+                "volume": {
+                    "quantity": 15,
+                    "unit": "mL"
+                },
+                "stir": true
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureForDuration",
+            "function_args": {
+                "reactor_name": "50 mL beaker",
+                "temperature": {
+                    "quantity": 90,
+                    "unit": "℃"
+                },
+                "duration": {
+                    "quantity": 30,
+                    "unit": "minutes"
+                },
+                "stir": true,
+                "stir_speed": {
+                    "quantity": 300,
+                    "unit": "rpm"
+                }
+            }
+        },
+        {
+            "function_name": "AdjustTemperatureTo",
+            "function_args": {
+                "reactor_name": "50 mL beaker",
+                "temperature": "room temperature",
+                "stir": false
+            }
+        },
+        {
+            "function_name": "Filter",
+            "function_args": {
+                "reactor_name": "50 mL beaker",
+                "target_form": "liquid",
+                "filtrate_vessel": "clean container"
+            }
+        },
+        {
+            "function_name": "Evaporate",
+            "function_args": {
+                "reactor_name": "clean container",
+                "temperature": "room temperature",
+                "duration": {
+                    "min": {
+                        "quantity": 2,
+                        "unit": "weeks"
+                    },
+                    "max": {
+                        "quantity": 4,
+                        "unit": "weeks"
+                    }
+                }
+            }
+        }
+    ]
+}

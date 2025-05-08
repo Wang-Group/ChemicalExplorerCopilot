@@ -1,0 +1,21 @@
+{
+    "time": "2024-09-21 22:26:41.648020",
+    "reactor": "reactor0",
+    "job finished": {
+        "Outcome": "Success",
+        "Substance Name": "HfOCl2.8H2O",
+        "Target Weight": {
+            "Value": 18.0,
+            "Unit": "Milligram"
+        },
+        "Tolerance": {
+            "Value": 5.0,
+            "Unit": "Milligram"
+        },
+        "Net Weight": {
+            "Value": "19.3",
+            "Unit": "Milligram",
+            "CustomUnitName": null
+        }
+    }
+}

@@ -1,0 +1,372 @@
+11-03-24 15:03:15 root         INFO     successful connection to the controller
+11-03-24 15:03:15 root         INFO     output port enable successful
+11-03-24 15:03:15 root         INFO     setting parameters succeed
+11-03-24 15:03:15 commanduino.commandmanager.CommandManager WARNING  No command handler type provided in configuration. Falling back to serial.
+11-03-24 15:03:15 commanduino.commandmanager.CommandManager INFO     Created serial-based command handler for :COM26.
+11-03-24 15:03:17 commanduino.commandmanager.CommandManager INFO     Found Arduino CommandManager at :COM26, init time was 2.01 seconds
+11-03-24 15:03:17 root         INFO     send:b'\xfe\xa0\x00\x00\x00\xa0'
+11-03-24 15:03:18 root         INFO     receive:b'\xfd\xa0\x00\x00\x00\xa0'
+11-03-24 15:03:18 root         INFO     HotPlate Connected
+11-03-24 15:03:21 commanduino.commandmanager.CommandManager WARNING  No command handler type provided in configuration. Falling back to serial.
+11-03-24 15:03:21 commanduino.commandmanager.CommandManager INFO     Created serial-based command handler for :COM10.
+11-03-24 15:03:23 commanduino.commandmanager.CommandManager INFO     Found Arduino CommandManager at :COM10, init time was 2.01 seconds
+11-03-24 15:03:34 root         INFO     gripper pgse is initializing
+11-03-24 15:03:35 root         INFO     gripper pgse initialization successful
+11-03-24 15:03:44 root         INFO     pump_restoration succeed, current volume is 0.
+11-03-24 15:03:53 root         INFO     pump_restoration succeed, current volume is 0.
+11-03-24 15:04:21 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 15:04:26 root         INFO     Injector initialization succeed :) 
+11-03-24 15:04:26 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 15:04:28 root         INFO     absolute_move succeed!
+11-03-24 15:04:28 root         INFO     axis z1's speed change, current speed 30
+11-03-24 15:04:28 root         INFO     axis z2's speed change, current speed 30
+11-03-24 15:04:28 root         INFO     axis z2's speed change, current speed 100
+11-03-24 15:04:28 root         INFO     axis z2 return home successful
+11-03-24 15:04:34 root         INFO     axis z1's speed change, current speed 100
+11-03-24 15:04:34 root         INFO     axis z1 return home successful
+11-03-24 15:04:34 root         INFO     axis y's speed change, current speed 30
+11-03-24 15:04:34 root         INFO     axis x's speed change, current speed 30
+11-03-24 15:04:38 root         INFO     axis x's speed change, current speed 100
+11-03-24 15:04:38 root         INFO     axis x return home successful
+11-03-24 15:04:45 root         INFO     axis y's speed change, current speed 100
+11-03-24 15:04:45 root         INFO     axis y return home successful
+11-03-24 15:04:45 root         INFO     all axes return home successful
+11-03-24 15:04:45 root         INFO     gripper rgi30 is initializing
+11-03-24 15:04:51 root         INFO     gripper rgi30 set_rotation_angle successful, rotation_angle: -90
+11-03-24 15:04:52 root         INFO     gripper rgi30 initialization successful
+11-03-24 15:04:53 root         INFO     gripper pge50 is initializing
+11-03-24 15:04:58 root         INFO     gripper pge50 initialization successful
+11-03-24 15:05:01 root         INFO     valve_restoration succeed, current channel is 15!
+11-03-24 15:05:01 root         INFO     restoration succeed.
+11-03-24 15:05:04 root         INFO     current channel: 7
+11-03-24 15:05:09 root         INFO     pump_restoration succeed, current volume is 0.
+11-03-24 15:05:10 root         INFO     current channel: 8
+11-03-24 15:05:11 root         INFO     current channel: 1
+11-03-24 15:05:11 root         INFO     current_speed is 0.7.
+11-03-24 15:05:22 root         INFO     move_to_absolute_position succeed, current position is 3000 step & 5.0 mL.
+11-03-24 15:05:23 root         INFO     current channel: 7
+11-03-24 15:05:23 root         INFO     current_speed is 1.75.
+11-03-24 15:05:28 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 15:05:28 root         INFO     send:b'\xfe\xa0\x00\x00\x00\xa0'
+11-03-24 15:05:29 root         INFO     receive:b'\xfd\xa0\x00\x00\x00\xa0'
+11-03-24 15:05:29 root         INFO     HotPlate Connected
+11-03-24 15:05:33 root         INFO     gripper rgi100 is initializing
+11-03-24 15:05:36 root         INFO     gripper rgi100 set_rotation_angle successful, rotation_angle: -90
+11-03-24 15:05:37 root         INFO     gripper rgi100 initialization successful
+11-03-24 15:05:38 root         INFO     gripper rgi100 set_force successful, force: 50
+11-03-24 15:05:39 root         INFO     restoration succeed.
+11-03-24 16:07:34 root         INFO     move to x:65.8, y:287.4, z1:170, z2:0
+11-03-24 16:07:42 root         INFO     move to x:14.5, y:485.9, z1:117.8, z2:0
+11-03-24 16:07:54 root         INFO     gripper rgi30 set_rotation_angle successful, rotation_angle: 900
+11-03-24 16:07:54 root         INFO     move to x:65.5, y:243.0, z1:194, z2:0
+11-03-24 16:08:03 root         INFO     move to x:14.5, y:485.9, z1:117.8, z2:0
+11-03-24 16:08:13 root         INFO     move to x:65.8, y:287.4, z1:170, z2:0
+11-03-24 16:08:22 root         INFO     move to x:16.5, y:265.7, z1:134.5, z2:0
+11-03-24 16:08:29 root         INFO     move to x:65.5, y:288.0, z1:69, z2:0
+11-03-24 16:08:35 root         INFO     current channel: 8
+11-03-24 16:08:37 root         INFO     current channel: 6
+11-03-24 16:08:37 root         INFO     current_speed is 1.
+11-03-24 16:08:44 root         INFO     move_to_absolute_position succeed, current position is 2400 step & 4.0 mL.
+11-03-24 16:08:45 root         INFO     current channel: 7
+11-03-24 16:08:45 root         INFO     current_speed is 1.75.
+11-03-24 16:08:49 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 16:08:50 root         INFO     current channel: 8
+11-03-24 16:08:50 root         INFO     current channel: 6
+11-03-24 16:08:50 root         INFO     current_speed is 0.7.
+11-03-24 16:09:01 root         INFO     move_to_absolute_position succeed, current position is 2790 step & 4.65 mL.
+11-03-24 16:09:02 root         INFO     current channel: 14
+11-03-24 16:09:03 root         INFO     current_speed is 1.75.
+11-03-24 16:09:07 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 16:09:09 root         INFO     current channel: 8
+11-03-24 16:09:09 root         INFO     current channel: 6
+11-03-24 16:09:09 root         INFO     current_speed is 1.
+11-03-24 16:09:18 root         INFO     move_to_absolute_position succeed, current position is 3000 step & 5.0 mL.
+11-03-24 16:09:18 root         INFO     current channel: 7
+11-03-24 16:09:18 root         INFO     current_speed is 1.75.
+11-03-24 16:09:23 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 16:09:24 root         INFO     current channel: 8
+11-03-24 16:09:24 root         INFO     current channel: 6
+11-03-24 16:09:24 root         INFO     current_speed is 1.
+11-03-24 16:09:33 root         INFO     move_to_absolute_position succeed, current position is 3000 step & 5.0 mL.
+11-03-24 16:09:34 root         INFO     current channel: 7
+11-03-24 16:09:34 root         INFO     current_speed is 1.75.
+11-03-24 16:09:39 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 16:09:40 root         INFO     current channel: 8
+11-03-24 16:09:42 root         INFO     current channel: 1
+11-03-24 16:09:42 root         INFO     current_speed is 1.
+11-03-24 16:09:45 root         INFO     move_to_absolute_position succeed, current position is 1200 step & 2.0 mL.
+11-03-24 16:09:46 root         INFO     current channel: 7
+11-03-24 16:09:47 root         INFO     current_speed is 1.75.
+11-03-24 16:09:49 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 16:09:50 root         INFO     current channel: 8
+11-03-24 16:09:50 root         INFO     current channel: 1
+11-03-24 16:09:50 root         INFO     current_speed is 1.
+11-03-24 16:09:54 root         INFO     move_to_absolute_position succeed, current position is 1200 step & 2.0 mL.
+11-03-24 16:09:55 root         INFO     current channel: 7
+11-03-24 16:09:55 root         INFO     current_speed is 1.75.
+11-03-24 16:09:57 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 16:09:58 root         INFO     current channel: 8
+11-03-24 16:09:58 root         INFO     current channel: 1
+11-03-24 16:09:59 root         INFO     current_speed is 1.
+11-03-24 16:10:02 root         INFO     move_to_absolute_position succeed, current position is 1200 step & 2.0 mL.
+11-03-24 16:10:04 root         INFO     current channel: 14
+11-03-24 16:10:04 root         INFO     current_speed is 0.1.
+11-03-24 16:10:35 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 16:10:36 root         INFO     current channel: 8
+11-03-24 16:10:37 root         INFO     current channel: 1
+11-03-24 16:10:37 root         INFO     current_speed is 1.
+11-03-24 16:10:40 root         INFO     move_to_absolute_position succeed, current position is 1200 step & 2.0 mL.
+11-03-24 16:10:42 root         INFO     current channel: 14
+11-03-24 16:10:42 root         INFO     current_speed is 0.1.
+11-03-24 16:11:13 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 16:11:13 root         INFO     move to x:16.5, y:265.7, z1:134.5, z2:0
+11-03-24 16:11:21 root         INFO     current channel: 8
+11-03-24 16:11:23 root         INFO     current channel: 6
+11-03-24 16:11:23 root         INFO     current_speed is 1.75.
+11-03-24 16:11:26 root         INFO     move_to_absolute_position succeed, current position is 1800 step & 3.0 mL.
+11-03-24 16:11:28 root         INFO     current channel: 14
+11-03-24 16:11:28 root         INFO     current_speed is 1.75.
+11-03-24 16:11:31 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 16:11:31 root         INFO     current channel: 14
+11-03-24 16:11:31 root         INFO     current_speed is 0.7.
+11-03-24 16:11:43 root         INFO     move_to_absolute_position succeed, current position is 3000 step & 5.0 mL.
+11-03-24 16:11:45 root         INFO     current channel: 7
+11-03-24 16:11:45 root         INFO     current_speed is 1.75.
+11-03-24 16:11:50 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 16:11:51 root         INFO     current channel: 8
+11-03-24 16:11:51 root         INFO     current channel: 6
+11-03-24 16:11:51 root         INFO     current_speed is 1.75.
+11-03-24 16:11:54 root         INFO     move_to_absolute_position succeed, current position is 1800 step & 3.0 mL.
+11-03-24 16:11:56 root         INFO     current channel: 14
+11-03-24 16:11:56 root         INFO     current_speed is 1.75.
+11-03-24 16:11:59 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 16:12:00 root         INFO     current channel: 14
+11-03-24 16:12:00 root         INFO     current_speed is 0.7.
+11-03-24 16:12:11 root         INFO     move_to_absolute_position succeed, current position is 3000 step & 5.0 mL.
+11-03-24 16:12:13 root         INFO     current channel: 7
+11-03-24 16:12:13 root         INFO     current_speed is 1.75.
+11-03-24 16:12:18 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 16:12:19 root         INFO     current channel: 8
+11-03-24 16:12:20 root         INFO     current channel: 6
+11-03-24 16:12:20 root         INFO     current_speed is 1.75.
+11-03-24 16:12:23 root         INFO     move_to_absolute_position succeed, current position is 1800 step & 3.0 mL.
+11-03-24 16:12:24 root         INFO     current channel: 14
+11-03-24 16:12:25 root         INFO     current_speed is 1.75.
+11-03-24 16:12:28 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 16:12:28 root         INFO     current channel: 14
+11-03-24 16:12:28 root         INFO     current_speed is 0.7.
+11-03-24 16:12:40 root         INFO     move_to_absolute_position succeed, current position is 3000 step & 5.0 mL.
+11-03-24 16:12:42 root         INFO     current channel: 7
+11-03-24 16:12:42 root         INFO     current_speed is 1.75.
+11-03-24 16:12:46 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 16:12:47 root         INFO     current channel: 8
+11-03-24 16:12:49 root         INFO     current channel: 1
+11-03-24 16:12:50 root         INFO     current_speed is 0.7.
+11-03-24 16:13:01 root         INFO     move_to_absolute_position succeed, current position is 3000 step & 5.0 mL.
+11-03-24 16:13:02 root         INFO     current channel: 7
+11-03-24 16:13:02 root         INFO     current_speed is 1.75.
+11-03-24 16:13:07 root         INFO     move_to_absolute_position succeed, current position is 0 step & 0.0 mL.
+11-03-24 16:13:07 root         INFO     send:b'\xfe\xb1\x01,\x00\xde'
+11-03-24 16:13:08 root         INFO     receive:b'\xfd\xb1\x00\x00\x00\xb1'
+11-03-24 16:13:08 root         INFO     send:b'\xfe\xb2\x00\xfa\x00\xac'
+11-03-24 16:13:09 root         INFO     receive:b'\xfd\xb2\x00\x00\x00\xb2'
+11-03-24 16:13:09 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+11-03-24 16:13:11 root         INFO     receive:b'\xfd\xa1\x02\x01\x01\x01\xa6'
+11-03-24 16:13:11 root         INFO     send:b'\xfe\xb9\x00\x00\x00\xb9'
+11-03-24 16:13:12 root         INFO     receive:b'\xfd\xb9\x00\x00\x00\xb9'
+11-03-24 16:13:12 root         INFO     stirring is on!
+11-03-24 16:13:12 root         INFO     send:b'\xfe\xb2\x00\xfa\x00\xac'
+11-03-24 16:13:13 root         INFO     receive:b'\xfd\xb2\x00\x00\x00\xb2'
+11-03-24 16:13:14 root         INFO     move to x:65.8, y:287.4, z1:170, z2:0
+11-03-24 16:13:20 root         INFO     move to x:156.8, y:532.2, z1:85, z2:0
+11-03-24 16:13:29 root         INFO     move to x:228.7, y:248.1, z1:0, z2:199
+11-03-24 16:13:37 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+11-03-24 16:13:38 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+11-03-24 16:13:38 root         INFO     move to x:235, y:95, z1:0, z2:133.5
+11-03-24 16:13:47 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:13:48 root         WARNING  the absorbed volume is not so correct, set volume is 0.574712643678161, current volume is 0.5741666666666667
+11-03-24 16:13:48 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:13:48 root         INFO     move to x:155.5, y:433.2, z1:0, z2:105
+11-03-24 16:13:57 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:13:59 root         INFO     injecting succeed!
+11-03-24 16:14:01 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:14:02 root         INFO     absorb succeed!
+11-03-24 16:14:02 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:14:02 root         INFO     inject succeed.
+11-03-24 16:14:02 root         INFO     move to x:115, y:75, z1:0, z2:160
+11-03-24 16:14:21 root         INFO     move to x:156.8, y:532.2, z1:85, z2:0
+11-03-24 16:14:31 root         INFO     move to x:-9.2, y:110.7, z1:156, z2:0
+11-03-24 16:15:13 root         INFO     move to x:-9.2, y:110.7, z1:156, z2:0
+11-03-24 16:15:13 root         INFO     move to x:156.8, y:532.2, z1:85, z2:0
+11-03-24 16:15:24 root         INFO     move to x:156.8, y:532.2, z1:85, z2:0
+11-03-24 16:15:24 root         INFO     move to x:65.8, y:287.4, z1:170, z2:0
+11-03-24 16:15:33 root         INFO     move to x:239.1, y:248.1, z1:0, z2:199
+11-03-24 16:15:41 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+11-03-24 16:15:42 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+11-03-24 16:15:42 root         INFO     move to x:305, y:95, z1:0, z2:133.5
+11-03-24 16:15:51 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:15:53 root         INFO     absorb succeed!
+11-03-24 16:15:53 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:15:53 root         INFO     move to x:64.2, y:188, z1:0, z2:133
+11-03-24 16:16:01 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:16:03 root         INFO     injecting succeed!
+11-03-24 16:16:05 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:16:06 root         INFO     absorb succeed!
+11-03-24 16:16:06 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:16:06 root         INFO     inject succeed.
+11-03-24 16:16:06 root         INFO     move to x:305, y:95, z1:0, z2:133.5
+11-03-24 16:16:14 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:16:16 root         INFO     absorb succeed!
+11-03-24 16:16:16 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:16:16 root         INFO     move to x:64.2, y:188, z1:0, z2:133
+11-03-24 16:16:25 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:16:27 root         INFO     injecting succeed!
+11-03-24 16:16:29 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:16:30 root         INFO     absorb succeed!
+11-03-24 16:16:30 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:16:30 root         INFO     inject succeed.
+11-03-24 16:16:30 root         INFO     move to x:305, y:95, z1:0, z2:133.5
+11-03-24 16:16:38 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:16:40 root         INFO     absorb succeed!
+11-03-24 16:16:40 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:16:40 root         INFO     move to x:64.2, y:188, z1:0, z2:133
+11-03-24 16:16:48 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:16:51 root         INFO     injecting succeed!
+11-03-24 16:16:53 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:16:54 root         INFO     absorb succeed!
+11-03-24 16:16:54 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:16:54 root         INFO     inject succeed.
+11-03-24 16:16:54 root         INFO     move to x:305, y:95, z1:0, z2:133.5
+11-03-24 16:17:02 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:17:04 root         INFO     absorb succeed!
+11-03-24 16:17:04 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:17:04 root         INFO     move to x:64.2, y:188, z1:0, z2:188
+11-03-24 16:17:13 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:17:14 root         INFO     injecting succeed!
+11-03-24 16:17:17 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:17:18 root         INFO     absorb succeed!
+11-03-24 16:17:18 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:17:18 root         INFO     inject succeed.
+11-03-24 16:17:18 root         INFO     move to x:115, y:75, z1:0, z2:160
+11-03-24 16:17:34 root         INFO     move to x:249.9, y:248.1, z1:0, z2:199
+11-03-24 16:17:42 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+11-03-24 16:17:43 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+11-03-24 16:17:43 root         INFO     move to x:270, y:95, z1:0, z2:133.5
+11-03-24 16:17:52 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:17:54 root         INFO     absorb succeed!
+11-03-24 16:17:54 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:17:54 root         INFO     move to x:64.2, y:188, z1:0, z2:133
+11-03-24 16:18:02 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:18:04 root         INFO     injecting succeed!
+11-03-24 16:18:06 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:18:07 root         INFO     absorb succeed!
+11-03-24 16:18:07 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:18:07 root         INFO     inject succeed.
+11-03-24 16:18:07 root         INFO     move to x:270, y:95, z1:0, z2:133.5
+11-03-24 16:18:15 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:18:16 root         INFO     absorb succeed!
+11-03-24 16:18:16 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:18:16 root         INFO     move to x:64.2, y:188, z1:0, z2:188
+11-03-24 16:18:24 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:18:25 root         INFO     injecting succeed!
+11-03-24 16:18:28 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:18:29 root         INFO     absorb succeed!
+11-03-24 16:18:29 root         INFO     current_speed is 0.8333333333333334 mL/s.
+11-03-24 16:18:29 root         INFO     inject succeed.
+11-03-24 16:18:29 root         INFO     move to x:115, y:75, z1:0, z2:160
+11-03-24 16:18:46 root         INFO     move to x:65.8, y:287.4, z1:170, z2:0
+11-03-24 16:18:55 root         INFO     move to x:14.5, y:485.9, z1:117.8, z2:0
+11-03-24 16:19:06 root         INFO     move to x:65.5, y:243.0, z1:194, z2:0
+11-03-24 16:19:14 root         INFO     move to x:14.5, y:485.9, z1:117.8, z2:0
+11-03-24 16:19:25 root         WARNING  the gripper is blocked, now open.
+11-03-24 16:19:26 root         INFO     send:b'\xfe\xb2\x03\x84\x009'
+11-03-24 16:19:27 root         INFO     receive:b'\xfd\xb2\x00\x00\x00\xb2'
+11-03-24 16:19:27 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+11-03-24 16:19:28 root         INFO     receive:b'\xfd\xa1\x02\x00\x01\x01\xa5'
+11-03-24 16:19:28 root         INFO     send:b'\xfe\xb8\x00\x00\x00\xb8'
+11-03-24 16:19:30 root         INFO     receive:b'\xfd\xb8\x00\x00\x00\xb8'
+11-03-24 16:19:30 root         INFO     heating is on!
+11-03-24 16:19:30 root         INFO     send:b'\xfe\xb2\x03\x84\x009'
+11-03-24 16:19:31 root         INFO     receive:b'\xfd\xb2\x00\x00\x00\xb2'
+11-03-24 16:19:31 root         INFO     send:b'\xfe\xb1\x01,\x00\xde'
+11-03-24 16:19:32 root         INFO     receive:b'\xfd\xb1\x00\x00\x00\xb1'
+11-03-24 16:19:32 root         INFO     send:b'\xfe\xb2\x03\x84\x009'
+11-03-24 16:19:33 root         INFO     receive:b'\xfd\xb2\x00\x00\x00\xb2'
+11-03-24 16:19:33 root         INFO     send:b'\xfe\xa1\x00\x00\x00\xa1'
+11-03-24 16:19:34 root         INFO     receive:b'\xfd\xa1\x02\x00\x00\x01\xa4'
+11-03-24 16:19:34 root         INFO     already stirring!
+11-03-24 16:19:34 root         INFO     send:b'\xfe\xb2\x03\x84\x009'
+11-03-24 16:19:36 root         INFO     receive:b'\xfd\xb2\x00\x00\x00\xb2'
+11-03-24 16:19:36 root         INFO     move to x:14.5, y:485.9, z1:117.8, z2:0
+11-03-24 16:19:38 root         INFO     move to x:156.8, y:532.2, z1:85, z2:0
+11-03-24 17:29:46 root         INFO     move to x:156.8, y:532.2, z1:85, z2:0
+11-03-24 17:29:47 root         INFO     move to x:14.5, y:485.9, z1:117.8, z2:0
+11-03-24 17:29:57 root         INFO     gripper rgi30 set_rotation_angle successful, rotation_angle: 900
+11-03-24 17:29:57 root         INFO     move to x:65.5, y:243.0, z1:194, z2:0
+11-03-24 17:30:07 root         INFO     move to x:14.5, y:485.9, z1:117.8, z2:0
+11-03-24 17:30:17 root         INFO     move to x:65.8, y:287.4, z1:170, z2:0
+11-03-24 17:40:25 root         INFO     move to x:65.8, y:287.4, z1:170, z2:0
+11-03-24 17:40:25 root         INFO     move to x:353, y:536.7, z1:82.5, z2:0
+11-03-24 17:40:35 root         INFO     move to x:94, y:287.7, z1:170, z2:0
+11-03-24 17:40:44 root         INFO     move to x:14.5, y:485.9, z1:117.8, z2:0
+11-03-24 17:40:55 root         INFO     gripper rgi30 set_rotation_angle successful, rotation_angle: 900
+11-03-24 17:40:55 root         INFO     move to x:93.4, y:243.1, z1:194, z2:0
+11-03-24 17:41:05 root         INFO     move to x:14.5, y:485.9, z1:117.8, z2:0
+11-03-24 17:41:15 root         INFO     move to x:353, y:595.7, z1:82.5, z2:0
+11-03-24 17:41:42 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 17:41:45 root         INFO     gripper rgi100 set_rotation_angle successful, rotation_angle: 180
+11-03-24 17:41:46 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 17:41:56 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 17:42:10 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 17:42:19 root         INFO     gripper rgi100 set_rotation_angle successful, rotation_angle: -180
+11-03-24 17:43:22 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 5
+11-03-24 17:43:26 root         INFO     gripper rgi100 set_rotation_angle successful, rotation_angle: -120
+11-03-24 17:43:49 root         INFO     gripper rgi100 set_rotation_angle successful, rotation_angle: 120
+11-03-24 17:43:49 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 17:44:22 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 17:44:30 root         INFO     gripper rgi100 set_rotation_angle successful, rotation_angle: 180
+11-03-24 17:44:42 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 1
+11-03-24 17:44:44 root         INFO     gripper rgi100 set_rotation_angle successful, rotation_angle: 20
+11-03-24 18:44:48 root         INFO     gripper rgi100 set_rotation_angle successful, rotation_angle: -20
+11-03-24 18:44:49 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 18:44:49 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 18:44:54 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 18:44:54 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 18:44:57 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 18:45:15 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 18:45:30 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 18:45:44 root         INFO     current channel: 8
+11-03-24 18:45:45 root         INFO     pump is open, current speed is -200 rpm.
+11-03-24 18:46:45 root         INFO     pump is stop, open time is 60 s.
+11-03-24 18:46:46 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 18:46:58 root         INFO     current channel: 2
+11-03-24 18:46:59 root         INFO     pump is open, current speed is 200 rpm.
+11-03-24 18:47:14 root         INFO     pump is stop, open time is 15 s.
+11-03-24 18:47:15 root         INFO     current channel: 1
+11-03-24 18:47:16 root         INFO     pump is open, current speed is 200 rpm.
+11-03-24 18:47:26 root         INFO     pump is stop, open time is 10 s.
+11-03-24 18:47:27 root         INFO     current channel: 8
+11-03-24 18:47:27 root         INFO     pump is open, current speed is -200 rpm.
+11-03-24 18:48:48 root         INFO     pump is stop, open time is 80 s.
+11-03-24 18:48:48 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 18:49:15 root         INFO     move to x:353, y:536.7, z1:82.5, z2:0
+11-03-24 18:49:20 root         INFO     move to x:65.8, y:287.4, z1:170, z2:0
+11-03-24 18:49:29 root         INFO     move to x:353, y:595.7, z1:82.5, z2:0
+11-03-24 18:49:38 root         INFO     move to x:94, y:287.7, z1:170, z2:0
+11-03-24 18:49:48 root         INFO     email sent success
+11-03-24 18:49:48 root         WARNING  send the email to the user and ask to collect sample at 2024-11-10 18:49:47.382298
+11-03-24 18:54:12 root         INFO     gripper rgi100 set_rotation_speed successful, rotation_speed: 40
+11-03-24 18:54:22 root         INFO     gripper rgi100 set_rotation_angle successful, rotation_angle: -180
+11-03-24 18:57:49 root         INFO     axis z1's speed change, current speed 30
+11-03-24 18:57:49 root         INFO     axis z2's speed change, current speed 30
+11-03-24 18:57:49 root         INFO     axis z2's speed change, current speed 100
+11-03-24 18:57:49 root         INFO     axis z2 return home successful
+11-03-24 18:57:55 root         INFO     axis z1's speed change, current speed 100
+11-03-24 18:57:55 root         INFO     axis z1 return home successful
+11-03-24 18:57:55 root         INFO     axis x's speed change, current speed 30
+11-03-24 18:57:55 root         INFO     axis y's speed change, current speed 30
+11-03-24 18:57:59 root         INFO     axis x's speed change, current speed 100
+11-03-24 18:57:59 root         INFO     axis x return home successful
+11-03-24 18:58:06 root         INFO     axis y's speed change, current speed 100
+11-03-24 18:58:06 root         INFO     axis y return home successful
+11-03-24 18:58:06 root         INFO     all axes return home successful

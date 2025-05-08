@@ -1,0 +1,125 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="reactor_1"
+      type="reactor" />
+    <Component
+      id="reactor_2"
+      type="reactor" />
+    <Component
+      id="reactor_3"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="CuCl(I)"
+      id="CuCl(I)"
+      role="reagent" />
+    <Reagent
+      name="HAuCl4·3H2O"
+      id="HAuCl4·3H2O"
+      role="reagent" />
+    <Reagent
+      name="OAm"
+      id="OAm"
+      role="reagent" />
+    <Reagent
+      name="chloroform"
+      id="chloroform"
+      role="reagent" />
+    <Reagent
+      name="toluene"
+      id="toluene"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor_1"
+      reagent="CuCl(I)"
+      mass="0.1 mmol"
+      amount="0.1 mmol" />
+    <Add
+      vessel="reactor_1"
+      reagent="OAm"
+      volume="5.0 mL"
+      amount="5.0 mL" />
+    <HeatChillToTemp
+      vessel="reactor_1"
+      temp="100.0 ℃"
+      stir="False" />
+    <Wait
+      time="30.0 min" />
+    <HeatChillToTemp
+      vessel="reactor_1"
+      temp="205.0 ℃"
+      stir_speed="mild" />
+    <HeatChillToTemp
+      vessel="reactor_1"
+      temp="80.0 ℃"
+      stir="False" />
+    <Add
+      vessel="reactor_1"
+      reagent="HAuCl4·3H2O"
+      mass="0.15 mmol"
+      amount="0.15 mmol" />
+    <Add
+      vessel="reactor_1"
+      reagent="OAm"
+      volume="1.0 mL"
+      amount="1.0 mL" />
+    <Add
+      vessel="reactor_1"
+      reagent="toluene"
+      volume="4.0 mL"
+      amount="4.0 mL" />
+    <StartStir
+      vessel="reactor_1"
+      stir_speed="mild" />
+    <Wait
+      time="2.0 min" />
+    <StopStir
+      vessel="reactor_1" />
+    <HeatChill
+      vessel="reactor_1"
+      time="45.0 min"
+      temp="65.0 ℃"
+      stir="False" />
+    <Centrifugate
+      vessel="reactor_1"
+      rotation_speed="appropriate"
+      time="appropriate" />
+    <Transfer
+      from_vessel="reactor_1"
+      to_vessel="reactor_2"
+      amount="all"
+      solid="True" />
+    <Add
+      vessel="reactor_2"
+      reagent="toluene"
+      volume="appropriate"
+      amount="appropriate" />
+    <Centrifugate
+      vessel="reactor_2"
+      rotation_speed="appropriate"
+      time="appropriate" />
+    <Transfer
+      from_vessel="reactor_2"
+      to_vessel="reactor_3"
+      amount="all"
+      solid="True" />
+    <Add
+      vessel="reactor_3"
+      reagent="chloroform"
+      volume="3.0 mL"
+      amount="3.0 mL" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

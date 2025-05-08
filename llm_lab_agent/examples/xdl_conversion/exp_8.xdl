@@ -1,0 +1,83 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="beaker_1"
+      type="reactor" />
+    <Component
+      id="beaker_2"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="absolute methanol"
+      id="absolute methanol"
+      role="reagent" />
+    <Reagent
+      name="ferric chloride hexa-hydrate (0.1 M)"
+      id="ferric chloride hexa-hydrate (0.1 M)"
+      role="reagent" />
+    <Reagent
+      name="sodium boro-hydride (2.5 M)"
+      id="sodium boro-hydride (2.5 M)"
+      role="reagent" />
+    <Reagent
+      name="water"
+      id="water"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="beaker_1"
+      reagent="sodium boro-hydride (2.5 M)"
+      volume="10.0 mL"
+      stir="True"
+      stir_speed="300.0 rpm"
+      amount="10.0 mL" />
+    <Add
+      vessel="beaker_2"
+      reagent="ferric chloride hexa-hydrate (0.1 M)"
+      volume="40.0 mL"
+      amount="40.0 mL" />
+    <Transfer
+      from_vessel="beaker_2"
+      to_vessel="beaker_1"
+      volume="all"
+      amount="all" />
+    <Wait
+      time="1.0 min" />
+    <Filter
+      vessel="beaker_1"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 ℃" />
+    <WashSolid
+      vessel="beaker_1"
+      solvent="water"
+      volume="appropriate"
+      filtrate_vessel="waste"
+      stir="False" />
+    <WashSolid
+      vessel="beaker_1"
+      solvent="absolute methanol"
+      volume="appropriate"
+      filtrate_vessel="waste"
+      stir="False" />
+    <Dry
+      vessel="beaker_1"
+      time="12.0 hours"
+      pressure="1 bar"
+      temp="50.0 ℃" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

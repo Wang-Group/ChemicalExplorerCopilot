@@ -1,0 +1,1103 @@
+{
+    "Current": {
+        "Vials": {
+            "vial_standard_0": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 0,
+                "capped": "cap_6"
+            },
+            "vial_standard_1": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 1,
+                "capped": "cap_7"
+            },
+            "vial_standard_2": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 2,
+                "capped": "cap_8"
+            },
+            "vial_standard_3": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 6,
+                "capped": "cap_9"
+            },
+            "vial_standard_4": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 7,
+                "capped": "cap_10"
+            },
+            "vial_standard_5": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 8,
+                "capped": "cap_11"
+            },
+            "vial_standard_6": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 12,
+                "capped": "cap_12"
+            },
+            "vial_standard_7": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 13,
+                "capped": "cap_13"
+            },
+            "vial_standard_8": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 14,
+                "capped": "cap_14"
+            },
+            "vial_standard_9": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 18,
+                "capped": "cap_15"
+            },
+            "vial_standard_10": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 19,
+                "capped": "cap_16"
+            },
+            "vial_standard_11": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 20,
+                "capped": "cap_17"
+            },
+            "vial_standard_12": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 24,
+                "capped": "cap_18"
+            },
+            "vial_standard_13": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 25,
+                "capped": "cap_19"
+            },
+            "vial_standard_14": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 26,
+                "capped": "cap_20"
+            },
+            "vial_standard_15": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 30,
+                "capped": "cap_21"
+            },
+            "vial_standard_16": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 31,
+                "capped": "cap_22"
+            },
+            "vial_standard_17": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 32,
+                "capped": "cap_23"
+            },
+            "vial_standard_18": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 36,
+                "capped": "cap_24"
+            },
+            "vial_standard_19": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 37,
+                "capped": "cap_25"
+            },
+            "vial_standard_20": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 38,
+                "capped": "cap_26"
+            },
+            "vial_standard_21": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 42,
+                "capped": "cap_27"
+            },
+            "vial_standard_22": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 43,
+                "capped": "cap_28"
+            },
+            "vial_standard_23": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 44,
+                "capped": "cap_29"
+            },
+            "vial_0": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 3,
+                "capped": "cap_30"
+            },
+            "vial_1": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 4,
+                "capped": "cap_31"
+            },
+            "vial_2": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 5,
+                "capped": "cap_32"
+            },
+            "vial_3": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 9,
+                "capped": "cap_33"
+            },
+            "vial_4": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 10,
+                "capped": "cap_34"
+            },
+            "vial_5": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 11,
+                "capped": "cap_35"
+            },
+            "vial_6": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 15,
+                "capped": "cap_36"
+            },
+            "vial_7": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 16,
+                "capped": "cap_37"
+            },
+            "vial_8": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 17,
+                "capped": "cap_38"
+            },
+            "vial_9": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 21,
+                "capped": "cap_39"
+            },
+            "vial_10": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 22,
+                "capped": "cap_40"
+            },
+            "vial_11": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 23,
+                "capped": "cap_41"
+            },
+            "vial_12": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 27,
+                "capped": "cap_42"
+            },
+            "vial_13": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 28,
+                "capped": "cap_43"
+            },
+            "vial_14": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 29,
+                "capped": "cap_44"
+            },
+            "vial_15": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 33,
+                "capped": "cap_45"
+            },
+            "vial_16": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 34,
+                "capped": "cap_46"
+            },
+            "vial_17": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 35,
+                "capped": "cap_47"
+            },
+            "vial_18": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 39,
+                "capped": "cap_48"
+            },
+            "vial_19": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 40,
+                "capped": "cap_49"
+            },
+            "vial_20": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 41,
+                "capped": "cap_50"
+            },
+            "vial_21": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 45,
+                "capped": "cap_51"
+            },
+            "vial_22": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 46,
+                "capped": "cap_52"
+            },
+            "vial_23": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 47,
+                "capped": "cap_53"
+            }
+        },
+        "Caps": {
+            "cap_6": {
+                "cap_plate": "vial_standard_0",
+                "slot_index": 0
+            },
+            "cap_7": {
+                "cap_plate": "vial_standard_1",
+                "slot_index": 0
+            },
+            "cap_8": {
+                "cap_plate": "vial_standard_2",
+                "slot_index": 0
+            },
+            "cap_9": {
+                "cap_plate": "vial_standard_3",
+                "slot_index": 0
+            },
+            "cap_10": {
+                "cap_plate": "vial_standard_4",
+                "slot_index": 0
+            },
+            "cap_11": {
+                "cap_plate": "vial_standard_5",
+                "slot_index": 0
+            },
+            "cap_12": {
+                "cap_plate": "vial_standard_6",
+                "slot_index": 0
+            },
+            "cap_13": {
+                "cap_plate": "vial_standard_7",
+                "slot_index": 0
+            },
+            "cap_14": {
+                "cap_plate": "vial_standard_8",
+                "slot_index": 0
+            },
+            "cap_15": {
+                "cap_plate": "vial_standard_9",
+                "slot_index": 0
+            },
+            "cap_16": {
+                "cap_plate": "vial_standard_10",
+                "slot_index": 0
+            },
+            "cap_17": {
+                "cap_plate": "vial_standard_11",
+                "slot_index": 0
+            },
+            "cap_18": {
+                "cap_plate": "vial_standard_12",
+                "slot_index": 0
+            },
+            "cap_19": {
+                "cap_plate": "vial_standard_13",
+                "slot_index": 0
+            },
+            "cap_20": {
+                "cap_plate": "vial_standard_14",
+                "slot_index": 0
+            },
+            "cap_21": {
+                "cap_plate": "vial_standard_15",
+                "slot_index": 0
+            },
+            "cap_22": {
+                "cap_plate": "vial_standard_16",
+                "slot_index": 0
+            },
+            "cap_23": {
+                "cap_plate": "vial_standard_17",
+                "slot_index": 0
+            },
+            "cap_24": {
+                "cap_plate": "vial_standard_18",
+                "slot_index": 0
+            },
+            "cap_25": {
+                "cap_plate": "vial_standard_19",
+                "slot_index": 0
+            },
+            "cap_26": {
+                "cap_plate": "vial_standard_20",
+                "slot_index": 0
+            },
+            "cap_27": {
+                "cap_plate": "vial_standard_21",
+                "slot_index": 0
+            },
+            "cap_28": {
+                "cap_plate": "vial_standard_22",
+                "slot_index": 0
+            },
+            "cap_29": {
+                "cap_plate": "vial_standard_23",
+                "slot_index": 0
+            },
+            "cap_30": {
+                "cap_plate": "vial_0",
+                "slot_index": 0
+            },
+            "cap_31": {
+                "cap_plate": "vial_1",
+                "slot_index": 0
+            },
+            "cap_32": {
+                "cap_plate": "vial_2",
+                "slot_index": 0
+            },
+            "cap_33": {
+                "cap_plate": "vial_3",
+                "slot_index": 0
+            },
+            "cap_34": {
+                "cap_plate": "vial_4",
+                "slot_index": 0
+            },
+            "cap_35": {
+                "cap_plate": "vial_5",
+                "slot_index": 0
+            },
+            "cap_36": {
+                "cap_plate": "vial_6",
+                "slot_index": 0
+            },
+            "cap_37": {
+                "cap_plate": "vial_7",
+                "slot_index": 0
+            },
+            "cap_38": {
+                "cap_plate": "vial_8",
+                "slot_index": 0
+            },
+            "cap_39": {
+                "cap_plate": "vial_9",
+                "slot_index": 0
+            },
+            "cap_40": {
+                "cap_plate": "vial_10",
+                "slot_index": 0
+            },
+            "cap_41": {
+                "cap_plate": "vial_11",
+                "slot_index": 0
+            },
+            "cap_42": {
+                "cap_plate": "vial_12",
+                "slot_index": 0
+            },
+            "cap_43": {
+                "cap_plate": "vial_13",
+                "slot_index": 0
+            },
+            "cap_44": {
+                "cap_plate": "vial_14",
+                "slot_index": 0
+            },
+            "cap_45": {
+                "cap_plate": "vial_15",
+                "slot_index": 0
+            },
+            "cap_46": {
+                "cap_plate": "vial_16",
+                "slot_index": 0
+            },
+            "cap_47": {
+                "cap_plate": "vial_17",
+                "slot_index": 0
+            },
+            "cap_48": {
+                "cap_plate": "vial_18",
+                "slot_index": 0
+            },
+            "cap_49": {
+                "cap_plate": "vial_19",
+                "slot_index": 0
+            },
+            "cap_50": {
+                "cap_plate": "vial_20",
+                "slot_index": 0
+            },
+            "cap_51": {
+                "cap_plate": "vial_21",
+                "slot_index": 0
+            },
+            "cap_52": {
+                "cap_plate": "vial_22",
+                "slot_index": 0
+            },
+            "cap_53": {
+                "cap_plate": "vial_23",
+                "slot_index": 0
+            }
+        },
+        "Solutions": {
+            },
+            
+        "Heads": {
+            "KCl": {
+                "head_plates": 0,
+                "slot_index": 0
+            },
+            "Na2WO4.2H2O": {
+                "head_plates": 0,
+                "slot_index": 1
+            }, 
+            "CuCl2.2H2O":{
+                "head_plates": 0, 
+                "slot_index": 2
+            }
+        }
+    },
+    "Storage": {
+        "Vials": {
+            "vial_standard_0": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 0,
+                "capped": "cap_6"
+            },
+            "vial_standard_1": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 1,
+                "capped": "cap_7"
+            },
+            "vial_standard_2": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 2,
+                "capped": "cap_8"
+            },
+            "vial_standard_3": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 6,
+                "capped": "cap_9"
+            },
+            "vial_standard_4": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 7,
+                "capped": "cap_10"
+            },
+            "vial_standard_5": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 8,
+                "capped": "cap_11"
+            },
+            "vial_standard_6": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 12,
+                "capped": "cap_12"
+            },
+            "vial_standard_7": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 13,
+                "capped": "cap_13"
+            },
+            "vial_standard_8": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 14,
+                "capped": "cap_14"
+            },
+            "vial_standard_9": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 18,
+                "capped": "cap_15"
+            },
+            "vial_standard_10": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 19,
+                "capped": "cap_16"
+            },
+            "vial_standard_11": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 20,
+                "capped": "cap_17"
+            },
+            "vial_standard_12": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 24,
+                "capped": "cap_18"
+            },
+            "vial_standard_13": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 25,
+                "capped": "cap_19"
+            },
+            "vial_standard_14": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 26,
+                "capped": "cap_20"
+            },
+            "vial_standard_15": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 30,
+                "capped": "cap_21"
+            },
+            "vial_standard_16": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 31,
+                "capped": "cap_22"
+            },
+            "vial_standard_17": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 32,
+                "capped": "cap_23"
+            },
+            "vial_standard_18": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 36,
+                "capped": "cap_24"
+            },
+            "vial_standard_19": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 37,
+                "capped": "cap_25"
+            },
+            "vial_standard_20": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 38,
+                "capped": "cap_26"
+            },
+            "vial_standard_21": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 42,
+                "capped": "cap_27"
+            },
+            "vial_standard_22": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 43,
+                "capped": "cap_28"
+            },
+            "vial_standard_23": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 44,
+                "capped": "cap_29"
+            },
+            "vial_0": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 3,
+                "capped": "cap_30"
+            },
+            "vial_1": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 4,
+                "capped": "cap_31"
+            },
+            "vial_2": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 5,
+                "capped": "cap_32"
+            },
+            "vial_3": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 9,
+                "capped": "cap_33"
+            },
+            "vial_4": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 10,
+                "capped": "cap_34"
+            },
+            "vial_5": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 11,
+                "capped": "cap_35"
+            },
+            "vial_6": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 15,
+                "capped": "cap_36"
+            },
+            "vial_7": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 16,
+                "capped": "cap_37"
+            },
+            "vial_8": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 17,
+                "capped": "cap_38"
+            },
+            "vial_9": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 21,
+                "capped": "cap_39"
+            },
+            "vial_10": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 22,
+                "capped": "cap_40"
+            },
+            "vial_11": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 23,
+                "capped": "cap_41"
+            },
+            "vial_12": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 27,
+                "capped": "cap_42"
+            },
+            "vial_13": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 28,
+                "capped": "cap_43"
+            },
+            "vial_14": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 29,
+                "capped": "cap_44"
+            },
+            "vial_15": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 33,
+                "capped": "cap_45"
+            },
+            "vial_16": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 34,
+                "capped": "cap_46"
+            },
+            "vial_17": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 35,
+                "capped": "cap_47"
+            },
+            "vial_18": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 39,
+                "capped": "cap_48"
+            },
+            "vial_19": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 40,
+                "capped": "cap_49"
+            },
+            "vial_20": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 41,
+                "capped": "cap_50"
+            },
+            "vial_21": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 45,
+                "capped": "cap_51"
+            },
+            "vial_22": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 46,
+                "capped": "cap_52"
+            },
+            "vial_23": {
+                "bottle_plate": "plate_0",
+                "stir": false,
+                "temperature": false,
+                "slot_index": 47,
+                "capped": "cap_53"
+            }
+        },
+        "Caps": {
+            "cap_6": {
+                "cap_plate": "vial_standard_0",
+                "slot_index": 0
+            },
+            "cap_7": {
+                "cap_plate": "vial_standard_1",
+                "slot_index": 0
+            },
+            "cap_8": {
+                "cap_plate": "vial_standard_2",
+                "slot_index": 0
+            },
+            "cap_9": {
+                "cap_plate": "vial_standard_3",
+                "slot_index": 0
+            },
+            "cap_10": {
+                "cap_plate": "vial_standard_4",
+                "slot_index": 0
+            },
+            "cap_11": {
+                "cap_plate": "vial_standard_5",
+                "slot_index": 0
+            },
+            "cap_12": {
+                "cap_plate": "vial_standard_6",
+                "slot_index": 0
+            },
+            "cap_13": {
+                "cap_plate": "vial_standard_7",
+                "slot_index": 0
+            },
+            "cap_14": {
+                "cap_plate": "vial_standard_8",
+                "slot_index": 0
+            },
+            "cap_15": {
+                "cap_plate": "vial_standard_9",
+                "slot_index": 0
+            },
+            "cap_16": {
+                "cap_plate": "vial_standard_10",
+                "slot_index": 0
+            },
+            "cap_17": {
+                "cap_plate": "vial_standard_11",
+                "slot_index": 0
+            },
+            "cap_18": {
+                "cap_plate": "vial_standard_12",
+                "slot_index": 0
+            },
+            "cap_19": {
+                "cap_plate": "vial_standard_13",
+                "slot_index": 0
+            },
+            "cap_20": {
+                "cap_plate": "vial_standard_14",
+                "slot_index": 0
+            },
+            "cap_21": {
+                "cap_plate": "vial_standard_15",
+                "slot_index": 0
+            },
+            "cap_22": {
+                "cap_plate": "vial_standard_16",
+                "slot_index": 0
+            },
+            "cap_23": {
+                "cap_plate": "vial_standard_17",
+                "slot_index": 0
+            },
+            "cap_24": {
+                "cap_plate": "vial_standard_18",
+                "slot_index": 0
+            },
+            "cap_25": {
+                "cap_plate": "vial_standard_19",
+                "slot_index": 0
+            },
+            "cap_26": {
+                "cap_plate": "vial_standard_20",
+                "slot_index": 0
+            },
+            "cap_27": {
+                "cap_plate": "vial_standard_21",
+                "slot_index": 0
+            },
+            "cap_28": {
+                "cap_plate": "vial_standard_22",
+                "slot_index": 0
+            },
+            "cap_29": {
+                "cap_plate": "vial_standard_23",
+                "slot_index": 0
+            },
+            "cap_30": {
+                "cap_plate": "vial_0",
+                "slot_index": 0
+            },
+            "cap_31": {
+                "cap_plate": "vial_1",
+                "slot_index": 0
+            },
+            "cap_32": {
+                "cap_plate": "vial_2",
+                "slot_index": 0
+            },
+            "cap_33": {
+                "cap_plate": "vial_3",
+                "slot_index": 0
+            },
+            "cap_34": {
+                "cap_plate": "vial_4",
+                "slot_index": 0
+            },
+            "cap_35": {
+                "cap_plate": "vial_5",
+                "slot_index": 0
+            },
+            "cap_36": {
+                "cap_plate": "vial_6",
+                "slot_index": 0
+            },
+            "cap_37": {
+                "cap_plate": "vial_7",
+                "slot_index": 0
+            },
+            "cap_38": {
+                "cap_plate": "vial_8",
+                "slot_index": 0
+            },
+            "cap_39": {
+                "cap_plate": "vial_9",
+                "slot_index": 0
+            },
+            "cap_40": {
+                "cap_plate": "vial_10",
+                "slot_index": 0
+            },
+            "cap_41": {
+                "cap_plate": "vial_11",
+                "slot_index": 0
+            },
+            "cap_42": {
+                "cap_plate": "vial_12",
+                "slot_index": 0
+            },
+            "cap_43": {
+                "cap_plate": "vial_13",
+                "slot_index": 0
+            },
+            "cap_44": {
+                "cap_plate": "vial_14",
+                "slot_index": 0
+            },
+            "cap_45": {
+                "cap_plate": "vial_15",
+                "slot_index": 0
+            },
+            "cap_46": {
+                "cap_plate": "vial_16",
+                "slot_index": 0
+            },
+            "cap_47": {
+                "cap_plate": "vial_17",
+                "slot_index": 0
+            },
+            "cap_48": {
+                "cap_plate": "vial_18",
+                "slot_index": 0
+            },
+            "cap_49": {
+                "cap_plate": "vial_19",
+                "slot_index": 0
+            },
+            "cap_50": {
+                "cap_plate": "vial_20",
+                "slot_index": 0
+            },
+            "cap_51": {
+                "cap_plate": "vial_21",
+                "slot_index": 0
+            },
+            "cap_52": {
+                "cap_plate": "vial_22",
+                "slot_index": 0
+            },
+            "cap_53": {
+                "cap_plate": "vial_23",
+                "slot_index": 0
+            }
+        },
+        "Solutions": {
+        }, 
+        "Heads": {
+            "KCl": {
+                "head_plates": 0,
+                "slot_index": 0
+            },
+            "Na2WO4.2H2O": {
+                "head_plates": 0,
+                "slot_index": 1
+            }, 
+            "CuCl2.2H2O":{
+                "head_plates": 0, 
+                "slot_index": 2
+            }
+        }
+    }
+}

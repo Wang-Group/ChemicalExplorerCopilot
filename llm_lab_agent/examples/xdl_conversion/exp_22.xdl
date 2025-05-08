@@ -1,0 +1,104 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="reactor_1"
+      type="reactor" />
+    <Component
+      id="reactor_2"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="0.5 M sodium acetate buffer (0.5 mol/L)"
+      id="0.5 M sodium acetate buffer (0.5 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="cobalt (II) nitrate hexahydrate"
+      id="cobalt (II) nitrate hexahydrate"
+      role="reagent" />
+    <Reagent
+      name="deionized water"
+      id="deionized water"
+      role="reagent" />
+    <Reagent
+      name="glacial acetic acid"
+      id="glacial acetic acid"
+      role="reagent" />
+    <Reagent
+      name="sodium acetate"
+      id="sodium acetate"
+      role="reagent" />
+    <Reagent
+      name="sodium metavanadate"
+      id="sodium metavanadate"
+      role="reagent" />
+    <Reagent
+      name="sodium tungsten dehydrate"
+      id="sodium tungsten dehydrate"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor_1"
+      reagent="deionized water"
+      volume="appropriate"
+      amount="appropriate" />
+    <Add
+      vessel="reactor_1"
+      reagent="sodium acetate"
+      mass="appropriate"
+      amount="appropriate" />
+    <Add
+      vessel="reactor_1"
+      reagent="glacial acetic acid"
+      volume="appropriate"
+      amount="appropriate" />
+    <Add
+      vessel="reactor_2"
+      reagent="sodium tungsten dehydrate"
+      mass="5.94 g"
+      amount="5.94 g" />
+    <Add
+      vessel="reactor_2"
+      reagent="sodium metavanadate"
+      mass="0.24 g"
+      amount="0.24 g" />
+    <Add
+      vessel="reactor_2"
+      reagent="0.5 M sodium acetate buffer (0.5 mol/L)"
+      volume="appropriate"
+      amount="appropriate" />
+    <Add
+      vessel="reactor_2"
+      reagent="cobalt (II) nitrate hexahydrate"
+      mass="1.17 g"
+      amount="1.17 g" />
+    <StartStir
+      vessel="reactor_2"
+      stir_speed="300.0 rpm" />
+    <HeatChill
+      vessel="reactor_2"
+      time="7200.0 second"
+      temp="80.0 °C" />
+    <Filter
+      vessel="reactor_2"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 °C" />
+    <CrystallizeStep
+      vessel="reactor_2"
+      ramp_temp="{'high': 'unknown quantity unknown unit', 'low_temp': '20.0 °C'}" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

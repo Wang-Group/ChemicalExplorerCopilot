@@ -1,0 +1,50 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Reactor C"
+      type="reactor" />
+    <Component
+      id="Reactor D"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="calcium chloride solution (0.1 M)"
+      id="calcium chloride solution (0.1 M)"
+      role="reagent" />
+    <Reagent
+      name="sodium carbonate solution (0.1 M)"
+      id="sodium carbonate solution (0.1 M)"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="Reactor C"
+      reagent="calcium chloride solution (0.1 M)"
+      volume="5.0 mL"
+      amount="5.0 mL" />
+    <Add
+      vessel="Reactor D"
+      reagent="sodium carbonate solution (0.1 M)"
+      volume="5.0 mL"
+      amount="5.0 mL" />
+    <Transfer
+      from_vessel="Reactor D"
+      to_vessel="Reactor C"
+      volume="all"
+      amount="all" />
+    <Stir
+      vessel="Reactor C"
+      time="5.0 minutes"
+      stir_speed="300.0 rpm" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

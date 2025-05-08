@@ -1,0 +1,117 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="Teflon-lined autoclave"
+      type="reactor" />
+    <Component
+      id="reactor1"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="1M NaOH aq (1.0 mol/L)"
+      id="1M NaOH aq (1.0 mol/L)"
+      role="reagent" />
+    <Reagent
+      name="4,4′-bipy"
+      id="4,4′-bipy"
+      role="reagent" />
+    <Reagent
+      name="CuCl2 ·2H2O"
+      id="CuCl2 ·2H2O"
+      role="reagent" />
+    <Reagent
+      name="K3[PMo12O40]·15H2O"
+      id="K3[PMo12O40]·15H2O"
+      role="reagent" />
+    <Reagent
+      name="distilled water"
+      id="distilled water"
+      role="reagent" />
+    <Reagent
+      name="piperazine containing six crystallographic water"
+      id="piperazine containing six crystallographic water"
+      role="reagent" />
+    <Reagent
+      name="water"
+      id="water"
+      role="reagent" />
+    <Reagent
+      name="{'acid': 'None', 'base': '1M NaOH aq (1.0 mol/L)'}"
+      id="{'acid': 'None', 'base': '1M NaOH aq (1.0 mol/L)'}"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor1"
+      reagent="piperazine containing six crystallographic water"
+      mass="0.03 g"
+      amount="0.03 g" />
+    <Add
+      vessel="reactor1"
+      reagent="4,4′-bipy"
+      mass="0.08 g"
+      amount="0.08 g" />
+    <Add
+      vessel="reactor1"
+      reagent="CuCl2 ·2H2O"
+      mass="0.125 g"
+      amount="0.125 g" />
+    <Add
+      vessel="reactor1"
+      reagent="K3[PMo12O40]·15H2O"
+      mass="0.193 g"
+      amount="0.193 g" />
+    <Add
+      vessel="reactor1"
+      reagent="water"
+      volume="5.0 mL"
+      amount="5.0 mL" />
+    <AdjustPH
+      vessel="reactor1"
+      reagent="{'acid': 'None', 'base': '1M NaOH aq (1.0 mol/L)'}"
+      pH="4.03" />
+    <Transfer
+      from_vessel="reactor1"
+      to_vessel="Teflon-lined autoclave"
+      volume="all"
+      amount="all" />
+    <HeatChill
+      vessel="Teflon-lined autoclave"
+      time="432000.0 second"
+      temp="160.0 °C"
+      stir="False" />
+    <HeatChillToTemp
+      vessel="Teflon-lined autoclave"
+      temp="20.0 °C"
+      stir="False" />
+    <Filter
+      vessel="Teflon-lined autoclave"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 °C" />
+    <WashSolid
+      vessel="Teflon-lined autoclave"
+      solvent="distilled water"
+      volume="appropriate"
+      filtrate_vessel="waste"
+      stir="False" />
+    <Dry
+      vessel="Teflon-lined autoclave"
+      time="900.0 second"
+      pressure="1 bar"
+      temp="20.0 °C" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

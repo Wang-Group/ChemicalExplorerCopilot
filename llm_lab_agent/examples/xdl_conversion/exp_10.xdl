@@ -1,0 +1,91 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="reactor_1"
+      type="reactor" />
+    <Component
+      id="reactor_2"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="2,2′-bipyridine"
+      id="2,2′-bipyridine"
+      role="reagent" />
+    <Reagent
+      name="FeCl3"
+      id="FeCl3"
+      role="reagent" />
+    <Reagent
+      name="ethanol"
+      id="ethanol"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor_1"
+      reagent="ethanol"
+      volume="10.0 mL"
+      amount="10.0 mL" />
+    <Add
+      vessel="reactor_1"
+      reagent="2,2′-bipyridine"
+      mass="562.0 mg"
+      amount="562.0 mg" />
+    <Add
+      vessel="reactor_2"
+      reagent="ethanol"
+      volume="10.0 mL"
+      amount="10.0 mL" />
+    <Add
+      vessel="reactor_2"
+      reagent="FeCl3"
+      mass="195.0 mg"
+      amount="195.0 mg" />
+    <StartStir
+      vessel="reactor_1"
+      stir_speed="300.0 rpm" />
+    <Stir
+      vessel="reactor_1"
+      time="5.0 minutes"
+      stir_speed="300.0 rpm" />
+    <StopStir
+      vessel="reactor_1" />
+    <StartStir
+      vessel="reactor_2"
+      stir_speed="300.0 rpm" />
+    <Stir
+      vessel="reactor_2"
+      time="5.0 minutes"
+      stir_speed="300.0 rpm" />
+    <StopStir
+      vessel="reactor_2" />
+    <Transfer
+      from_vessel="reactor_1"
+      to_vessel="reactor_2"
+      volume="all"
+      amount="all" />
+    <StartStir
+      vessel="reactor_2"
+      stir_speed="300.0 rpm" />
+    <Stir
+      vessel="reactor_2"
+      time="10.0 minutes"
+      stir_speed="300.0 rpm" />
+    <StopStir
+      vessel="reactor_2" />
+    <Evaporate
+      vessel="reactor_2"
+      time="24.0 hours"
+      temp="20.0 ℃" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

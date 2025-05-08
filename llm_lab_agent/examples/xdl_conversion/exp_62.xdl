@@ -1,0 +1,58 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="reactor_1"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="H2O"
+      id="H2O"
+      role="reagent" />
+    <Reagent
+      name="HCl (1.0 M)"
+      id="HCl (1.0 M)"
+      role="reagent" />
+    <Reagent
+      name="Na2MoO4"
+      id="Na2MoO4"
+      role="reagent" />
+    <Reagent
+      name="Na2S2O4"
+      id="Na2S2O4"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="reactor_1"
+      reagent="H2O"
+      volume="10.0 mL"
+      amount="10.0 mL" />
+    <Add
+      vessel="reactor_1"
+      reagent="Na2MoO4"
+      mass="3.0 g"
+      amount="3.0 g" />
+    <Add
+      vessel="reactor_1"
+      reagent="Na2S2O4"
+      mass="0.25 g"
+      amount="0.25 g" />
+    <Add
+      vessel="reactor_1"
+      reagent="HCl (1.0 M)"
+      volume="30.0 mL"
+      amount="30.0 mL" />
+    <Wait
+      time="2.0 days" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>

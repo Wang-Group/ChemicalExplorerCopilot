@@ -1,0 +1,16 @@
+user_account: 
+  20420202201757@stu.xmu.edu.cn
+
+password: 
+  ap3c4zjJKKVurGSB
+
+receiver_account:
+  - hl17679965425@outlook.com
+  - hl17679965425@icloud.com
+
+smtp_server:
+  - smtp.stu.xmu.edu.cn
+  - 465
+
+nickname: 
+  Black Dragon-1

@@ -1,0 +1,39 @@
+{
+    "Reactor": {},
+    "Property": {},
+    "ChemicalNames": {},
+    "Solid": [
+        {
+            "HfOCl2.8H2O": {
+                "head": "HfOCl2.8H2O",
+                "maximum_mass (g)": 5
+            }
+        }, 
+        {
+            "1,3,5-Tris(4-carboxyphenyl)benzene": {
+                "head": "H3BTB",
+                "maximum_mass (g)": 5
+            }
+        }
+    ],
+    "Liquid": [
+        {
+            "DMF": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "reactor": "storage_reactor0"
+                }
+            }
+        }, 
+        {
+            "HCOOH": {
+                "solvent": null,
+                "concentration": null,
+                "connection": {
+                    "reactor": "storage_reactor1"
+                }
+            }
+        }
+    ]
+}

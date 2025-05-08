@@ -1,0 +1,76 @@
+<?xdl version="2.0.0" ?>
+<XDL>
+
+<Synthesis>
+
+  <Hardware>
+    <Component
+      id="autoclave"
+      type="reactor" />
+    <Component
+      id="waste"
+      type="reactor" />
+  </Hardware>
+
+  <Reagents>
+    <Reagent
+      name="1,4-benzenedicarboxylic acid"
+      id="1,4-benzenedicarboxylic acid"
+      role="reagent" />
+    <Reagent
+      name="DMF"
+      id="DMF"
+      role="reagent" />
+    <Reagent
+      name="ZrCl4"
+      id="ZrCl4"
+      role="reagent" />
+  </Reagents>
+
+  <Procedure>
+    <Add
+      vessel="autoclave"
+      reagent="ZrCl4"
+      mass="53.0 mg"
+      amount="53.0 mg" />
+    <Add
+      vessel="autoclave"
+      reagent="1,4-benzenedicarboxylic acid"
+      mass="34.0 mg"
+      amount="34.0 mg" />
+    <Add
+      vessel="autoclave"
+      reagent="DMF"
+      volume="25.0 mL"
+      amount="25.0 mL" />
+    <HeatChillToTemp
+      vessel="autoclave"
+      temp="120.0 ℃"
+      stir="False" />
+    <Wait
+      time="48.0 hours" />
+    <HeatChillToTemp
+      vessel="autoclave"
+      temp="20.0 ℃"
+      stir="False" />
+    <Filter
+      vessel="autoclave"
+      filtrate_vessel="waste"
+      stir="False"
+      temp="20.0 ℃" />
+    <WashSolid
+      vessel="autoclave"
+      solvent="DMF"
+      volume="appropriate"
+      filtrate_vessel="waste"
+      stir="False" />
+    <Dry
+      vessel="autoclave"
+      time="appropriate"
+      pressure="1 bar"
+      temp="20.0 ℃" />
+  </Procedure>
+
+</Synthesis>
+
+</XDL>
